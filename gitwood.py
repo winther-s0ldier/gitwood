@@ -97,10 +97,20 @@ STREAK_MILESTONES = {7, 30, 100, 365}
 GRAPHQL_URL = "https://api.github.com/graphql"
 REST_URL = "https://api.github.com"
 
-CONTRIBUTIONS_QUERY = """
+# Fetches account creation year
+ACCOUNT_QUERY = """
 query($login: String!) {
   user(login: $login) {
-    contributionsCollection {
+    createdAt
+  }
+}
+"""
+
+# Fetches contributions for a specific year range
+YEARLY_QUERY = """
+query($login: String!, $from: DateTime!, $to: DateTime!) {
+  user(login: $login) {
+    contributionsCollection(from: $from, to: $to) {
       contributionCalendar {
         totalContributions
         weeks {
@@ -116,8 +126,21 @@ query($login: String!) {
 """
 
 
+def _graphql_post(payload: dict, headers: dict) -> dict:
+    """Execute a GraphQL request and return parsed JSON."""
+    resp = requests.post(GRAPHQL_URL, json=payload, headers=headers, timeout=30)
+    resp.raise_for_status()
+    data = resp.json()
+    if "errors" in data:
+        raise ValueError(f"GraphQL errors: {data['errors']}")
+    return data
+
+
 def fetch_graphql(username: str, token: str) -> dict:
-    """Fetch total contributions + calendar via GitHub GraphQL API.
+    """Fetch LIFETIME total contributions by querying every year since account creation.
+
+    GitHub's contributionsCollection defaults to the current year only.
+    This loops from account creation year → now to get the true all-time total.
 
     Returns:
         {"total_contributions": int, "days": {"YYYY-MM-DD": int}}
@@ -126,24 +149,47 @@ def fetch_graphql(username: str, token: str) -> dict:
         "Authorization": f"Bearer {token}",
         "Content-Type": "application/json",
     }
-    payload = {"query": CONTRIBUTIONS_QUERY, "variables": {"login": username}}
-    resp = requests.post(GRAPHQL_URL, json=payload, headers=headers, timeout=30)
-    resp.raise_for_status()
-    data = resp.json()
 
-    if "errors" in data:
-        raise ValueError(f"GraphQL errors: {data['errors']}")
-
-    calendar = (
-        data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+    # Step 1: get account creation year
+    data = _graphql_post(
+        {"query": ACCOUNT_QUERY, "variables": {"login": username}},
+        headers,
     )
-    total = calendar["totalContributions"]
-    days = {}
-    for week in calendar["weeks"]:
-        for day in week["contributionDays"]:
-            days[day["date"]] = day["contributionCount"]
+    created_at = data["data"]["user"]["createdAt"]  # e.g. "2018-04-12T10:22:00Z"
+    created_year = int(created_at[:4])
+    current_year = datetime.now(timezone.utc).year
 
-    return {"total_contributions": total, "days": days}
+    print(f"[gitwood] Account created {created_year}, scanning {created_year}–{current_year}...")
+
+    # Step 2: query each year and accumulate
+    total = 0
+    all_days = {}
+
+    for year in range(created_year, current_year + 1):
+        from_dt = f"{year}-01-01T00:00:00Z"
+        to_dt   = f"{year}-12-31T23:59:59Z"
+
+        data = _graphql_post(
+            {
+                "query": YEARLY_QUERY,
+                "variables": {"login": username, "from": from_dt, "to": to_dt},
+            },
+            headers,
+        )
+        calendar = (
+            data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+        )
+        year_total = calendar["totalContributions"]
+        total += year_total
+        print(f"[gitwood]   {year}: {year_total} contributions")
+
+        for week in calendar["weeks"]:
+            for day in week["contributionDays"]:
+                if day["contributionCount"] > 0:
+                    all_days[day["date"]] = day["contributionCount"]
+
+    print(f"[gitwood] Lifetime total: {total} contributions")
+    return {"total_contributions": total, "days": all_days}
 
 
 def fetch_rest_events(username: str, token: str, pages: int = 3) -> list:
