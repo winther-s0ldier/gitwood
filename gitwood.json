@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 311,
-  "last_update": "2026-03-29T09:41:46.552896+00:00",
+  "total_contributions": 312,
+  "last_update": "2026-03-29T12:44:31.701192+00:00",
   "tree": {
     "branches": [
       {
@@ -5874,7 +5874,7 @@
       {
         "x": 172,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 3.77,
         "duration": 3.83,
@@ -5885,7 +5885,7 @@
       {
         "x": 220,
         "y": 164,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 3.25,
         "duration": 3.12,
@@ -5896,7 +5896,7 @@
       {
         "x": 228,
         "y": 148,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.15,
         "duration": 3.22,
@@ -5907,7 +5907,7 @@
       {
         "x": 188,
         "y": 144,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 1.68,
         "duration": 3.46,
@@ -5918,7 +5918,7 @@
       {
         "x": 176,
         "y": 168,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 4.73,
         "duration": 3.75,
@@ -5929,7 +5929,7 @@
       {
         "x": 172,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 4.34,
         "duration": 4.28,
@@ -5940,7 +5940,7 @@
       {
         "x": 156,
         "y": 168,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.38,
         "duration": 2.97,
@@ -5951,7 +5951,7 @@
       {
         "x": 224,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.09,
         "duration": 3.73,
@@ -5962,7 +5962,7 @@
       {
         "x": 244,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 0.64,
         "duration": 4.19,
@@ -5973,7 +5973,7 @@
       {
         "x": 228,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 3.97,
         "duration": 3.95,
@@ -5984,7 +5984,7 @@
       {
         "x": 152,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 1.81,
         "duration": 3.59,
@@ -5995,7 +5995,7 @@
       {
         "x": 248,
         "y": 168,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.14,
         "duration": 2.73,
@@ -6006,7 +6006,7 @@
       {
         "x": 176,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 2.83,
         "duration": 2.89,
@@ -6017,7 +6017,7 @@
       {
         "x": 236,
         "y": 148,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.88,
         "duration": 3.11,
@@ -6028,7 +6028,7 @@
       {
         "x": 204,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 0.47,
         "duration": 3.72,
@@ -6039,7 +6039,7 @@
       {
         "x": 240,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 2.57,
         "duration": 4.05,
@@ -6050,7 +6050,7 @@
       {
         "x": 236,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 2.45,
         "duration": 4.06,
@@ -6061,7 +6061,7 @@
       {
         "x": 228,
         "y": 140,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.6,
         "duration": 3.26,
@@ -6072,7 +6072,7 @@
       {
         "x": 188,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 3.37,
         "duration": 4.13,
@@ -6083,11 +6083,132 @@
       {
         "x": 240,
         "y": 164,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.72,
         "duration": 3.62,
         "drift": 20,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 168,
+        "y": 152,
+        "state": "regrowing",
+        "color_idx": 1,
+        "delay": 2.53,
+        "duration": 4.34,
+        "drift": 19,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 212,
+        "y": 148,
+        "state": "regrowing",
+        "color_idx": 3,
+        "delay": 1.66,
+        "duration": 3.83,
+        "drift": -18,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 252,
+        "y": 168,
+        "state": "regrowing",
+        "color_idx": 3,
+        "delay": 2.97,
+        "duration": 3.53,
+        "drift": -4,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 240,
+        "y": 160,
+        "state": "regrowing",
+        "color_idx": 0,
+        "delay": 0.34,
+        "duration": 3.71,
+        "drift": 28,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 144,
+        "y": 176,
+        "state": "regrowing",
+        "color_idx": 0,
+        "delay": 3.07,
+        "duration": 3.71,
+        "drift": -8,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 140,
+        "y": 160,
+        "state": "regrowing",
+        "color_idx": 3,
+        "delay": 4.52,
+        "duration": 2.85,
+        "drift": -7,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 224,
+        "y": 144,
+        "state": "regrowing",
+        "color_idx": 3,
+        "delay": 4.76,
+        "duration": 4.1,
+        "drift": -5,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 152,
+        "y": 164,
+        "state": "regrowing",
+        "color_idx": 3,
+        "delay": 3.89,
+        "duration": 4.02,
+        "drift": 3,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 176,
+        "y": 152,
+        "state": "regrowing",
+        "color_idx": 0,
+        "delay": 2.65,
+        "duration": 3.97,
+        "drift": -25,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 156,
+        "y": 156,
+        "state": "regrowing",
+        "color_idx": 0,
+        "delay": 2.7,
+        "duration": 3.71,
+        "drift": -17,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 240,
+        "y": 152,
+        "state": "regrowing",
+        "color_idx": 1,
+        "delay": 4.03,
+        "duration": 2.98,
+        "drift": 8,
         "fell_at": null,
         "season": "spring"
       }
@@ -6096,7 +6217,7 @@
   },
   "activity": {
     "streak": 1,
-    "recent_score": 2,
+    "recent_score": 10,
     "last_high_day": null
   },
   "yearly_cache": {
