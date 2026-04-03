@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 332,
-  "last_update": "2026-04-03T12:55:12.887494+00:00",
+  "total_contributions": 333,
+  "last_update": "2026-04-03T18:40:16.161458+00:00",
   "tree": {
     "branches": [
       {
@@ -5995,12 +5995,12 @@
       {
         "x": 224,
         "y": 144,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 3,
         "delay": 4.76,
         "duration": 4.1,
         "drift": -5,
-        "fell_at": null,
+        "fell_at": "2026-04-03T18:40:16.161682+00:00",
         "season": "spring"
       },
       {
@@ -6017,12 +6017,12 @@
       {
         "x": 228,
         "y": 156,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 0,
         "delay": 4.69,
         "duration": 4.49,
         "drift": -24,
-        "fell_at": null,
+        "fell_at": "2026-04-03T18:40:16.161682+00:00",
         "season": "spring"
       },
       {
@@ -6050,12 +6050,12 @@
       {
         "x": 136,
         "y": 168,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 2,
         "delay": 3.21,
         "duration": 4.21,
         "drift": 19,
-        "fell_at": null,
+        "fell_at": "2026-04-03T18:40:16.161682+00:00",
         "season": "spring"
       },
       {
@@ -6193,7 +6193,7 @@
       {
         "x": 136,
         "y": 184,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 4.64,
         "duration": 2.63,
@@ -6204,7 +6204,7 @@
       {
         "x": 224,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 2.13,
         "duration": 4.42,
@@ -6215,7 +6215,7 @@
       {
         "x": 228,
         "y": 144,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 0.09,
         "duration": 3.37,
@@ -6226,7 +6226,7 @@
       {
         "x": 236,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 4.12,
         "duration": 2.7,
