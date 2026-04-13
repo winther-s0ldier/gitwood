@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 386,
-  "last_update": "2026-04-13T13:16:55.770177+00:00",
+  "total_contributions": 388,
+  "last_update": "2026-04-13T19:08:29.432483+00:00",
   "tree": {
     "branches": [
       {
@@ -6013,12 +6013,12 @@
       {
         "x": 228,
         "y": 160,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 3,
         "delay": 3.97,
         "duration": 3.95,
         "drift": -24,
-        "fell_at": null,
+        "fell_at": "2026-04-13T19:08:29.432695+00:00",
         "season": "spring"
       },
       {
@@ -6110,17 +6110,6 @@
         "season": "spring"
       },
       {
-        "x": 136,
-        "y": 164,
-        "state": "falling",
-        "color_idx": 0,
-        "delay": 0.01,
-        "duration": 2.73,
-        "drift": 14,
-        "fell_at": "2026-04-13T13:16:55.770424+00:00",
-        "season": "spring"
-      },
-      {
         "x": 176,
         "y": 136,
         "state": "attached",
@@ -6145,12 +6134,12 @@
       {
         "x": 180,
         "y": 152,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 2.07,
         "duration": 4.04,
         "drift": 26,
-        "fell_at": null,
+        "fell_at": "2026-04-13T19:08:29.432695+00:00",
         "season": "spring"
       },
       {
@@ -6222,12 +6211,12 @@
       {
         "x": 192,
         "y": 164,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 2.06,
         "duration": 2.99,
         "drift": -20,
-        "fell_at": null,
+        "fell_at": "2026-04-13T19:08:29.432695+00:00",
         "season": "spring"
       },
       {
@@ -6354,12 +6343,12 @@
       {
         "x": 168,
         "y": 168,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 3,
         "delay": 3.87,
         "duration": 2.88,
         "drift": -1,
-        "fell_at": null,
+        "fell_at": "2026-04-13T19:08:29.432695+00:00",
         "season": "spring"
       },
       {
@@ -6387,7 +6376,7 @@
       {
         "x": 136,
         "y": 168,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 2.46,
         "duration": 3.6,
@@ -6398,7 +6387,7 @@
       {
         "x": 168,
         "y": 144,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.38,
         "duration": 3.42,
@@ -6409,11 +6398,22 @@
       {
         "x": 184,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 1.82,
         "duration": 2.87,
         "drift": -27,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 164,
+        "y": 148,
+        "state": "regrowing",
+        "color_idx": 0,
+        "delay": 1.97,
+        "duration": 3.7,
+        "drift": -8,
         "fell_at": null,
         "season": "spring"
       }
@@ -6430,12 +6430,18 @@
         "y": 276,
         "size": 1,
         "type": "shrub"
+      },
+      {
+        "x": 147,
+        "y": 276,
+        "size": 1,
+        "type": "mushroom"
       }
     ]
   },
   "activity": {
-    "streak": 0,
-    "recent_score": 0,
+    "streak": 1,
+    "recent_score": 2,
     "last_high_day": null
   },
   "yearly_cache": {
