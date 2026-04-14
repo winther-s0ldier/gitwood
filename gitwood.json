@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 388,
-  "last_update": "2026-04-13T19:08:29.432483+00:00",
+  "total_contributions": 391,
+  "last_update": "2026-04-14T02:06:07.080555+00:00",
   "tree": {
     "branches": [
       {
@@ -6011,17 +6011,6 @@
         "season": "spring"
       },
       {
-        "x": 228,
-        "y": 160,
-        "state": "falling",
-        "color_idx": 3,
-        "delay": 3.97,
-        "duration": 3.95,
-        "drift": -24,
-        "fell_at": "2026-04-13T19:08:29.432695+00:00",
-        "season": "spring"
-      },
-      {
         "x": 200,
         "y": 152,
         "state": "attached",
@@ -6068,12 +6057,12 @@
       {
         "x": 244,
         "y": 156,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 4.76,
         "duration": 2.6,
         "drift": 27,
-        "fell_at": null,
+        "fell_at": "2026-04-14T02:06:07.080889+00:00",
         "season": "spring"
       },
       {
@@ -6090,12 +6079,12 @@
       {
         "x": 268,
         "y": 200,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 2,
         "delay": 2.37,
         "duration": 4.06,
         "drift": -24,
-        "fell_at": null,
+        "fell_at": "2026-04-14T02:06:07.080889+00:00",
         "season": "spring"
       },
       {
@@ -6129,17 +6118,6 @@
         "duration": 3.23,
         "drift": 24,
         "fell_at": null,
-        "season": "spring"
-      },
-      {
-        "x": 180,
-        "y": 152,
-        "state": "falling",
-        "color_idx": 1,
-        "delay": 2.07,
-        "duration": 4.04,
-        "drift": 26,
-        "fell_at": "2026-04-13T19:08:29.432695+00:00",
         "season": "spring"
       },
       {
@@ -6209,17 +6187,6 @@
         "season": "spring"
       },
       {
-        "x": 192,
-        "y": 164,
-        "state": "falling",
-        "color_idx": 1,
-        "delay": 2.06,
-        "duration": 2.99,
-        "drift": -20,
-        "fell_at": "2026-04-13T19:08:29.432695+00:00",
-        "season": "spring"
-      },
-      {
         "x": 156,
         "y": 152,
         "state": "attached",
@@ -6266,12 +6233,12 @@
       {
         "x": 140,
         "y": 168,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 2.43,
         "duration": 3.22,
         "drift": -20,
-        "fell_at": null,
+        "fell_at": "2026-04-14T02:06:07.080889+00:00",
         "season": "spring"
       },
       {
@@ -6341,17 +6308,6 @@
         "season": "spring"
       },
       {
-        "x": 168,
-        "y": 168,
-        "state": "falling",
-        "color_idx": 3,
-        "delay": 3.87,
-        "duration": 2.88,
-        "drift": -1,
-        "fell_at": "2026-04-13T19:08:29.432695+00:00",
-        "season": "spring"
-      },
-      {
         "x": 204,
         "y": 164,
         "state": "attached",
@@ -6409,11 +6365,66 @@
       {
         "x": 164,
         "y": 148,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 1.97,
         "duration": 3.7,
         "drift": -8,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 184,
+        "y": 164,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 0.82,
+        "duration": 3.58,
+        "drift": -14,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 160,
+        "y": 152,
+        "state": "regrowing",
+        "color_idx": 1,
+        "delay": 0.01,
+        "duration": 2.8,
+        "drift": -23,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 208,
+        "y": 144,
+        "state": "regrowing",
+        "color_idx": 0,
+        "delay": 3.03,
+        "duration": 4.1,
+        "drift": -3,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 164,
+        "y": 156,
+        "state": "regrowing",
+        "color_idx": 1,
+        "delay": 2.19,
+        "duration": 4.04,
+        "drift": 0,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 176,
+        "y": 144,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 3.43,
+        "duration": 3.78,
+        "drift": 3,
         "fell_at": null,
         "season": "spring"
       }
@@ -6440,8 +6451,8 @@
     ]
   },
   "activity": {
-    "streak": 1,
-    "recent_score": 2,
+    "streak": 0,
+    "recent_score": 0,
     "last_high_day": null
   },
   "yearly_cache": {
