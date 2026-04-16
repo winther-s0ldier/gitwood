@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 400,
-  "last_update": "2026-04-16T07:25:14.343035+00:00",
+  "total_contributions": 401,
+  "last_update": "2026-04-16T13:21:10.362466+00:00",
   "tree": {
     "branches": [
       {
@@ -6024,12 +6024,12 @@
       {
         "x": 220,
         "y": 164,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 2,
         "delay": 0.29,
         "duration": 3.99,
         "drift": -30,
-        "fell_at": null,
+        "fell_at": "2026-04-16T13:21:10.362895+00:00",
         "season": "spring"
       },
       {
@@ -6046,12 +6046,12 @@
       {
         "x": 224,
         "y": 144,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 3.34,
         "duration": 3.23,
         "drift": 24,
-        "fell_at": null,
+        "fell_at": "2026-04-16T13:21:10.362895+00:00",
         "season": "spring"
       },
       {
@@ -6156,12 +6156,12 @@
       {
         "x": 236,
         "y": 152,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 0,
         "delay": 4.51,
         "duration": 3.83,
         "drift": 1,
-        "fell_at": null,
+        "fell_at": "2026-04-16T13:21:10.362895+00:00",
         "season": "spring"
       },
       {
@@ -6266,12 +6266,12 @@
       {
         "x": 140,
         "y": 176,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 4.09,
         "duration": 3.11,
         "drift": -7,
-        "fell_at": null,
+        "fell_at": "2026-04-16T13:21:10.362895+00:00",
         "season": "spring"
       },
       {
@@ -6354,12 +6354,12 @@
       {
         "x": 216,
         "y": 136,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 2,
         "delay": 4.69,
         "duration": 2.62,
         "drift": 21,
-        "fell_at": null,
+        "fell_at": "2026-04-16T13:21:10.362895+00:00",
         "season": "spring"
       },
       {
@@ -6387,7 +6387,7 @@
       {
         "x": 184,
         "y": 144,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.5,
         "duration": 2.68,
@@ -6398,7 +6398,7 @@
       {
         "x": 188,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 4.52,
         "duration": 3.2,
@@ -6409,7 +6409,7 @@
       {
         "x": 196,
         "y": 144,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 3.16,
         "duration": 3.18,
@@ -6420,7 +6420,7 @@
       {
         "x": 168,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.09,
         "duration": 4.3,
@@ -6431,7 +6431,7 @@
       {
         "x": 172,
         "y": 144,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 4.93,
         "duration": 3.33,
