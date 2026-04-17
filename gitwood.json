@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 406,
-  "last_update": "2026-04-17T07:26:26.776309+00:00",
+  "total_contributions": 409,
+  "last_update": "2026-04-17T13:09:08.736821+00:00",
   "tree": {
     "branches": [
       {
@@ -6431,7 +6431,7 @@
       {
         "x": 164,
         "y": 172,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 2.55,
         "duration": 2.58,
@@ -6458,12 +6458,18 @@
         "y": 276,
         "size": 1,
         "type": "mushroom"
+      },
+      {
+        "x": 32,
+        "y": 276,
+        "size": 1,
+        "type": "flower"
       }
     ]
   },
   "activity": {
     "streak": 1,
-    "recent_score": 4,
+    "recent_score": 10,
     "last_high_day": null
   },
   "yearly_cache": {
