@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 409,
-  "last_update": "2026-04-17T13:09:08.736821+00:00",
+  "total_contributions": 410,
+  "last_update": "2026-04-17T18:54:16.585083+00:00",
   "tree": {
     "branches": [
       {
@@ -6438,6 +6438,17 @@
         "drift": -4,
         "fell_at": null,
         "season": "spring"
+      },
+      {
+        "x": 220,
+        "y": 136,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 3.81,
+        "duration": 2.56,
+        "drift": 12,
+        "fell_at": null,
+        "season": "spring"
       }
     ],
     "plants": [
@@ -6464,6 +6475,12 @@
         "y": 276,
         "size": 1,
         "type": "flower"
+      },
+      {
+        "x": 192,
+        "y": 276,
+        "size": 1,
+        "type": "sprout"
       }
     ]
   },
