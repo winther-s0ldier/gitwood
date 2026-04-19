@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 415,
-  "last_update": "2026-04-19T02:11:08.545256+00:00",
+  "total_contributions": 416,
+  "last_update": "2026-04-19T07:13:02.536859+00:00",
   "tree": {
     "branches": [
       {
@@ -6068,12 +6068,12 @@
       {
         "x": 136,
         "y": 168,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 0,
         "delay": 2.46,
         "duration": 3.6,
         "drift": 19,
-        "fell_at": null,
+        "fell_at": "2026-04-19T07:13:02.537090+00:00",
         "season": "spring"
       },
       {
@@ -6134,12 +6134,12 @@
       {
         "x": 220,
         "y": 148,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 4.37,
         "duration": 4.08,
         "drift": 4,
-        "fell_at": null,
+        "fell_at": "2026-04-19T07:13:02.537090+00:00",
         "season": "spring"
       },
       {
@@ -6288,12 +6288,12 @@
       {
         "x": 160,
         "y": 144,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 2,
         "delay": 3.71,
         "duration": 3.48,
         "drift": 18,
-        "fell_at": null,
+        "fell_at": "2026-04-19T07:13:02.537090+00:00",
         "season": "spring"
       },
       {
@@ -6310,12 +6310,12 @@
       {
         "x": 264,
         "y": 192,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 0,
         "delay": 4.87,
         "duration": 3.56,
         "drift": 9,
-        "fell_at": null,
+        "fell_at": "2026-04-19T07:13:02.537090+00:00",
         "season": "spring"
       },
       {
@@ -6431,7 +6431,7 @@
       {
         "x": 160,
         "y": 176,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 1.07,
         "duration": 3.03,
@@ -6442,7 +6442,7 @@
       {
         "x": 180,
         "y": 164,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 3.21,
         "duration": 3.76,
