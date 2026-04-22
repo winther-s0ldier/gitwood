@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 444,
-  "last_update": "2026-04-22T13:17:02.075824+00:00",
+  "total_contributions": 451,
+  "last_update": "2026-04-22T19:06:44.869015+00:00",
   "tree": {
     "branches": [
       {
@@ -6110,17 +6110,6 @@
         "season": "spring"
       },
       {
-        "x": 260,
-        "y": 184,
-        "state": "falling",
-        "color_idx": 1,
-        "delay": 2.2,
-        "duration": 3.27,
-        "drift": 2,
-        "fell_at": "2026-04-22T13:17:02.076014+00:00",
-        "season": "spring"
-      },
-      {
         "x": 184,
         "y": 144,
         "state": "attached",
@@ -6453,7 +6442,7 @@
       {
         "x": 268,
         "y": 188,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 2.61,
         "duration": 3.68,
@@ -6464,7 +6453,7 @@
       {
         "x": 200,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 0.41,
         "duration": 2.78,
@@ -6475,11 +6464,33 @@
       {
         "x": 220,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 2.17,
         "duration": 3.0,
         "drift": 14,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 144,
+        "y": 180,
+        "state": "regrowing",
+        "color_idx": 3,
+        "delay": 4.97,
+        "duration": 3.06,
+        "drift": 19,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 248,
+        "y": 152,
+        "state": "regrowing",
+        "color_idx": 1,
+        "delay": 1.85,
+        "duration": 2.69,
+        "drift": -17,
         "fell_at": null,
         "season": "spring"
       }
@@ -6518,8 +6529,8 @@
     ]
   },
   "activity": {
-    "streak": 0,
-    "recent_score": 0,
+    "streak": 3,
+    "recent_score": 12,
     "last_high_day": null
   },
   "yearly_cache": {
