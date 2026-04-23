@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 451,
-  "last_update": "2026-04-22T19:06:44.869015+00:00",
+  "total_contributions": 452,
+  "last_update": "2026-04-23T02:10:14.187622+00:00",
   "tree": {
     "branches": [
       {
@@ -6068,12 +6068,12 @@
       {
         "x": 244,
         "y": 168,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 0.92,
         "duration": 3.57,
         "drift": 10,
-        "fell_at": null,
+        "fell_at": "2026-04-23T02:10:14.187823+00:00",
         "season": "spring"
       },
       {
@@ -6178,23 +6178,23 @@
       {
         "x": 236,
         "y": 164,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 3,
         "delay": 1.07,
         "duration": 3.62,
         "drift": 30,
-        "fell_at": null,
+        "fell_at": "2026-04-23T02:10:14.187823+00:00",
         "season": "spring"
       },
       {
         "x": 212,
         "y": 144,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 3,
         "delay": 4.74,
         "duration": 4.11,
         "drift": -4,
-        "fell_at": null,
+        "fell_at": "2026-04-23T02:10:14.187823+00:00",
         "season": "spring"
       },
       {
@@ -6222,12 +6222,12 @@
       {
         "x": 180,
         "y": 164,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 2,
         "delay": 3.21,
         "duration": 3.76,
         "drift": 26,
-        "fell_at": null,
+        "fell_at": "2026-04-23T02:10:14.187823+00:00",
         "season": "spring"
       },
       {
@@ -6475,7 +6475,7 @@
       {
         "x": 144,
         "y": 180,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.97,
         "duration": 3.06,
@@ -6486,7 +6486,7 @@
       {
         "x": 248,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 1.85,
         "duration": 2.69,
@@ -6529,8 +6529,8 @@
     ]
   },
   "activity": {
-    "streak": 3,
-    "recent_score": 12,
+    "streak": 0,
+    "recent_score": 0,
     "last_high_day": null
   },
   "yearly_cache": {
