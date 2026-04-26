@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 468,
-  "last_update": "2026-04-26T12:56:59.058578+00:00",
+  "total_contributions": 471,
+  "last_update": "2026-04-26T18:44:10.846079+00:00",
   "tree": {
     "branches": [
       {
@@ -6209,17 +6209,6 @@
         "season": "spring"
       },
       {
-        "x": 136,
-        "y": 184,
-        "state": "falling",
-        "color_idx": 0,
-        "delay": 2.39,
-        "duration": 3.47,
-        "drift": 11,
-        "fell_at": "2026-04-26T12:56:59.058738+00:00",
-        "season": "spring"
-      },
-      {
         "x": 184,
         "y": 164,
         "state": "attached",
@@ -6475,7 +6464,7 @@
       {
         "x": 168,
         "y": 144,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 0.73,
         "duration": 4.25,
@@ -6486,7 +6475,7 @@
       {
         "x": 228,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 3.68,
         "duration": 2.73,
@@ -6497,11 +6486,33 @@
       {
         "x": 244,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 2.82,
         "duration": 4.5,
         "drift": -18,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 236,
+        "y": 152,
+        "state": "regrowing",
+        "color_idx": 1,
+        "delay": 0.85,
+        "duration": 4.08,
+        "drift": 13,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 224,
+        "y": 156,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 2.44,
+        "duration": 4.32,
+        "drift": 17,
         "fell_at": null,
         "season": "spring"
       }
@@ -6540,8 +6551,8 @@
     ]
   },
   "activity": {
-    "streak": 0,
-    "recent_score": 0,
+    "streak": 1,
+    "recent_score": 4,
     "last_high_day": null
   },
   "yearly_cache": {
