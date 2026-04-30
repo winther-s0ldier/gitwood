@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 486,
-  "last_update": "2026-04-29T19:18:07.773658+00:00",
+  "total_contributions": 487,
+  "last_update": "2026-04-30T02:33:30.714101+00:00",
   "tree": {
     "branches": [
       {
@@ -6145,12 +6145,12 @@
       {
         "x": 140,
         "y": 168,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 3,
         "delay": 2.4,
         "duration": 3.37,
         "drift": 5,
-        "fell_at": null,
+        "fell_at": "2026-04-30T02:33:30.714272+00:00",
         "season": "spring"
       },
       {
@@ -6200,12 +6200,12 @@
       {
         "x": 228,
         "y": 160,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 2,
         "delay": 3.68,
         "duration": 2.73,
         "drift": -29,
-        "fell_at": null,
+        "fell_at": "2026-04-30T02:33:30.714272+00:00",
         "season": "spring"
       },
       {
@@ -6497,7 +6497,7 @@
       {
         "x": 248,
         "y": 168,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 3.43,
         "duration": 2.99,
@@ -6508,7 +6508,7 @@
       {
         "x": 204,
         "y": 148,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 0.03,
         "duration": 2.86,
@@ -6519,7 +6519,7 @@
       {
         "x": 248,
         "y": 176,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 0.53,
         "duration": 3.09,
@@ -6562,8 +6562,8 @@
     ]
   },
   "activity": {
-    "streak": 2,
-    "recent_score": 6,
+    "streak": 0,
+    "recent_score": 0,
     "last_high_day": null
   },
   "yearly_cache": {
