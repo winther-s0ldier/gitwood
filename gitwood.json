@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 499,
-  "last_update": "2026-05-02T07:26:23.231585+00:00",
+  "total_contributions": 500,
+  "last_update": "2026-05-02T12:59:57.542586+00:00",
   "tree": {
     "branches": [
       {
@@ -6090,12 +6090,12 @@
       {
         "x": 204,
         "y": 140,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 0,
         "delay": 4.42,
         "duration": 2.77,
         "drift": 1,
-        "fell_at": null,
+        "fell_at": "2026-05-02T12:59:57.542808+00:00",
         "season": "spring"
       },
       {
@@ -6365,12 +6365,12 @@
       {
         "x": 252,
         "y": 156,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 0,
         "delay": 0.89,
         "duration": 3.49,
         "drift": -1,
-        "fell_at": null,
+        "fell_at": "2026-05-02T12:59:57.542808+00:00",
         "season": "spring"
       },
       {
@@ -6530,11 +6530,22 @@
       {
         "x": 244,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.47,
         "duration": 4.09,
         "drift": 8,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 192,
+        "y": 164,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 4.78,
+        "duration": 2.81,
+        "drift": -19,
         "fell_at": null,
         "season": "spring"
       }
