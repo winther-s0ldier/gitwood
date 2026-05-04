@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 510,
-  "last_update": "2026-05-03T18:53:12.481921+00:00",
+  "total_contributions": 511,
+  "last_update": "2026-05-04T02:29:09.187626+00:00",
   "tree": {
     "branches": [
       {
@@ -6024,12 +6024,12 @@
       {
         "x": 268,
         "y": 172,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 2,
         "delay": 0.82,
         "duration": 2.63,
         "drift": -20,
-        "fell_at": null,
+        "fell_at": "2026-05-04T02:29:09.187805+00:00",
         "season": "spring"
       },
       {
@@ -6112,12 +6112,12 @@
       {
         "x": 200,
         "y": 148,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 0.9,
         "duration": 3.74,
         "drift": 21,
-        "fell_at": null,
+        "fell_at": "2026-05-04T02:29:09.187805+00:00",
         "season": "spring"
       },
       {
@@ -6277,12 +6277,12 @@
       {
         "x": 164,
         "y": 164,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 0.44,
         "duration": 3.03,
         "drift": 27,
-        "fell_at": null,
+        "fell_at": "2026-05-04T02:29:09.187805+00:00",
         "season": "spring"
       },
       {
@@ -6508,7 +6508,7 @@
       {
         "x": 160,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 1.94,
         "duration": 4.48,
@@ -6519,7 +6519,7 @@
       {
         "x": 188,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 4.18,
         "duration": 3.12,
@@ -6530,7 +6530,7 @@
       {
         "x": 232,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 1.46,
         "duration": 3.6,
@@ -6541,7 +6541,7 @@
       {
         "x": 180,
         "y": 164,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.18,
         "duration": 4.33,
@@ -6552,7 +6552,7 @@
       {
         "x": 212,
         "y": 136,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 4.1,
         "duration": 4.17,
@@ -6595,8 +6595,8 @@
     ]
   },
   "activity": {
-    "streak": 2,
-    "recent_score": 10,
+    "streak": 0,
+    "recent_score": 0,
     "last_high_day": null
   },
   "yearly_cache": {
