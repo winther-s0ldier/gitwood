@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 579,
-  "last_update": "2026-05-18T02:50:47.513030+00:00",
+  "total_contributions": 584,
+  "last_update": "2026-05-18T09:52:42.351388+00:00",
   "tree": {
     "branches": [
       {
@@ -6022,17 +6022,6 @@
         "season": "spring"
       },
       {
-        "x": 204,
-        "y": 164,
-        "state": "falling",
-        "color_idx": 3,
-        "delay": 4.28,
-        "duration": 3.68,
-        "drift": -1,
-        "fell_at": "2026-05-18T02:50:47.513221+00:00",
-        "season": "spring"
-      },
-      {
         "x": 184,
         "y": 148,
         "state": "attached",
@@ -6129,17 +6118,6 @@
         "duration": 3.98,
         "drift": 19,
         "fell_at": null,
-        "season": "spring"
-      },
-      {
-        "x": 264,
-        "y": 176,
-        "state": "falling",
-        "color_idx": 2,
-        "delay": 2.51,
-        "duration": 2.77,
-        "drift": -6,
-        "fell_at": "2026-05-18T02:50:47.513221+00:00",
         "season": "spring"
       },
       {
@@ -6272,17 +6250,6 @@
         "duration": 4.02,
         "drift": -7,
         "fell_at": null,
-        "season": "spring"
-      },
-      {
-        "x": 180,
-        "y": 152,
-        "state": "falling",
-        "color_idx": 0,
-        "delay": 2.85,
-        "duration": 3.34,
-        "drift": 8,
-        "fell_at": "2026-05-18T02:50:47.513221+00:00",
         "season": "spring"
       },
       {
@@ -6484,17 +6451,6 @@
         "season": "spring"
       },
       {
-        "x": 248,
-        "y": 156,
-        "state": "falling",
-        "color_idx": 3,
-        "delay": 1.66,
-        "duration": 2.92,
-        "drift": -27,
-        "fell_at": "2026-05-18T02:50:47.513221+00:00",
-        "season": "spring"
-      },
-      {
         "x": 132,
         "y": 168,
         "state": "attached",
@@ -6585,7 +6541,7 @@
       {
         "x": 164,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 0.05,
         "duration": 3.34,
@@ -6596,7 +6552,7 @@
       {
         "x": 156,
         "y": 172,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 3.66,
         "duration": 4.22,
@@ -6607,7 +6563,7 @@
       {
         "x": 256,
         "y": 168,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 1.02,
         "duration": 2.96,
@@ -6618,11 +6574,66 @@
       {
         "x": 244,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 2.17,
         "duration": 4.47,
         "drift": 7,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 140,
+        "y": 176,
+        "state": "regrowing",
+        "color_idx": 3,
+        "delay": 1.7,
+        "duration": 3.39,
+        "drift": 26,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 180,
+        "y": 152,
+        "state": "regrowing",
+        "color_idx": 3,
+        "delay": 3.16,
+        "duration": 3.27,
+        "drift": 11,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 184,
+        "y": 168,
+        "state": "regrowing",
+        "color_idx": 0,
+        "delay": 4.1,
+        "duration": 2.94,
+        "drift": 25,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 208,
+        "y": 152,
+        "state": "regrowing",
+        "color_idx": 0,
+        "delay": 2.8,
+        "duration": 4.43,
+        "drift": 4,
+        "fell_at": null,
+        "season": "spring"
+      },
+      {
+        "x": 260,
+        "y": 160,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 1.03,
+        "duration": 3.44,
+        "drift": 15,
         "fell_at": null,
         "season": "spring"
       }
@@ -6661,8 +6672,8 @@
     ]
   },
   "activity": {
-    "streak": 0,
-    "recent_score": 0,
+    "streak": 1,
+    "recent_score": 8,
     "last_high_day": null
   },
   "yearly_cache": {
