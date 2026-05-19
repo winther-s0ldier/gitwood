@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 590,
-  "last_update": "2026-05-18T19:40:12.752032+00:00",
+  "total_contributions": 591,
+  "last_update": "2026-05-19T02:47:50.873348+00:00",
   "tree": {
     "branches": [
       {
@@ -6068,23 +6068,23 @@
       {
         "x": 136,
         "y": 176,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 3,
         "delay": 3.94,
         "duration": 3.87,
         "drift": -27,
-        "fell_at": null,
+        "fell_at": "2026-05-19T02:47:50.873527+00:00",
         "season": "spring"
       },
       {
         "x": 220,
         "y": 140,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 2,
         "delay": 4.42,
         "duration": 2.67,
         "drift": 8,
-        "fell_at": null,
+        "fell_at": "2026-05-19T02:47:50.873527+00:00",
         "season": "spring"
       },
       {
@@ -6134,12 +6134,12 @@
       {
         "x": 252,
         "y": 164,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 0.96,
         "duration": 4.18,
         "drift": -6,
-        "fell_at": null,
+        "fell_at": "2026-05-19T02:47:50.873527+00:00",
         "season": "spring"
       },
       {
@@ -6475,12 +6475,12 @@
       {
         "x": 160,
         "y": 172,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 3,
         "delay": 1.36,
         "duration": 3.06,
         "drift": -25,
-        "fell_at": null,
+        "fell_at": "2026-05-19T02:47:50.873527+00:00",
         "season": "spring"
       },
       {
@@ -6640,7 +6640,7 @@
       {
         "x": 208,
         "y": 140,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 2.31,
         "duration": 2.63,
@@ -6683,8 +6683,8 @@
     ]
   },
   "activity": {
-    "streak": 1,
-    "recent_score": 11,
+    "streak": 0,
+    "recent_score": 0,
     "last_high_day": null
   },
   "yearly_cache": {
