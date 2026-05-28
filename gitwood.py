@@ -28,6 +28,7 @@ import random
 import sys
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -56,34 +57,86 @@ _load_dotenv()
 # CONSTANTS
 # ---------------------------------------------------------------------------
 
-CANVAS_W = 400
-CANVAS_H = 300
 PIXEL_SIZE = 4
 
 MAX_LEAVES = 300
-MAX_PLANTS = 5
+MAX_PLANTS = 20
 
-TRUNK_BASE_X = 200
-TRUNK_BASE_Y = 272
-GRASS_Y = 276
 GRASS_ROWS = 2
 
 STATE_FILE = "gitwood.json"
 SVG_FILE = "gitwood.svg"
 
+def compute_canvas_size(total: int, num_plants: int) -> dict:
+    base_h = 300
+    if total > 2000: base_h += 40
+    elif total > 500: base_h += 20
+    
+    if num_plants > 10: base_h += 30
+    elif num_plants > 5: base_h += 15
+    
+    height = min(base_h, 450)
+    width = 400
+    grass_y = height - 24
+    trunk_base_y = grass_y - 4
+    
+    return {
+        "w": width,
+        "h": height,
+        "trunk_base_x": width // 2,
+        "trunk_base_y": trunk_base_y,
+        "grass_y": grass_y,
+    }
+
 # Base colors (overridden per season/time in generate_svg)
 COLORS = {
-    "trunk": "#8B4513",
-    "branch_mid": "#6B3410",
-    "branch_tip": "#5a2d0c",
-    "root": "#6B3410",
-    "grass_dark": "#2d5a27",
-    "grass_light": "#4a7c59",
     "fruit": "#cc3333",
     "fruit_ripe": "#ff6633",
-    "star": "#ffffff",
     "sun": "#f5d060",
     "moon": "#d4cfb0",
+}
+
+TIME_PALETTES = {
+    "dawn": {
+        "sky":        "#1a1035",
+        "trunk":      "#7a4a2a",
+        "branch_mid": "#5a3418",
+        "branch_tip": "#4a2d15",
+        "root":       "#5a3418",
+        "grass_dark": "#3a5a30",
+        "grass_light":"#5a7e50",
+        "star":       "#ffffff",
+    },
+    "day": {
+        "sky":        "#87CEEB",      # BRIGHT blue sky for daytime
+        "trunk":      "#8B4513",
+        "branch_mid": "#6B3410",
+        "branch_tip": "#5a2d0c",
+        "root":       "#6B3410",
+        "grass_dark": "#2d8a27",
+        "grass_light":"#4a9c59",
+        "star":       "#ffffff",
+    },
+    "dusk": {
+        "sky":        "#2d1b4e",
+        "trunk":      "#6a3a1a",
+        "branch_mid": "#5a2e10",
+        "branch_tip": "#4a250a",
+        "root":       "#5a2e10",
+        "grass_dark": "#4a5a30",
+        "grass_light":"#6a7a40",
+        "star":       "#ffffff",
+    },
+    "night": {
+        "sky":        "#0d1117",
+        "trunk":      "#5a3010",
+        "branch_mid": "#4a2a0e",
+        "branch_tip": "#3a200a",
+        "root":       "#4a2a0e",
+        "grass_dark": "#1d3a17",
+        "grass_light":"#2a4c39",
+        "star":       "#ffffff",
+    },
 }
 
 # Seasonal leaf color palettes
@@ -92,14 +145,6 @@ SEASON_LEAF_COLORS = {
     "summer":  ["#2d5a27", "#4a7c59", "#6aad5e", "#8bc34a"],
     "autumn":  ["#c84b11", "#d4620a", "#e8941a", "#f0c040"],
     "winter":  ["#7a6652", "#8d7b6a", "#5a7a65", "#4a7c59"],
-}
-
-# Sky color palettes keyed by time-of-day bucket
-SKY_COLORS = {
-    "night":   "#0d1117",
-    "dawn":    "#1a1035",
-    "day":     "#0f2744",
-    "dusk":    "#1c0f2e",
 }
 
 GRASS_SEASON_COLORS = {
@@ -130,9 +175,9 @@ FRUIT_MILESTONES  = [100, 500, 1000, 2000, 5000]
 # SEASON / TIME HELPERS
 # ---------------------------------------------------------------------------
 
-def get_season() -> str:
+def get_season(tz=None) -> str:
     """Return current season based on calendar month."""
-    month = datetime.now(timezone.utc).month
+    month = datetime.now(tz or timezone.utc).month
     if month in (3, 4, 5):
         return "spring"
     elif month in (6, 7, 8):
@@ -142,9 +187,9 @@ def get_season() -> str:
     return "winter"
 
 
-def get_time_of_day() -> str:
+def get_time_of_day(tz=None) -> str:
     """Return time-of-day bucket based on UTC hour."""
-    hour = datetime.now(timezone.utc).hour
+    hour = datetime.now(tz or timezone.utc).hour
     if 6 <= hour < 8:
         return "dawn"
     elif 8 <= hour < 18:
@@ -154,8 +199,8 @@ def get_time_of_day() -> str:
     return "night"
 
 
-def is_nighttime() -> bool:
-    return get_time_of_day() == "night"
+def is_nighttime(tz=None) -> bool:
+    return get_time_of_day(tz) == "night"
 
 
 def fruit_count(total: int) -> int:
@@ -358,11 +403,12 @@ def check_streak(activity: dict) -> int:
 
 def empty_state(username: str = "") -> dict:
     return {
-        "version": 2,
         "username": username,
         "total_contributions": 0,
         "last_update": datetime.now(timezone.utc).isoformat(),
+        "timezone": "UTC",
         "yearly_cache": {},
+        "contribution_days": {},
         "tree": {
             "branches": [],
             "leaves": [],
@@ -392,6 +438,19 @@ def load_state(path: str = STATE_FILE) -> dict:
         for k, v in base["activity"].items():
             if k not in state["activity"]:
                 state["activity"][k] = v
+                
+        # Backfill new fields on existing leaves
+        now_iso = datetime.now(timezone.utc).isoformat()
+        for leaf in state.get("tree", {}).get("leaves", []):
+            leaf.setdefault("attached_at", now_iso)
+            leaf.setdefault("lifespan_days", random.randint(14, 28))
+        
+        # Backfill new fields on existing plants
+        for plant in state.get("tree", {}).get("plants", []):
+            plant.setdefault("born_at", now_iso)
+            plant.setdefault("growth_stage", "mature")
+            plant.setdefault("kind", "ground_plant")
+            
         return state
     except (json.JSONDecodeError, KeyError):
         return empty_state()
@@ -425,15 +484,30 @@ def update_activity(state: dict, streak: int, today_score: int, last_high_day) -
 # ---------------------------------------------------------------------------
 
 
+HEIGHT_CAP_CONTRIBUTIONS = 2000
+
 def compute_scale_params(total: int) -> dict:
     t = max(total, 0)
-    max_depth      = min(6, max(2, int(math.log(t + 1, 2))))
-    initial_length = min(80, max(20, int(math.log(t + 1) * 8)))
-    trunk_thickness = min(6, max(1, int(math.log(t + 1, 10) * 2)))
+    capped_t = min(t, HEIGHT_CAP_CONTRIBUTIONS)
+    max_depth = min(8, max(2, int(math.log(capped_t + 1, 1.8))))
+    initial_length = min(90, max(20, int(math.log(capped_t + 1) * 9)))
+    
+    trunk_thickness = min(4, max(1, int(math.log(t + 1, 10) * 1.2)))
+    
+    branch_thickness = {
+        "trunk": trunk_thickness,
+        "mid":   max(1, trunk_thickness - 1),
+        "tip":   1,
+    }
+    
+    leaf_scale = 1 if t < 1000 else 2
+    
     return {
         "max_depth": max_depth,
         "initial_length": initial_length,
         "trunk_thickness": trunk_thickness,
+        "branch_thickness": branch_thickness,
+        "leaf_scale": leaf_scale,
     }
 
 
@@ -441,14 +515,14 @@ def snap(value: float) -> int:
     return int(round(value / PIXEL_SIZE) * PIXEL_SIZE)
 
 
-def rasterize_segment(x1, y1, x2, y2, depth, angle) -> list:
+def rasterize_segment(x1, y1, x2, y2, depth, angle, canvas) -> list:
     x1s, y1s = snap(x1), snap(y1)
     x2s, y2s = snap(x2), snap(y2)
     dx = x2s - x1s
     dy = y2s - y1s
     steps = max(abs(dx), abs(dy)) // PIXEL_SIZE
     if steps == 0:
-        if 0 <= x1s < CANVAS_W and 0 <= y1s < CANVAS_H:
+        if 0 <= x1s < canvas['w'] and 0 <= y1s < canvas['h']:
             return [{"x": x1s, "y": y1s, "w": PIXEL_SIZE, "h": PIXEL_SIZE,
                      "depth": depth, "angle": angle}]
         return []
@@ -458,7 +532,7 @@ def rasterize_segment(x1, y1, x2, y2, depth, angle) -> list:
         t = i / steps
         px = snap(x1s + t * dx)
         py = snap(y1s + t * dy)
-        if not (0 <= px < CANVAS_W and 0 <= py < CANVAS_H):
+        if not (0 <= px < canvas['w'] and 0 <= py < canvas['h']):
             continue
         key = (px, py)
         if key not in seen:
@@ -468,28 +542,28 @@ def rasterize_segment(x1, y1, x2, y2, depth, angle) -> list:
     return pixels
 
 
-def generate_branches(x, y, angle, length, depth, max_depth, branches, rng):
+def generate_branches(x, y, angle, length, depth, max_depth, branches, rng, canvas):
     if depth > max_depth or length < PIXEL_SIZE:
         return
     x2 = x + math.cos(math.radians(angle)) * length
     y2 = y - math.sin(math.radians(angle)) * length
-    branches.extend(rasterize_segment(x, y, x2, y2, depth, angle))
+    branches.extend(rasterize_segment(x, y, x2, y2, depth, angle, canvas))
     spread = 25 + rng.randint(-10, 10)
-    generate_branches(x2, y2, angle + spread, length * 0.7, depth + 1, max_depth, branches, rng)
-    generate_branches(x2, y2, angle - spread, length * 0.7, depth + 1, max_depth, branches, rng)
+    generate_branches(x2, y2, angle + spread, length * 0.7, depth + 1, max_depth, branches, rng, canvas)
+    generate_branches(x2, y2, angle - spread, length * 0.7, depth + 1, max_depth, branches, rng, canvas)
     if depth < 2:
         generate_branches(x2, y2, angle + rng.randint(-5, 5), length * 0.6,
-                          depth + 1, max_depth, branches, rng)
+                          depth + 1, max_depth, branches, rng, canvas)
 
 
-def build_branches(total: int) -> list:
+def build_branches(total: int, canvas: dict) -> list:
     params = compute_scale_params(total)
     rng = random.Random(total)
     branches = []
     generate_branches(
-        float(TRUNK_BASE_X), float(TRUNK_BASE_Y),
+        float(canvas['trunk_base_x']), float(canvas['trunk_base_y']),
         90.0, float(params["initial_length"]),
-        0, params["max_depth"], branches, rng,
+        0, params["max_depth"], branches, rng, canvas
     )
     return branches
 
@@ -502,9 +576,8 @@ def build_branches(total: int) -> list:
 def collect_leaf_anchors(branches: list) -> list:
     if not branches:
         return []
-    max_depth = max(b["depth"] for b in branches)
-    tip_depth = max(max_depth - 1, 0)
-    anchors = [(b["x"], b["y"]) for b in branches if b["depth"] >= tip_depth]
+    # Anchor leaves on any branch depth >= 2
+    anchors = [(b["x"], b["y"]) for b in branches if b["depth"] >= 2]
     return list(dict.fromkeys(anchors))
 
 
@@ -519,6 +592,16 @@ def compute_leaf_target(total: int, season: str) -> int:
 
 
 def make_leaf(x: int, y: int, state: str, rng: random.Random, season: str = "summer") -> dict:
+    now = datetime.now(timezone.utc)
+    if season == "autumn":
+        lifespan = rng.randint(7, 14)
+    elif season == "winter":
+        lifespan = rng.randint(5, 10)
+    elif season == "spring":
+        lifespan = rng.randint(18, 30)
+    else:  # summer
+        lifespan = rng.randint(14, 28)
+    
     return {
         "x": x,
         "y": y,
@@ -529,6 +612,8 @@ def make_leaf(x: int, y: int, state: str, rng: random.Random, season: str = "sum
         "drift":    rng.randint(-30, 30),
         "fell_at":  None,
         "season":   season,
+        "attached_at": now.isoformat(),
+        "lifespan_days": lifespan,
     }
 
 
@@ -558,6 +643,31 @@ def evolve_leaves(existing, anchors, today_score, total, rng, season="summer"):
                     pass
 
         if leaf["state"] == "attached":
+            attached_at = leaf.get("attached_at")
+            if attached_at:
+                try:
+                    att_dt = datetime.fromisoformat(attached_at)
+                    if att_dt.tzinfo is None:
+                        att_dt = att_dt.replace(tzinfo=timezone.utc)
+                    age_days = (now - att_dt).total_seconds() / 86400
+                    lifespan = leaf.get("lifespan_days", 21)
+                    
+                    if age_days >= lifespan:
+                        leaf = dict(leaf)
+                        leaf["state"] = "falling"
+                        leaf["fell_at"] = now.isoformat()
+                        updated.append(leaf)
+                        continue
+                    elif age_days >= lifespan * 0.8:
+                        if rng.random() < 0.15:
+                            leaf = dict(leaf)
+                            leaf["state"] = "falling"
+                            leaf["fell_at"] = now.isoformat()
+                            updated.append(leaf)
+                            continue
+                except ValueError:
+                    pass
+
             fall_chance = 0.08 if season == "autumn" else (0.15 if season == "winter" else 0.05)
             if today_score == 0 and rng.random() < fall_chance:
                 leaf = dict(leaf)
@@ -579,7 +689,7 @@ def evolve_leaves(existing, anchors, today_score, total, rng, season="summer"):
     rng.shuffle(free_anchors)
 
     deficit = target - len(updated)
-    for i in range(min(deficit, len(free_anchors), 20)):
+    for i in range(min(deficit, len(free_anchors))):
         ax, ay = free_anchors[i]
         updated.append(make_leaf(ax, ay, "regrowing", rng, season))
 
@@ -593,11 +703,61 @@ def evolve_leaves(existing, anchors, today_score, total, rng, season="summer"):
 # MODULE 5 — ECOSYSTEM (PLANTS)
 # ---------------------------------------------------------------------------
 
+PLANT_KINDS = {
+    "ground_plant": ["sprout", "fern", "mushroom", "shrub"],
+    "flower": ["flower_purple", "flower_pink", "flower_blue", 
+               "flower_lavender", "flower_orange", "flower_yellow"],
+    "tree_seedling": ["seedling"],
+}
+
+GROWTH_STAGES = {
+    "ground_plant": ["sprout", "growing", "mature"],
+    "flower":       ["bud", "blooming", "full_bloom", "wilting"],
+    "tree_seedling": ["seed", "sprout", "sapling", "young_tree"],
+}
+
+STAGE_DURATIONS = {
+    "ground_plant": {"sprout": 3, "growing": 7, "mature": 999},
+    "flower":       {"bud": 2, "blooming": 5, "full_bloom": 14, "wilting": 3},
+    "tree_seedling": {"seed": 3, "sprout": 7, "sapling": 21, "young_tree": 999},
+}
+
+LEAF_SPAWN_CHANCES = {
+    "flower": 0.12,
+    "ground_plant": 0.05,
+    "tree_seedling": 0.02,
+}
+
 PLANT_PIXEL_SHAPES = {
     "sprout": [
         (0, 0), (0, -4), (0, -8), (-4, -8), (4, -8),
     ],
-    "flower": [
+    "flower_purple": [
+        (0, 0), (0, -4), (0, -8),
+        (-4, -12), (0, -12), (4, -12),
+        (0, -16), (-4, -8), (4, -8),
+    ],
+    "flower_pink": [
+        (0, 0), (0, -4), (0, -8),
+        (-4, -12), (0, -12), (4, -12),
+        (-8, -8), (8, -8), (0, -16),
+    ],
+    "flower_blue": [
+        (0, 0), (0, -4),
+        (-4, -8), (0, -8), (4, -8),
+        (0, -12),
+    ],
+    "flower_lavender": [
+        (0, 0), (0, -4), (0, -8),
+        (-4, -12), (0, -12), (4, -12),
+        (-4, -16), (0, -16), (4, -16),
+    ],
+    "flower_yellow": [
+        (0, 0), (0, -4), (0, -8),
+        (-4, -8), (4, -8),
+        (-4, -12), (0, -12), (4, -12),
+    ],
+    "flower_orange": [
         (0, 0), (0, -4), (0, -8),
         (-4, -12), (0, -12), (4, -12),
         (-4, -8), (4, -8), (0, -16),
@@ -617,14 +777,41 @@ PLANT_PIXEL_SHAPES = {
         (-4, -4), (-8, -8),
         (4, -4), (8, -8), (4, -12), (-4, -12),
     ],
+    "seedling_seed": [
+        (0, 0),
+    ],
+    "seedling_sprout": [
+        (0, 0), (0, -4), (-4, -4), (4, -4),
+    ],
+    "seedling_sapling": [
+        (0, 0), (0, -4), (0, -8), (0, -12),
+        (-4, -8), (4, -8), (-4, -4), (4, -4),
+        (-4, -12), (4, -12),
+    ],
+    "seedling_young_tree": [
+        (0, 4), (0, 0), (0, -4), (0, -8), (0, -12), (0, -16),
+        (-4, -8), (4, -8), (-8, -8), (8, -8),
+        (-4, -12), (4, -12), (-8, -12), (8, -12),
+        (-4, -16), (4, -16),
+        (0, -20), (-4, -20), (4, -20),
+    ],
 }
 
 PLANT_COLORS = {
     "sprout":   "#6aad5e",
-    "flower":   "#ff9966",
     "shrub":    "#4a7c59",
     "mushroom": "#cc7755",
     "fern":     "#2d5a27",
+    "flower_purple":   "#9b59b6",
+    "flower_pink":     "#e91e8c",
+    "flower_blue":     "#3498db",
+    "flower_lavender": "#b39ddb",
+    "flower_yellow":   "#f1c40f",
+    "flower_orange":   "#ff9966",
+    "seedling_seed":       "#8B4513",
+    "seedling_sprout":     "#6aad5e",
+    "seedling_sapling":    "#5a8a4a",
+    "seedling_young_tree": "#4a7c39",
 }
 
 
@@ -645,39 +832,213 @@ def check_spawn_triggers(state, today_score, rolling_avg):
     return triggers
 
 
-def maybe_spawn_from_leaf(leaf, plants, rng):
-    if len(plants) >= MAX_PLANTS or rng.random() > 0.02:
+def maybe_spawn_from_leaf(leaf, plants, rng, canvas):
+    """A fallen leaf might take root where it landed."""
+    if len(plants) >= MAX_PLANTS:
         return None
-    plant_type = rng.choice(list(PLANT_PIXEL_SHAPES.keys()))
-    x = rng.randint(20, CANVAS_W - 20)
-    return {"x": x, "y": GRASS_Y, "size": 1, "type": plant_type}
+    
+    # Roll for each kind
+    for kind, chance in LEAF_SPAWN_CHANCES.items():
+        if rng.random() < chance:
+            if kind == "flower":
+                plant_type = rng.choice(PLANT_KINDS["flower"])
+            elif kind == "ground_plant":
+                plant_type = rng.choice(PLANT_KINDS["ground_plant"])
+            else:
+                plant_type = "seedling"
+            
+            leaf_x = leaf["x"] + leaf.get("drift", 0) // 3
+            spawn_x = max(20, min(canvas['w'] - 20, leaf_x))
+            
+            if any(abs(spawn_x - p["x"]) < 16 for p in plants):
+                return None
+            
+            return {
+                "x": spawn_x,
+                "y": canvas['grass_y'],
+                "type": plant_type,
+                "kind": kind,
+                "growth_stage": GROWTH_STAGES[kind][0],
+                "born_at": datetime.now(timezone.utc).isoformat(),
+                "size": 1,
+            }
+    
+    return None
+
+def evolve_plant_growth(plants: list, rng) -> list:
+    """Age plants through growth stages. Remove dead ones."""
+    now = datetime.now(timezone.utc)
+    updated = []
+    
+    for plant in plants:
+        kind = plant.get("kind", "ground_plant")
+        stage = plant.get("growth_stage", "mature")
+        born_at = plant.get("born_at")
+        
+        if not born_at:
+            updated.append(plant)
+            continue
+        
+        try:
+            born_dt = datetime.fromisoformat(born_at)
+            if born_dt.tzinfo is None:
+                born_dt = born_dt.replace(tzinfo=timezone.utc)
+        except ValueError:
+            updated.append(plant)
+            continue
+        
+        age_days = (now - born_dt).total_seconds() / 86400
+        
+        stages = GROWTH_STAGES.get(kind, ["mature"])
+        durations = STAGE_DURATIONS.get(kind, {})
+        
+        cumulative_days = 0
+        target_stage = stages[0]
+        for s in stages:
+            dur = durations.get(s, 999)
+            cumulative_days += dur
+            if age_days < cumulative_days:
+                target_stage = s
+                break
+            target_stage = s
+        
+        if kind == "flower" and target_stage == "wilting":
+            total_flower_life = sum(durations.get(s, 0) for s in stages)
+            if age_days > total_flower_life:
+                continue
+        
+        plant = dict(plant)
+        plant["growth_stage"] = target_stage
+        
+        if kind == "tree_seedling":
+            plant["type"] = f"seedling_{target_stage}"
+        elif kind == "flower":
+            pass
+        
+        updated.append(plant)
+    
+    return updated
 
 
-def spawn_plant(x, plant_type):
-    return {"x": x, "y": GRASS_Y, "size": 1, "type": plant_type}
+def spawn_plant(x, plant_type, canvas):
+    return {
+        "x": x, "y": canvas['grass_y'], "type": plant_type,
+        "kind": "ground_plant",
+        "growth_stage": GROWTH_STAGES["ground_plant"][0],
+        "born_at": datetime.now(timezone.utc).isoformat(),
+        "size": 1,
+    }
 
 
-def evolve_plants(state, today_score, rolling_avg, completed_falling, rng):
+def evolve_plants(state, today_score, rolling_avg, completed_falling, rng, canvas):
     plants = list(state["tree"]["plants"])
+    
+    plants = evolve_plant_growth(plants, rng)
+    
     triggers = check_spawn_triggers(state, today_score, rolling_avg)
     for trigger in triggers:
         if len(plants) >= MAX_PLANTS:
             break
-        plant_type = rng.choice(list(PLANT_PIXEL_SHAPES.keys()))
+        plant_type = rng.choice(list(PLANT_KINDS["ground_plant"]))
         existing_xs = {p["x"] for p in plants}
         for _ in range(20):
-            x = rng.randint(20, CANVAS_W - 20)
-            if all(abs(x - ex) > 20 for ex in existing_xs):
+            x = rng.randint(20, canvas['w'] - 20)
+            if all(abs(x - ex) > 16 for ex in existing_xs):
                 break
-        plants.append(spawn_plant(x, plant_type))
+        plants.append(spawn_plant(x, plant_type, canvas))
         if trigger.startswith("streak_"):
             state["activity"]["last_high_day"] = trigger
+            
     for leaf in completed_falling:
         if len(plants) >= MAX_PLANTS:
             break
-        new_plant = maybe_spawn_from_leaf(leaf, plants, rng)
+        new_plant = maybe_spawn_from_leaf(leaf, plants, rng, canvas)
         if new_plant:
             plants.append(new_plant)
+            
+    return plants
+
+def seed_initial_ecosystem(total: int, rng, canvas) -> list:
+    """Generate a mature-looking ecosystem for first-time runs."""
+    plants = []
+    
+    if total < 50:
+        target_plants = 1
+        flower_ratio = 0.5
+        tree_chance = 0.0
+    elif total < 200:
+        target_plants = 3
+        flower_ratio = 0.5
+        tree_chance = 0.0
+    elif total < 500:
+        target_plants = 5
+        flower_ratio = 0.4
+        tree_chance = 0.05
+    elif total < 1000:
+        target_plants = 8
+        flower_ratio = 0.4
+        tree_chance = 0.1
+    elif total < 2000:
+        target_plants = 12
+        flower_ratio = 0.35
+        tree_chance = 0.15
+    else:
+        target_plants = 15
+        flower_ratio = 0.3
+        tree_chance = 0.2
+    
+    eco_rng = random.Random(total * 31 + 7)
+    now = datetime.now(timezone.utc)
+    
+    occupied_xs = set()
+    
+    for i in range(target_plants):
+        for _ in range(30):
+            x = eco_rng.randint(20, canvas['w'] - 20)
+            if all(abs(x - ox) > 16 for ox in occupied_xs):
+                break
+        occupied_xs.add(x)
+        
+        roll = eco_rng.random()
+        if roll < tree_chance and total >= 500:
+            if total >= 2000:
+                stage = "young_tree"
+                plant_type = "seedling_young_tree"
+            elif total >= 1000:
+                stage = "sapling"
+                plant_type = "seedling_sapling"
+            else:
+                stage = "sprout"
+                plant_type = "seedling_sprout"
+            kind = "tree_seedling"
+            age_days = eco_rng.randint(30, 120)
+            born_at = (now - timedelta(days=age_days)).isoformat()
+        elif roll < tree_chance + flower_ratio:
+            flower_types = ["flower_purple", "flower_pink", "flower_blue",
+                           "flower_lavender", "flower_orange", "flower_yellow"]
+            plant_type = eco_rng.choice(flower_types)
+            kind = "flower"
+            stage = "full_bloom"
+            age_days = eco_rng.randint(5, 15)
+            born_at = (now - timedelta(days=age_days)).isoformat()
+        else:
+            ground_types = ["sprout", "fern", "mushroom", "shrub"]
+            plant_type = eco_rng.choice(ground_types)
+            kind = "ground_plant"
+            stage = "mature"
+            age_days = eco_rng.randint(10, 60)
+            born_at = (now - timedelta(days=age_days)).isoformat()
+        
+        plants.append({
+            "x": x,
+            "y": canvas['grass_y'],
+            "type": plant_type,
+            "kind": kind,
+            "growth_stage": stage,
+            "born_at": born_at,
+            "size": 1,
+        })
+    
     return plants
 
 
@@ -755,10 +1116,10 @@ def build_defs(leaf_colors: list) -> str:
     return "\n".join(lines)
 
 
-def render_sky(tod: str) -> str:
+def render_sky(tod: str, palette: dict, canvas: dict) -> str:
     """Render background and celestial body (sun or moon) based on time of day."""
-    bg = SKY_COLORS[tod]
-    lines = [f'<!-- Sky ({tod}) -->', _rect(0, 0, CANVAS_W, CANVAS_H, bg)]
+    bg = palette["sky"]
+    lines = [f'<!-- Sky ({tod}) -->', _rect(0, 0, canvas['w'], canvas['h'], bg)]
 
     if tod == "night":
         # Moon: top-right corner, crescent-style
@@ -780,138 +1141,274 @@ def render_sky(tod: str) -> str:
 
     elif tod == "dawn":
         # Horizon glow: thin strip at ground level
-        for x in range(0, CANVAS_W, PIXEL_SIZE):
-            lines.append(_rect(x, GRASS_Y - PIXEL_SIZE * 3, PIXEL_SIZE, PIXEL_SIZE,
+        for x in range(0, canvas['w'], PIXEL_SIZE):
+            lines.append(_rect(x, canvas['grass_y'] - PIXEL_SIZE * 3, PIXEL_SIZE, PIXEL_SIZE,
                                "#3a1f5c", f' opacity="0.4"'))
 
     elif tod == "dusk":
         # Orange horizon glow
-        for x in range(0, CANVAS_W, PIXEL_SIZE):
-            lines.append(_rect(x, GRASS_Y - PIXEL_SIZE * 3, PIXEL_SIZE, PIXEL_SIZE,
+        for x in range(0, canvas['w'], PIXEL_SIZE):
+            lines.append(_rect(x, canvas['grass_y'] - PIXEL_SIZE * 3, PIXEL_SIZE, PIXEL_SIZE,
                                "#8b2500", f' opacity="0.4"'))
 
     return "\n".join(lines)
 
 
-def render_stars(rng: random.Random, tod: str) -> str:
+def render_weather(tod: str, season: str, today_score: int, rng, canvas: dict) -> str:
+    """Render weather effects: rain, snow, fireflies, clouds."""
+    lines = ["<!-- Weather -->"]
+    
+    # --- RAIN: appears on inactive days (not winter) ---
+    if today_score == 0 and season != "winter":
+        for i in range(15):
+            x = rng.randint(0, canvas['w'])
+            y = rng.randint(0, canvas['h'] - 40)
+            delay = round(rng.uniform(0, 2), 2)
+            dur = round(rng.uniform(0.4, 0.8), 2)
+            lines.append(f'<line x1="{x}" y1="{y}" x2="{x-2}" y2="{y+8}" '
+                         f'stroke="#6688aa" stroke-width="1" opacity="0.4">')
+            lines.append(f'  <animateTransform attributeName="transform" type="translate" '
+                         f'from="0 0" to="4 {canvas['h']}" dur="{dur}s" begin="{delay}s" '
+                         f'repeatCount="indefinite"/>')
+            lines.append(f'  <animate attributeName="opacity" values="0.4;0.2;0.4" '
+                         f'dur="{dur}s" begin="{delay}s" repeatCount="indefinite"/>')
+            lines.append('</line>')
+    
+    # --- SNOW: winter only ---
+    if season == "winter":
+        count = 12 if today_score == 0 else 6
+        for i in range(count):
+            x = rng.randint(0, canvas['w'])
+            y = rng.randint(-20, 0)
+            delay = round(rng.uniform(0, 4), 2)
+            dur = round(rng.uniform(3, 6), 2)
+            drift = rng.randint(-20, 20)
+            lines.append(f'<rect x="{x}" y="{y}" width="2" height="2" fill="#ffffff" opacity="0.6">')
+            lines.append(f'  <animateTransform attributeName="transform" type="translate" '
+                         f'from="0 0" to="{drift} {canvas['h'] + 20}" dur="{dur}s" begin="{delay}s" '
+                         f'repeatCount="indefinite"/>')
+            lines.append(f'  <animate attributeName="opacity" values="0.6;0.3;0.6;0" '
+                         f'dur="{dur}s" begin="{delay}s" repeatCount="indefinite"/>')
+            lines.append('</rect>')
+    
+    # --- FIREFLIES: night only, spring/summer ---
+    if tod == "night" and season in ("spring", "summer"):
+        for i in range(8):
+            cx = rng.randint(40, canvas['w'] - 40)
+            cy = rng.randint(100, canvas['grass_y'] - 20)
+            delay = round(rng.uniform(0, 5), 2)
+            dur = round(rng.uniform(2, 4), 2)
+            drift_x = rng.randint(-15, 15)
+            drift_y = rng.randint(-10, 10)
+            lines.append(f'<circle cx="{cx}" cy="{cy}" r="1.5" fill="#ffff66" opacity="0">')
+            lines.append(f'  <animate attributeName="opacity" values="0;0.8;0.9;0.3;0" '
+                         f'dur="{dur}s" begin="{delay}s" repeatCount="indefinite"/>')
+            lines.append(f'  <animateTransform attributeName="transform" type="translate" '
+                         f'from="0 0" to="{drift_x} {drift_y}" dur="{dur * 2}s" begin="{delay}s" '
+                         f'repeatCount="indefinite"/>')
+            lines.append('</circle>')
+    
+    # --- CLOUDS: daytime, drifting pixel clouds ---
+    if tod in ("day", "dawn", "dusk"):
+        cloud_count = 2 if tod == "day" else 1
+        for i in range(cloud_count):
+            cy = rng.randint(15, 50)
+            delay = round(rng.uniform(0, 10), 2)
+            dur = round(rng.uniform(30, 60), 1)
+            cloud_color = "#ffffff" if tod == "day" else "#8888aa"
+            opacity = "0.3" if tod == "day" else "0.2"
+            lines.append(f'<g opacity="{opacity}">')
+            lines.append(f'  <rect x="0" y="{cy}" width="12" height="4" fill="{cloud_color}"/>')
+            lines.append(f'  <rect x="4" y="{cy-4}" width="8" height="4" fill="{cloud_color}"/>')
+            lines.append(f'  <rect x="-4" y="{cy}" width="4" height="4" fill="{cloud_color}"/>')
+            lines.append(f'  <animateTransform attributeName="transform" type="translate" '
+                         f'from="-20 0" to="{canvas['w'] + 20} 0" dur="{dur}s" begin="{delay}s" '
+                         f'repeatCount="indefinite"/>')
+            lines.append('</g>')
+    
+    return "\n".join(lines)
+
+
+def render_stars(rng: random.Random, tod: str, canvas: dict) -> str:
     """Render stars — visible at night and dawn only."""
     if tod not in ("night", "dawn"):
         return "<!-- No stars (daytime) -->"
     lines = ["<!-- Stars -->"]
     count = 20 if tod == "night" else 8
+    
+    lines.append('<g>')
+    lines.append('<animateTransform attributeName="transform" type="translate" '
+                 'values="0 0;3 0;0 0;-3 0;0 0" dur="60s" repeatCount="indefinite"/>')
     for _ in range(count):
-        x = rng.randint(4, CANVAS_W - 4)
+        x = rng.randint(4, canvas['w'] - 4)
         y = rng.randint(4, 60)
         opacity = round(rng.uniform(0.3, 0.8), 1)
-        lines.append(_rect(x, y, 2, 2, COLORS["star"], f' opacity="{opacity}"'))
+        lines.append(_rect(x, y, 2, 2, "#ffffff", f' opacity="{opacity}"'))
+    lines.append('</g>')
     return "\n".join(lines)
 
 
-def render_grass(season: str) -> str:
-    """Render alternating pixel-art grass with season-appropriate colors."""
+def render_ground(season: str, contribution_days: dict, canvas: dict) -> str:
+    """Render ground as contribution heatmap + grass border."""
+    lines = [f'<!-- Ground ({season}) -->']
+    
+    today = datetime.now(timezone.utc).date()
+    heatmap_data = []
+    for i in range(364):
+        day = today - timedelta(days=363 - i)
+        count = contribution_days.get(day.strftime("%Y-%m-%d"), 0)
+        heatmap_data.append(count)
+    
+    max_count = max(heatmap_data) if heatmap_data and max(heatmap_data) > 0 else 1
+    
+    def heatmap_color(count, season):
+        if count == 0:
+            if season == "winter": return "#1a2a1a"
+            return "#1a2a17"
+        intensity = min(count / max_count, 1.0)
+        if season == "autumn":
+            r = int(100 + 155 * intensity)
+            g = int(80 + 80 * intensity)
+            b = int(20 + 10 * intensity)
+        elif season == "winter":
+            r = int(40 + 100 * intensity)
+            g = int(60 + 120 * intensity)
+            b = int(80 + 140 * intensity)
+        else:
+            r = int(20 + 30 * intensity)
+            g = int(60 + 140 * intensity)
+            b = int(20 + 30 * intensity)
+        return f"#{r:02x}{g:02x}{b:02x}"
+    
+    cols = canvas['w'] // PIXEL_SIZE
+    days_per_col = len(heatmap_data) / cols
+    
+    for col in range(cols):
+        x = col * PIXEL_SIZE
+        start_idx = int(col * days_per_col)
+        end_idx = int((col + 1) * days_per_col)
+        chunk = heatmap_data[start_idx:end_idx]
+        avg_count = sum(chunk) / len(chunk) if chunk else 0
+        
+        color = heatmap_color(avg_count, season)
+        lines.append(_rect(x, canvas['grass_y'], PIXEL_SIZE, PIXEL_SIZE, color))
+    
     dark, light = GRASS_SEASON_COLORS.get(season, ("#2d5a27", "#4a7c59"))
-    lines = [f'<!-- Grass ({season}) -->']
-    for row in range(GRASS_ROWS):
-        y = GRASS_Y + row * PIXEL_SIZE
-        for col in range(CANVAS_W // PIXEL_SIZE):
-            x = col * PIXEL_SIZE
-            color = dark if (col + row) % 2 == 0 else light
-            lines.append(_rect(x, y, PIXEL_SIZE, PIXEL_SIZE, color))
+    for col in range(cols):
+        x = col * PIXEL_SIZE
+        color = dark if col % 2 == 0 else light
+        lines.append(_rect(x, canvas['grass_y'] + PIXEL_SIZE, PIXEL_SIZE, PIXEL_SIZE, color))
+    
+    # Soil layer
+    soil_y = canvas['grass_y'] + PIXEL_SIZE * 2
+    soil_h = canvas['h'] - soil_y
+    if soil_h > 0:
+        soil_color = "#2e1b12" if season == "winter" else "#3e2723"
+        lines.append(_rect(0, soil_y, canvas['w'], soil_h, soil_color))
+    
     return "\n".join(lines)
 
 
-def render_roots(total: int) -> str:
+def render_roots(total: int, palette: dict, canvas: dict) -> str:
     """Render pixel root system below the trunk. Grows with contributions."""
     if total < 10:
         return "<!-- No roots yet -->"
 
     lines = ["<!-- Roots -->"]
     root_depth = min(4, max(1, int(math.log(total + 1, 10) * 2)))
-    color = COLORS["root"]
+    color = palette["root"]
 
-    # Central tap root (straight down)
     for i in range(root_depth):
-        y = TRUNK_BASE_Y + GRASS_ROWS * PIXEL_SIZE + i * PIXEL_SIZE
-        if y >= CANVAS_H:
+        y = canvas['trunk_base_y'] + GRASS_ROWS * PIXEL_SIZE + i * PIXEL_SIZE
+        if y >= canvas['h']:
             break
-        lines.append(_rect(TRUNK_BASE_X, y, PIXEL_SIZE, PIXEL_SIZE, color))
+        lines.append(_rect(canvas['trunk_base_x'], y, PIXEL_SIZE, PIXEL_SIZE, color))
 
-    # Left root
     if total >= 30:
         for i in range(min(root_depth, 3)):
-            x = TRUNK_BASE_X - (i + 1) * PIXEL_SIZE
-            y = TRUNK_BASE_Y + GRASS_ROWS * PIXEL_SIZE + i * PIXEL_SIZE
-            if 0 <= x < CANVAS_W and y < CANVAS_H:
+            x = canvas['trunk_base_x'] - (i + 1) * PIXEL_SIZE
+            y = canvas['trunk_base_y'] + GRASS_ROWS * PIXEL_SIZE + i * PIXEL_SIZE
+            if 0 <= x < canvas['w'] and y < canvas['h']:
                 lines.append(_rect(x, y, PIXEL_SIZE, PIXEL_SIZE, color))
 
-    # Right root
     if total >= 30:
         for i in range(min(root_depth, 3)):
-            x = TRUNK_BASE_X + (i + 2) * PIXEL_SIZE
-            y = TRUNK_BASE_Y + GRASS_ROWS * PIXEL_SIZE + i * PIXEL_SIZE
-            if 0 <= x < CANVAS_W and y < CANVAS_H:
+            x = canvas['trunk_base_x'] + (i + 2) * PIXEL_SIZE
+            y = canvas['trunk_base_y'] + GRASS_ROWS * PIXEL_SIZE + i * PIXEL_SIZE
+            if 0 <= x < canvas['w'] and y < canvas['h']:
                 lines.append(_rect(x, y, PIXEL_SIZE, PIXEL_SIZE, color))
 
-    # Deeper side roots for veteran contributors
     if total >= 200:
         for i in range(2):
-            x = TRUNK_BASE_X - (root_depth + i) * PIXEL_SIZE
-            y = TRUNK_BASE_Y + GRASS_ROWS * PIXEL_SIZE + root_depth * PIXEL_SIZE
-            if 0 <= x < CANVAS_W and y < CANVAS_H:
+            x = canvas['trunk_base_x'] - (root_depth + i) * PIXEL_SIZE
+            y = canvas['trunk_base_y'] + GRASS_ROWS * PIXEL_SIZE + root_depth * PIXEL_SIZE
+            if 0 <= x < canvas['w'] and y < canvas['h']:
                 lines.append(_rect(x, y, PIXEL_SIZE, PIXEL_SIZE, color))
-            x = TRUNK_BASE_X + (root_depth + i + 1) * PIXEL_SIZE
-            if 0 <= x < CANVAS_W and y < CANVAS_H:
+            x = canvas['trunk_base_x'] + (root_depth + i + 1) * PIXEL_SIZE
+            if 0 <= x < canvas['w'] and y < canvas['h']:
                 lines.append(_rect(x, y, PIXEL_SIZE, PIXEL_SIZE, color))
 
     return "\n".join(lines)
 
 
-def render_branches(branches: list) -> str:
+def render_branches(branches: list, scale_params: dict, palette: dict, canvas: dict) -> str:
     """Render branches in 3-tier wind groups."""
     if not branches:
         return "<!-- No branches -->"
 
-    def branch_color(depth):
-        if depth <= 1:   return COLORS["trunk"]
-        elif depth <= 3: return COLORS["branch_mid"]
-        return COLORS["branch_tip"]
+    thickness = (scale_params or {}).get("branch_thickness", {"trunk": 1, "mid": 1, "tip": 1})
+
+    def branch_color(angle):
+        # Directional lighting: light from the left (angle > 100), shadow on the right (angle < 80)
+        if angle > 100:   return palette.get("branch_light", palette["trunk"])
+        elif angle < 80:  return palette.get("branch_dark", palette["branch_tip"])
+        return palette.get("branch_base", palette["branch_mid"])
 
     trunk_pixels = [b for b in branches if b["depth"] <= 1]
     mid_pixels   = [b for b in branches if 2 <= b["depth"] <= 3]
     tip_pixels   = [b for b in branches if b["depth"] >= 4]
 
     lines = ["<!-- Branches -->"]
+    lines.append("<defs>")
+    lines.append(f'  <rect id="px_trunk" width="{PIXEL_SIZE * thickness["trunk"]}" height="{PIXEL_SIZE}"/>')
+    lines.append(f'  <rect id="px_mid" width="{PIXEL_SIZE * thickness["mid"]}" height="{PIXEL_SIZE}"/>')
+    lines.append(f'  <rect id="px_tip" width="{PIXEL_SIZE * thickness["tip"]}" height="{PIXEL_SIZE}"/>')
+    lines.append("</defs>")
 
     if trunk_pixels:
         lines.append('<g id="wind-trunk">')
-        lines.append(_wind_animate(TRUNK_BASE_X, TRUNK_BASE_Y, 0.5, 8, 0))
+        lines.append(_wind_animate(canvas['trunk_base_x'], canvas['trunk_base_y'], 0.3, 10, 0))
         for b in trunk_pixels:
-            lines.append(_rect(b["x"], b["y"], b["w"], b["h"], branch_color(b["depth"])))
+            w = b["w"] * thickness["trunk"]
+            x_offset = (w - b["w"]) // 2
+            lines.append(f'<use href="#px_trunk" x="{b["x"] - x_offset}" y="{b["y"]}" fill="{branch_color(b["angle"])}"/>')
         lines.append("</g>")
 
     if mid_pixels:
         cy = min(b["y"] for b in mid_pixels)
         lines.append('<g id="wind-mid">')
-        lines.append(_wind_animate(TRUNK_BASE_X, cy, 1.5, 6, 0.3))
+        lines.append(_wind_animate(canvas['trunk_base_x'], cy, 1.0, 7, 0.3))
         for b in mid_pixels:
-            lines.append(_rect(b["x"], b["y"], b["w"], b["h"], branch_color(b["depth"])))
+            w = b["w"] * thickness["mid"]
+            x_offset = (w - b["w"]) // 2
+            lines.append(f'<use href="#px_mid" x="{b["x"] - x_offset}" y="{b["y"]}" fill="{branch_color(b["angle"])}"/>')
         lines.append("</g>")
 
     if tip_pixels:
-        band_size = CANVAS_W // 4
-        bands = defaultdict(list)
+        band_size = canvas['w'] // 4
+        bands = __import__('collections').defaultdict(list)
         for b in tip_pixels:
             bands[b["x"] // band_size].append(b)
         for band_idx in sorted(bands.keys()):
             bp = bands[band_idx]
             cx = int(sum(b["x"] for b in bp) / len(bp))
             cy = int(sum(b["y"] for b in bp) / len(bp))
-            begin = round((cx / CANVAS_W) * 2.0, 2)
-            dur   = round(4.0 + (band_idx % 3) * 0.5, 1)
-            lines.append('<g class="wind-tip">')
-            lines.append(_wind_animate(cx, cy, 2.0, dur, begin))
+            lines.append(f'<g id="wind-tip-{band_idx}">')
+            lines.append(_wind_animate(cx, cy, 3.0, 3.5, band_idx * 0.2))
             for b in bp:
-                lines.append(_rect(b["x"], b["y"], b["w"], b["h"], branch_color(b["depth"])))
+                w = b["w"] * thickness["tip"]
+                x_offset = (w - b["w"]) // 2
+                lines.append(f'<use href="#px_tip" x="{b["x"] - x_offset}" y="{b["y"]}" fill="{branch_color(b["angle"])}"/>')
             lines.append("</g>")
 
     return "\n".join(lines)
@@ -923,7 +1420,6 @@ def render_fruit(branches: list, total: int) -> str:
     if count == 0 or not branches:
         return "<!-- No fruit yet -->"
 
-    # Pick stable tip positions seeded by milestone count
     tips = [b for b in branches if b["depth"] >= 4]
     if not tips:
         return "<!-- No tips for fruit -->"
@@ -938,7 +1434,7 @@ def render_fruit(branches: list, total: int) -> str:
     return "\n".join(lines)
 
 
-def render_leaves(leaves: list) -> str:
+def render_leaves(leaves: list, canvas: dict) -> str:
     """Render all leaves with per-state animations."""
     if not leaves:
         return "<!-- No leaves -->"
@@ -953,12 +1449,12 @@ def render_leaves(leaves: list) -> str:
 
         if state == "attached":
             lines.append("<g>")
-            lines.append(_wind_animate(x, y, 3.0, duration, delay))
+            lines.append(_wind_animate(x, y, 4.0, duration * 0.8, delay))
             lines.append(_use(f"leaf-{color_idx}", x, y))
             lines.append("</g>")
 
         elif state == "falling":
-            drop = max(0, GRASS_Y - y)
+            drop = max(0, canvas['grass_y'] - y)
             fade_begin = round(delay + duration * 0.8, 2)
             lines.append("<g>")
             lines.append(_fall_animate(x, y, drift, drop, duration, delay))
@@ -972,14 +1468,14 @@ def render_leaves(leaves: list) -> str:
                 f'<animate attributeName="opacity" from="0" to="1" '
                 f'dur="2s" begin="{delay}s" fill="freeze"/>'
             )
-            lines.append(_wind_animate(x, y, 3.0, duration, delay + 2))
+            lines.append(_wind_animate(x, y, 4.0, duration * 0.8, delay + 2))
             lines.append(_use(f"leaf-{color_idx}", x, y))
             lines.append("</g>")
 
     return "\n".join(lines)
 
 
-def render_plants(plants: list) -> str:
+def render_plants(plants: list, canvas: dict) -> str:
     if not plants:
         return "<!-- No plants -->"
     lines = ["<!-- Plants -->"]
@@ -987,41 +1483,216 @@ def render_plants(plants: list) -> str:
         ptype = plant.get("type", "sprout")
         if ptype not in PLANT_PIXEL_SHAPES:
             ptype = "sprout"
-        lines.append(_use(f"plant-{ptype}", plant["x"], plant["y"]))
+        lines.append(_use(f"plant-{ptype}", plant["x"], canvas['grass_y']))
     return "\n".join(lines)
 
 
-def generate_svg(state: dict, path: str = SVG_FILE) -> None:
+
+# ---------------------------------------------------------------------------
+# PHASE 5 GLOBALS
+# ---------------------------------------------------------------------------
+
+CREATURE_UNLOCKS = {
+    "butterfly": {"min_contributions": 100, "seasons": ["spring", "summer"], "time": ["day", "dawn"]},
+    "bird":      {"min_contributions": 500, "seasons": None, "time": ["day", "dawn", "dusk"]},
+    "owl":       {"min_contributions": 500, "seasons": None, "time": ["night"]},
+    "squirrel":  {"min_contributions": 1000, "seasons": None, "time": None},
+    "beehive":   {"min_contributions": 2000, "seasons": ["spring", "summer"], "time": None},
+}
+
+CREATURE_PIXEL_SHAPES = {
+    "butterfly": [
+        (-4, -4), (4, -4),    # upper wings
+        (-4, 0), (0, 0), (4, 0),  # body + lower wings
+        (0, -4),              # head
+    ],
+    "bird": [
+        (-8, 0), (-4, -4), (0, -4), (4, -4), (8, 0),  # wings spread
+        (0, 0),  # body
+    ],
+    "owl": [
+        (-4, -8), (0, -8), (4, -8),  # head
+        (-4, -4), (0, -4), (4, -4),  # body
+        (-8, -4), (8, -4),           # ears
+        (-4, 0), (4, 0),             # feet
+    ],
+    "squirrel": [
+        (0, 0), (0, -4), (0, -8),    # body
+        (4, -8), (4, -12),            # tail
+        (-4, -4),                     # arm
+    ],
+    "beehive": [
+        (-4, -4), (0, -4), (4, -4),
+        (-8, 0), (-4, 0), (0, 0), (4, 0), (8, 0),
+        (-4, 4), (0, 4), (4, 4),
+        (0, -8),  # attachment point
+    ],
+}
+
+CREATURE_COLORS = {
+    "butterfly": "#e91e8c",
+    "bird":      "#4a6a8a",
+    "owl":       "#8a7a6a",
+    "squirrel":  "#b5651d",
+    "beehive":   "#daa520",
+}
+
+PIXEL_FONT = {
+    "0": [(0,0),(1,0),(2,0),(0,1),(2,1),(0,2),(2,2),(0,3),(2,3),(0,4),(1,4),(2,4)],
+    "1": [(1,0),(1,1),(1,2),(1,3),(1,4)],
+    "2": [(0,0),(1,0),(2,0),(2,1),(0,2),(1,2),(2,2),(0,3),(0,4),(1,4),(2,4)],
+    "3": [(0,0),(1,0),(2,0),(2,1),(0,2),(1,2),(2,2),(2,3),(0,4),(1,4),(2,4)],
+    "4": [(0,0),(2,0),(0,1),(2,1),(0,2),(1,2),(2,2),(2,3),(2,4)],
+    "5": [(0,0),(1,0),(2,0),(0,1),(0,2),(1,2),(2,2),(2,3),(0,4),(1,4),(2,4)],
+    "6": [(0,0),(1,0),(2,0),(0,1),(0,2),(1,2),(2,2),(0,3),(2,3),(0,4),(1,4),(2,4)],
+    "7": [(0,0),(1,0),(2,0),(2,1),(2,2),(2,3),(2,4)],
+    "8": [(0,0),(1,0),(2,0),(0,1),(2,1),(0,2),(1,2),(2,2),(0,3),(2,3),(0,4),(1,4),(2,4)],
+    "9": [(0,0),(1,0),(2,0),(0,1),(2,1),(0,2),(1,2),(2,2),(2,3),(0,4),(1,4),(2,4)],
+    "K": [(0,0),(2,0),(0,1),(1,1),(0,2),(0,3),(1,3),(0,4),(2,4)],
+    ".": [(1,4)],
+    " ": [],
+}
+
+RANK_THRESHOLDS = [
+    (0,     "Seed"),
+    (50,    "Sprout"),
+    (200,   "Sapling"),
+    (500,   "Tree"),
+    (1000,  "Oak"),
+    (2000,  "Ancient"),
+    (5000,  "Forest"),
+    (10000, "Legend"),
+]
+
+def get_rank(total: int) -> str:
+    rank = "Seed"
+    for threshold, name in RANK_THRESHOLDS:
+        if total >= threshold:
+            rank = name
+    return rank
+
+def render_creatures(branches: list, total: int, season: str, tod: str, rng) -> str:
+    lines = ["<!-- Creatures -->"]
+    
+    tips = [b for b in branches if b["depth"] >= 4]
+    if not tips:
+        return "<!-- No branches for creatures -->"
+    
+    for creature, req in CREATURE_UNLOCKS.items():
+        if total < req["min_contributions"]:
+            continue
+        if req["seasons"] and season not in req["seasons"]:
+            continue
+        if req["time"] and tod not in req["time"]:
+            continue
+        
+        creature_rng = __import__('random').Random(total + hash(creature))
+        tip = creature_rng.choice(tips)
+        cx, cy = tip["x"], tip["y"] - 8
+        
+        color = CREATURE_COLORS[creature]
+        shape = CREATURE_PIXEL_SHAPES[creature]
+        
+        lines.append(f'<g class="creature-{creature}">')
+        
+        bob_dur = round(rng.uniform(2, 4), 1)
+        bob_delay = round(rng.uniform(0, 3), 2)
+        lines.append(f'  <animateTransform attributeName="transform" type="translate" '
+                     f'values="0 0;0 -2;0 0;0 1;0 0" dur="{bob_dur}s" begin="{bob_delay}s" '
+                     f'repeatCount="indefinite"/>')
+        
+        for ox, oy in shape:
+            lines.append(f'  {{_rect(cx + ox, cy + oy, PIXEL_SIZE, PIXEL_SIZE, color)}}')
+        
+        lines.append('</g>')
+        
+        if creature == "butterfly":
+            lines.append(f'<g class="butterfly-wings">')
+            flap_dur = round(rng.uniform(0.3, 0.6), 2)
+            lines.append(f'  <animateTransform attributeName="transform" type="translate" '
+                         f'from="{cx} {cy}" to="{{cx + rng.randint(-20, 20)}} {{cy + rng.randint(-15, 15)}}" '
+                         f'dur="{{rng.randint(4, 8)}}s" begin="0s" repeatCount="indefinite"/>')
+            lines.append('</g>')
+    
+    return "\n".join(lines)
+
+def render_pixel_text(text: str, start_x: int, start_y: int, color: str, scale: int = 1) -> str:
+    lines = []
+    cursor_x = start_x
+    for char in text.upper():
+        pixels = PIXEL_FONT.get(char, [])
+        for px, py in pixels:
+            x = cursor_x + px * (scale + 1)
+            y = start_y + py * (scale + 1)
+            lines.append(_rect(x, y, scale, scale, color))
+        cursor_x += 4 * (scale + 1)
+    return "\n".join(lines)
+
+def render_hud(total: int, streak: int, season: str, tod: str, canvas: dict) -> str:
+    lines = ['<!-- HUD -->']
+    
+    panel_x = canvas['w'] - 85
+    panel_y = 8
+    lines.append(f'<rect x="{panel_x}" y="{panel_y}" width="78" height="40" '
+                 f'rx="2" fill="#000000" opacity="0.35"/>')
+    
+    total_str = f"{total}" if total < 10000 else f"{total/1000:.1f}K"
+    text_color = "#e0e0e0"
+    lines.append(render_pixel_text(total_str, panel_x + 4, panel_y + 4, text_color, 1))
+    
+    if streak > 0:
+        fx = panel_x + 4
+        fy = panel_y + 16
+        lines.append(_rect(fx, fy, 2, 2, "#ff6633"))
+        lines.append(_rect(fx, fy - 2, 2, 2, "#ffaa33"))
+        lines.append(_rect(fx + 2, fy, 2, 2, "#ff4411"))
+        lines.append(render_pixel_text(str(streak), fx + 8, fy - 2, text_color, 1))
+    
+    rank = get_rank(total)
+    rank_color = "#8bc34a" if total < 1000 else "#f0c040" if total < 5000 else "#ff6633"
+    lines.append(render_pixel_text(rank, panel_x + 4, panel_y + 28, rank_color, 1))
+    
+    return "\n".join(lines)
+
+
+def generate_svg(state: dict, canvas: dict, path: str = SVG_FILE) -> None:
     """Assemble the complete SVG with all layers and write to path."""
     total    = state.get("total_contributions", 0)
     branches = state["tree"].get("branches", [])
     leaves   = state["tree"].get("leaves", [])
     plants   = state["tree"].get("plants", [])
 
-    season      = get_season()
-    tod         = get_time_of_day()
+    tz_name = state.get("timezone", "UTC")
+    tz = ZoneInfo(tz_name) if tz_name != "UTC" else timezone.utc
+
+    season      = get_season(tz)
+    tod         = get_time_of_day(tz)
     leaf_colors = SEASON_LEAF_COLORS[season]
+    palette     = TIME_PALETTES[tod]
 
     star_rng = random.Random(total + 42)
+    weather_rng = random.Random(total + int(datetime.now(timezone.utc).timestamp()) // 3600)
+    scale_params = compute_scale_params(total)
 
     parts = []
     parts.append(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<svg xmlns="http://www.w3.org/2000/svg" '
         'xmlns:xlink="http://www.w3.org/1999/xlink" '
-        f'viewBox="0 0 {CANVAS_W} {CANVAS_H}" '
-        f'width="{CANVAS_W}" height="{CANVAS_H}" '
+        f'viewBox="0 0 {canvas['w']} {canvas['h']}" '
+        f'width="{canvas['w']}" height="{canvas['h']}" '
         'preserveAspectRatio="xMidYMid meet">'
     )
     parts.append(build_defs(leaf_colors))
-    parts.append(render_sky(tod))
-    parts.append(render_stars(star_rng, tod))
-    parts.append(render_grass(season))
-    parts.append(render_roots(total))
-    parts.append(render_branches(branches))
+    parts.append(render_sky(tod, palette, canvas))
+    parts.append(render_stars(star_rng, tod, canvas))
+    parts.append(render_weather(tod, season, state.get("activity", {}).get("recent_score", 0), weather_rng, canvas))
+    parts.append(render_ground(season, state.get("contribution_days", {}), canvas))
+    parts.append(render_roots(total, palette, canvas))
+    parts.append(render_branches(branches, scale_params, palette, canvas))
     parts.append(render_fruit(branches, total))
-    parts.append(render_leaves(leaves))
-    parts.append(render_plants(plants))
+    parts.append(render_leaves(leaves, canvas))
+    parts.append(render_plants(plants, canvas))
     parts.append("</svg>")
 
     content = "\n".join(parts)
@@ -1046,6 +1717,8 @@ def parse_args():
     parser.add_argument("--mode", choices=["initial", "update"], default="update")
     parser.add_argument("--output", default=SVG_FILE)
     parser.add_argument("--state",  default=STATE_FILE)
+    parser.add_argument("--demo", action="store_true", help="Generate synthetic data")
+    parser.add_argument("--timezone", default=None, help="IANA timezone e.g. Asia/Kolkata")
     return parser.parse_args()
 
 
@@ -1060,6 +1733,10 @@ def run_initial(username: str, token: str, args) -> None:
     print(f"[gitwood] Initial run for @{username}")
     state = load_state(args.state)
 
+    tz_name = args.timezone or state.get("timezone", "UTC")
+    tz = ZoneInfo(tz_name) if tz_name != "UTC" else timezone.utc
+    state["timezone"] = tz_name
+
     print("[gitwood] Fetching lifetime contributions via GraphQL...")
     try:
         gql_data = fetch_graphql(username, token, state)
@@ -1067,27 +1744,55 @@ def run_initial(username: str, token: str, args) -> None:
         print(f"[gitwood] GraphQL fetch failed: {e}", file=sys.stderr)
         sys.exit(1)
 
+    try:
+        events = fetch_rest_events(username, token)
+        activity_scores = compute_activity_score(events)
+        today_score = get_today_score(events)
+        streak = check_streak(activity_scores)
+        rolling_avg = compute_rolling_avg(activity_scores)
+    except Exception:
+        today_score = 0
+        streak = 0
+        rolling_avg = 0
+        
+    state = update_activity(state, streak, today_score, last_high_day=None)
+
     total        = gql_data["total_contributions"]
     yearly_cache = gql_data["yearly_cache"]
+    state["contribution_days"] = gql_data.get("days", {})
     print(f"[gitwood] Total contributions: {total}")
 
     state = update_metadata(state, total, username, yearly_cache)
 
+
+    # Pre-calculate target plants to size canvas properly
+    if total < 50: target_plants = 1
+    elif total < 200: target_plants = 3
+    elif total < 500: target_plants = 5
+    elif total < 1000: target_plants = 8
+    elif total < 2000: target_plants = 12
+    else: target_plants = 15
+    canvas = compute_canvas_size(total, target_plants)
+    state["canvas"] = canvas
+
     print("[gitwood] Building fractal branch structure...")
-    branches = build_branches(total)
+    branches = build_branches(total, canvas)
+
     state["tree"]["branches"] = branches
     print(f"[gitwood] Generated {len(branches)} branch pixels")
 
-    season  = get_season()
+    season  = get_season(tz)
     anchors = collect_leaf_anchors(branches)
     rng     = random.Random(total + 1)
-    leaves, _ = evolve_leaves([], anchors, 0, total, rng, season)
+    leaves, _ = evolve_leaves([], anchors, today_score, total, rng, season)
     state["tree"]["leaves"] = leaves
-    state["tree"]["plants"] = []
+    
+    state["tree"]["plants"] = seed_initial_ecosystem(total, rng, canvas)
+    print(f"[gitwood] Seeded {len(state['tree']['plants'])} initial plants/flowers")
     print(f"[gitwood] Placed {len(leaves)} leaves (season: {season})")
 
     save_state(state, args.state)
-    generate_svg(state, args.output)
+    generate_svg(state, canvas, args.output)
 
 
 def run_update(username: str, token: str, args) -> None:
@@ -1097,6 +1802,10 @@ def run_update(username: str, token: str, args) -> None:
         print("[gitwood] No existing state, falling back to initial run.")
         run_initial(username, token, args)
         return
+
+    tz_name = args.timezone or state.get("timezone", "UTC")
+    tz = ZoneInfo(tz_name) if tz_name != "UTC" else timezone.utc
+    state["timezone"] = tz_name
 
     print("[gitwood] Fetching recent events via REST API...")
     try:
@@ -1116,24 +1825,43 @@ def run_update(username: str, token: str, args) -> None:
         gql_data     = fetch_graphql(username, token, state)
         total        = gql_data["total_contributions"]
         yearly_cache = gql_data["yearly_cache"]
+        state["contribution_days"] = gql_data.get("days", {})
     except Exception as e:
         print(f"[gitwood] GraphQL refresh failed (using cached): {e}")
         total        = state.get("total_contributions", 0)
         yearly_cache = state.get("yearly_cache", {})
 
+
+    old_canvas = state.get("canvas")
+    canvas = compute_canvas_size(total, len(state["tree"].get("plants", [])))
+    
+    # Handle dynamic canvas resizing (shift existing geometry)
+    if old_canvas and old_canvas["h"] != canvas["h"]:
+        dy = canvas["trunk_base_y"] - old_canvas["trunk_base_y"]
+        print(f"[gitwood] Canvas resized ({old_canvas['h']} -> {canvas['h']})! Shifting Y by {dy}px")
+        for b in state["tree"].get("branches", []):
+            b["y"] += dy
+        for l in state["tree"].get("leaves", []):
+            l["y"] += dy
+        for p in state["tree"].get("plants", []):
+            p["y"] += dy
+            
+    state["canvas"] = canvas
+
     old_total = state.get("total_contributions", 0)
     state = update_metadata(state, total, username, yearly_cache)
 
-    if abs(total - old_total) > 10 or not state["tree"]["branches"]:
+    if abs(total - old_total) > 3 or not state["tree"].get("branches"):
         print(f"[gitwood] Rebuilding branches ({old_total} → {total})...")
-        branches = build_branches(total)
+        branches = build_branches(total, canvas)
+
         state["tree"]["branches"] = branches
         print(f"[gitwood] Generated {len(branches)} branch pixels")
     else:
         branches = state["tree"]["branches"]
         print(f"[gitwood] Keeping existing {len(branches)} branch pixels")
 
-    season  = get_season()
+    season  = get_season(tz)
     anchors = collect_leaf_anchors(branches)
     rng     = random.Random(total + int(datetime.now(timezone.utc).timestamp()) % 10000)
     leaves, completed_falling = evolve_leaves(
@@ -1142,13 +1870,57 @@ def run_update(username: str, token: str, args) -> None:
     state["tree"]["leaves"] = leaves
     print(f"[gitwood] Leaves: {len(leaves)} active, {len(completed_falling)} fell | season={season}")
 
-    plants = evolve_plants(state, today_score, rolling_avg, completed_falling, rng)
+    plants = evolve_plants(state, today_score, rolling_avg, completed_falling, rng, canvas)
     state["tree"]["plants"] = plants
     state = update_activity(state, streak, today_score,
                             last_high_day=state["activity"].get("last_high_day"))
 
     save_state(state, args.state)
-    generate_svg(state, args.output)
+    generate_svg(state, canvas, args.output)
+
+
+
+def run_demo(args):
+    total = int(args.username) if args.username.isdigit() else 500
+    state = empty_state("demo-user")
+    state["total_contributions"] = total
+    
+    demo_rng = __import__('random').Random(total)
+    state["contribution_days"] = {
+        (__import__('datetime').datetime.now(__import__('datetime').timezone.utc) - __import__('datetime').timedelta(days=i)).strftime("%Y-%m-%d"): 
+        demo_rng.randint(0, 10) if demo_rng.random() > 0.3 else 0
+        for i in range(365)
+    }
+    
+    streak = min(total // 50, 30)
+    today_score = demo_rng.randint(1, 10) if total > 50 else 0
+    state = update_activity(state, streak, today_score, last_high_day=None)
+    
+    if total < 50: target_plants = 1
+    elif total < 200: target_plants = 3
+    elif total < 500: target_plants = 5
+    elif total < 1000: target_plants = 8
+    elif total < 2000: target_plants = 12
+    else: target_plants = 15
+    canvas = compute_canvas_size(total, target_plants)
+    state["canvas"] = canvas
+    
+    branches = build_branches(total, canvas)
+    state["tree"]["branches"] = branches
+    
+    season = get_season(__import__('zoneinfo').ZoneInfo("UTC"))
+    anchors = collect_leaf_anchors(branches)
+    rng = __import__('random').Random(total + 1)
+    leaves, _ = evolve_leaves([], anchors, today_score, total, rng, season, canvas=canvas) if 'canvas' in evolve_leaves.__code__.co_varnames else evolve_leaves([], anchors, today_score, total, rng, season)
+    state["tree"]["leaves"] = leaves
+    
+    state["tree"]["plants"] = seed_initial_ecosystem(total, rng, canvas)
+    
+    save_state(state, args.state)
+    generate_svg(state, canvas, args.output)
+    print(f"[gitwood] Demo generated: {total} contributions, "
+          f"{len(branches)} branches, {len(leaves)} leaves, "
+          f"{len(state['tree']['plants'])} plants")
 
 
 def main():
@@ -1158,7 +1930,9 @@ def main():
         print("Error: No GitHub token. Use --token or set GH_TOKEN.", file=sys.stderr)
         sys.exit(1)
 
-    if args.mode == "initial":
+    if args.demo:
+        run_demo(args)
+    elif args.mode == "initial":
         run_initial(args.username, token, args)
     else:
         run_update(args.username, token, args)
