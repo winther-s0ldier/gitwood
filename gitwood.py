@@ -1223,8 +1223,9 @@ def render_weather(tod: str, season: str, today_score: int, rng, canvas: dict) -
             lines.append(f'  <rect x="0" y="{cy}" width="12" height="4" fill="{cloud_color}"/>')
             lines.append(f'  <rect x="4" y="{cy-4}" width="8" height="4" fill="{cloud_color}"/>')
             lines.append(f'  <rect x="-4" y="{cy}" width="4" height="4" fill="{cloud_color}"/>')
+            cw = canvas['w']
             lines.append(f'  <animateTransform attributeName="transform" type="translate" '
-                         f'from="-20 0" to="{canvas['w'] + 20} 0" dur="{dur}s" begin="{delay}s" '
+                         f'from="-20 0" to="{cw + 20} 0" dur="{dur}s" begin="{delay}s" '
                          f'repeatCount="indefinite"/>')
             lines.append('</g>')
     
@@ -1677,12 +1678,13 @@ def generate_svg(state: dict, canvas: dict, path: str = SVG_FILE) -> None:
     scale_params = compute_scale_params(total)
 
     parts = []
+    cw, ch = canvas['w'], canvas['h']
     parts.append(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<svg xmlns="http://www.w3.org/2000/svg" '
         'xmlns:xlink="http://www.w3.org/1999/xlink" '
-        f'viewBox="0 0 {canvas['w']} {canvas['h']}" '
-        f'width="{canvas['w']}" height="{canvas['h']}" '
+        f'viewBox="0 0 {cw} {ch}" '
+        f'width="{cw}" height="{ch}" '
         'preserveAspectRatio="xMidYMid meet">'
     )
     parts.append(build_defs(leaf_colors))
