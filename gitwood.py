@@ -1167,8 +1167,9 @@ def render_weather(tod: str, season: str, today_score: int, rng, canvas: dict) -
             dur = round(rng.uniform(0.4, 0.8), 2)
             lines.append(f'<line x1="{x}" y1="{y}" x2="{x-2}" y2="{y+8}" '
                          f'stroke="#6688aa" stroke-width="1" opacity="0.4">')
+            ch = canvas['h']
             lines.append(f'  <animateTransform attributeName="transform" type="translate" '
-                         f'from="0 0" to="4 {canvas['h']}" dur="{dur}s" begin="{delay}s" '
+                         f'from="0 0" to="4 {ch}" dur="{dur}s" begin="{delay}s" '
                          f'repeatCount="indefinite"/>')
             lines.append(f'  <animate attributeName="opacity" values="0.4;0.2;0.4" '
                          f'dur="{dur}s" begin="{delay}s" repeatCount="indefinite"/>')
@@ -1184,8 +1185,9 @@ def render_weather(tod: str, season: str, today_score: int, rng, canvas: dict) -
             dur = round(rng.uniform(3, 6), 2)
             drift = rng.randint(-20, 20)
             lines.append(f'<rect x="{x}" y="{y}" width="2" height="2" fill="#ffffff" opacity="0.6">')
+            ch = canvas['h']
             lines.append(f'  <animateTransform attributeName="transform" type="translate" '
-                         f'from="0 0" to="{drift} {canvas['h'] + 20}" dur="{dur}s" begin="{delay}s" '
+                         f'from="0 0" to="{drift} {ch + 20}" dur="{dur}s" begin="{delay}s" '
                          f'repeatCount="indefinite"/>')
             lines.append(f'  <animate attributeName="opacity" values="0.6;0.3;0.6;0" '
                          f'dur="{dur}s" begin="{delay}s" repeatCount="indefinite"/>')
