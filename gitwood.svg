@@ -189,131 +189,95 @@
     <rect x="0" y="4" width="4" height="4" fill="#cc3333"/>
   </g>
 </defs>
-<!-- Sky (night) -->
-<rect x="0" y="0" width="400" height="335" fill="#0d1117"/>
-<rect x="340" y="30" width="4" height="4" fill="#d4cfb0"/>
-<rect x="344" y="30" width="4" height="4" fill="#d4cfb0"/>
-<rect x="348" y="30" width="4" height="4" fill="#d4cfb0"/>
-<rect x="340" y="34" width="4" height="4" fill="#d4cfb0"/>
-<rect x="340" y="38" width="4" height="4" fill="#d4cfb0"/>
-<rect x="344" y="38" width="4" height="4" fill="#d4cfb0"/>
-<!-- Stars -->
-<g>
-<animateTransform attributeName="transform" type="translate" values="0 0;3 0;0 0;-3 0;0 0" dur="60s" repeatCount="indefinite"/>
-<rect x="67" y="59" width="2" height="2" fill="#ffffff" opacity="0.7"/>
-<rect x="334" y="26" width="2" height="2" fill="#ffffff" opacity="0.4"/>
-<rect x="184" y="53" width="2" height="2" fill="#ffffff" opacity="0.8"/>
-<rect x="310" y="31" width="2" height="2" fill="#ffffff" opacity="0.5"/>
-<rect x="308" y="45" width="2" height="2" fill="#ffffff" opacity="0.5"/>
-<rect x="130" y="29" width="2" height="2" fill="#ffffff" opacity="0.3"/>
-<rect x="216" y="16" width="2" height="2" fill="#ffffff" opacity="0.7"/>
-<rect x="151" y="18" width="2" height="2" fill="#ffffff" opacity="0.6"/>
-<rect x="206" y="12" width="2" height="2" fill="#ffffff" opacity="0.7"/>
-<rect x="60" y="27" width="2" height="2" fill="#ffffff" opacity="0.4"/>
-<rect x="190" y="30" width="2" height="2" fill="#ffffff" opacity="0.4"/>
-<rect x="50" y="28" width="2" height="2" fill="#ffffff" opacity="0.7"/>
-<rect x="346" y="19" width="2" height="2" fill="#ffffff" opacity="0.5"/>
-<rect x="74" y="5" width="2" height="2" fill="#ffffff" opacity="0.4"/>
-<rect x="387" y="54" width="2" height="2" fill="#ffffff" opacity="0.7"/>
-<rect x="42" y="41" width="2" height="2" fill="#ffffff" opacity="0.3"/>
-<rect x="371" y="58" width="2" height="2" fill="#ffffff" opacity="0.6"/>
-<rect x="209" y="7" width="2" height="2" fill="#ffffff" opacity="0.7"/>
-<rect x="338" y="29" width="2" height="2" fill="#ffffff" opacity="0.6"/>
-<rect x="358" y="47" width="2" height="2" fill="#ffffff" opacity="0.7"/>
-</g>
+<!-- Sky (day) -->
+<rect x="0" y="0" width="400" height="335" fill="#87CEEB"/>
+<rect x="28" y="12" width="4" height="4" fill="#f5d060"/>
+<rect x="28" y="16" width="4" height="4" fill="#f5d060"/>
+<rect x="28" y="20" width="4" height="4" fill="#f5d060"/>
+<rect x="28" y="24" width="4" height="4" fill="#f5d060"/>
+<rect x="28" y="28" width="4" height="4" fill="#f5d060"/>
+<rect x="20" y="20" width="4" height="4" fill="#f5d060"/>
+<rect x="24" y="20" width="4" height="4" fill="#f5d060"/>
+<rect x="32" y="20" width="4" height="4" fill="#f5d060"/>
+<rect x="36" y="20" width="4" height="4" fill="#f5d060"/>
+<rect x="24" y="16" width="4" height="4" fill="#f5d060"/>
+<rect x="32" y="16" width="4" height="4" fill="#f5d060"/>
+<rect x="24" y="24" width="4" height="4" fill="#f5d060"/>
+<rect x="32" y="24" width="4" height="4" fill="#f5d060"/>
+<!-- No stars (daytime) -->
 <!-- Weather -->
-<line x1="235" y1="12" x2="233" y2="20" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.68s" begin="1.7s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.68s" begin="1.7s" repeatCount="indefinite"/>
+<line x1="266" y1="150" x2="264" y2="158" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.79s" begin="1.57s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.79s" begin="1.57s" repeatCount="indefinite"/>
 </line>
-<line x1="274" y1="21" x2="272" y2="29" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.41s" begin="1.02s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.41s" begin="1.02s" repeatCount="indefinite"/>
+<line x1="375" y1="280" x2="373" y2="288" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.66s" begin="1.86s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.66s" begin="1.86s" repeatCount="indefinite"/>
 </line>
-<line x1="278" y1="87" x2="276" y2="95" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.69s" begin="1.06s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.69s" begin="1.06s" repeatCount="indefinite"/>
+<line x1="291" y1="45" x2="289" y2="53" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.62s" begin="0.18s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.62s" begin="0.18s" repeatCount="indefinite"/>
 </line>
-<line x1="23" y1="80" x2="21" y2="88" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.42s" begin="0.08s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.42s" begin="0.08s" repeatCount="indefinite"/>
+<line x1="11" y1="41" x2="9" y2="49" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.46s" begin="0.28s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.46s" begin="0.28s" repeatCount="indefinite"/>
 </line>
-<line x1="279" y1="208" x2="277" y2="216" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.41s" begin="1.75s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.41s" begin="1.75s" repeatCount="indefinite"/>
+<line x1="124" y1="157" x2="122" y2="165" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.74s" begin="0.57s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.74s" begin="0.57s" repeatCount="indefinite"/>
 </line>
-<line x1="308" y1="133" x2="306" y2="141" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.77s" begin="0.88s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.77s" begin="0.88s" repeatCount="indefinite"/>
+<line x1="268" y1="149" x2="266" y2="157" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.68s" begin="1.58s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.68s" begin="1.58s" repeatCount="indefinite"/>
 </line>
-<line x1="335" y1="5" x2="333" y2="13" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.8s" begin="0.92s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.8s" begin="0.92s" repeatCount="indefinite"/>
+<line x1="175" y1="85" x2="173" y2="93" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.5s" begin="0.04s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.5s" begin="0.04s" repeatCount="indefinite"/>
 </line>
-<line x1="397" y1="54" x2="395" y2="62" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.79s" begin="0.58s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.79s" begin="0.58s" repeatCount="indefinite"/>
+<line x1="354" y1="134" x2="352" y2="142" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.74s" begin="1.04s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.74s" begin="1.04s" repeatCount="indefinite"/>
 </line>
-<line x1="146" y1="286" x2="144" y2="294" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.64s" begin="1.78s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.64s" begin="1.78s" repeatCount="indefinite"/>
+<line x1="50" y1="179" x2="48" y2="187" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.48s" begin="0.53s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.48s" begin="0.53s" repeatCount="indefinite"/>
 </line>
-<line x1="332" y1="272" x2="330" y2="280" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.45s" begin="1.49s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.45s" begin="1.49s" repeatCount="indefinite"/>
+<line x1="13" y1="34" x2="11" y2="42" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.73s" begin="1.1s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.73s" begin="1.1s" repeatCount="indefinite"/>
 </line>
-<line x1="340" y1="165" x2="338" y2="173" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.58s" begin="0.32s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.58s" begin="0.32s" repeatCount="indefinite"/>
+<line x1="373" y1="46" x2="371" y2="54" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.72s" begin="0.63s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.72s" begin="0.63s" repeatCount="indefinite"/>
 </line>
-<line x1="206" y1="57" x2="204" y2="65" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.59s" begin="0.25s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.59s" begin="0.25s" repeatCount="indefinite"/>
+<line x1="123" y1="250" x2="121" y2="258" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.44s" begin="0.72s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.44s" begin="0.72s" repeatCount="indefinite"/>
 </line>
-<line x1="314" y1="118" x2="312" y2="126" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.41s" begin="0.83s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.41s" begin="0.83s" repeatCount="indefinite"/>
+<line x1="150" y1="1" x2="148" y2="9" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.73s" begin="1.16s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.73s" begin="1.16s" repeatCount="indefinite"/>
 </line>
-<line x1="23" y1="249" x2="21" y2="257" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.47s" begin="1.91s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.47s" begin="1.91s" repeatCount="indefinite"/>
+<line x1="277" y1="99" x2="275" y2="107" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.59s" begin="0.7s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.59s" begin="0.7s" repeatCount="indefinite"/>
 </line>
-<line x1="67" y1="166" x2="65" y2="174" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.51s" begin="0.9s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.51s" begin="0.9s" repeatCount="indefinite"/>
+<line x1="195" y1="292" x2="193" y2="300" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 335" dur="0.76s" begin="0.33s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.76s" begin="0.33s" repeatCount="indefinite"/>
 </line>
-<circle cx="335" cy="208" r="1.5" fill="#ffff66" opacity="0">
-  <animate attributeName="opacity" values="0;0.8;0.9;0.3;0" dur="3.28s" begin="3.52s" repeatCount="indefinite"/>
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="-3 -4" dur="6.56s" begin="3.52s" repeatCount="indefinite"/>
-</circle>
-<circle cx="271" cy="247" r="1.5" fill="#ffff66" opacity="0">
-  <animate attributeName="opacity" values="0;0.8;0.9;0.3;0" dur="3.26s" begin="2.87s" repeatCount="indefinite"/>
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="-15 -9" dur="6.52s" begin="2.87s" repeatCount="indefinite"/>
-</circle>
-<circle cx="339" cy="124" r="1.5" fill="#ffff66" opacity="0">
-  <animate attributeName="opacity" values="0;0.8;0.9;0.3;0" dur="3.87s" begin="4.02s" repeatCount="indefinite"/>
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="-10 9" dur="7.74s" begin="4.02s" repeatCount="indefinite"/>
-</circle>
-<circle cx="111" cy="133" r="1.5" fill="#ffff66" opacity="0">
-  <animate attributeName="opacity" values="0;0.8;0.9;0.3;0" dur="2.13s" begin="1.37s" repeatCount="indefinite"/>
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="3 7" dur="4.26s" begin="1.37s" repeatCount="indefinite"/>
-</circle>
-<circle cx="255" cy="108" r="1.5" fill="#ffff66" opacity="0">
-  <animate attributeName="opacity" values="0;0.8;0.9;0.3;0" dur="3.08s" begin="0.23s" repeatCount="indefinite"/>
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="2 9" dur="6.16s" begin="0.23s" repeatCount="indefinite"/>
-</circle>
-<circle cx="89" cy="218" r="1.5" fill="#ffff66" opacity="0">
-  <animate attributeName="opacity" values="0;0.8;0.9;0.3;0" dur="2.27s" begin="2.04s" repeatCount="indefinite"/>
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="-3 1" dur="4.54s" begin="2.04s" repeatCount="indefinite"/>
-</circle>
-<circle cx="81" cy="228" r="1.5" fill="#ffff66" opacity="0">
-  <animate attributeName="opacity" values="0;0.8;0.9;0.3;0" dur="2.52s" begin="2.79s" repeatCount="indefinite"/>
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 7" dur="5.04s" begin="2.79s" repeatCount="indefinite"/>
-</circle>
-<circle cx="210" cy="263" r="1.5" fill="#ffff66" opacity="0">
-  <animate attributeName="opacity" values="0;0.8;0.9;0.3;0" dur="3.11s" begin="0.94s" repeatCount="indefinite"/>
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="3 -2" dur="6.22s" begin="0.94s" repeatCount="indefinite"/>
-</circle>
+<g opacity="0.3">
+  <rect x="0" y="40" width="12" height="4" fill="#ffffff"/>
+  <rect x="4" y="36" width="8" height="4" fill="#ffffff"/>
+  <rect x="-4" y="40" width="4" height="4" fill="#ffffff"/>
+  <animateTransform attributeName="transform" type="translate" from="-20 0" to="420 0" dur="44.9s" begin="7.88s" repeatCount="indefinite"/>
+</g>
+<g opacity="0.3">
+  <rect x="0" y="44" width="12" height="4" fill="#ffffff"/>
+  <rect x="4" y="40" width="8" height="4" fill="#ffffff"/>
+  <rect x="-4" y="44" width="4" height="4" fill="#ffffff"/>
+  <animateTransform attributeName="transform" type="translate" from="-20 0" to="420 0" dur="46.7s" begin="7.2s" repeatCount="indefinite"/>
+</g>
 <!-- Ground (spring) -->
 <rect x="0" y="311" width="4" height="4" fill="#1a2a17"/>
 <rect x="4" y="311" width="4" height="4" fill="#1a2a17"/>
@@ -414,7 +378,7 @@
 <rect x="384" y="311" width="4" height="4" fill="#238423"/>
 <rect x="388" y="311" width="4" height="4" fill="#1b5f1b"/>
 <rect x="392" y="311" width="4" height="4" fill="#1f701f"/>
-<rect x="396" y="311" width="4" height="4" fill="#1e6c1e"/>
+<rect x="396" y="311" width="4" height="4" fill="#1e6e1e"/>
 <rect x="0" y="315" width="4" height="4" fill="#3a7a30"/>
 <rect x="4" y="315" width="4" height="4" fill="#5a9e50"/>
 <rect x="8" y="315" width="4" height="4" fill="#3a7a30"/>
@@ -517,20 +481,20 @@
 <rect x="396" y="315" width="4" height="4" fill="#5a9e50"/>
 <rect x="0" y="319" width="400" height="16" fill="#3e2723"/>
 <!-- Roots -->
-<rect x="200" y="315" width="4" height="4" fill="#4a2a0e"/>
-<rect x="200" y="319" width="4" height="4" fill="#4a2a0e"/>
-<rect x="200" y="323" width="4" height="4" fill="#4a2a0e"/>
-<rect x="200" y="327" width="4" height="4" fill="#4a2a0e"/>
-<rect x="196" y="315" width="4" height="4" fill="#4a2a0e"/>
-<rect x="192" y="319" width="4" height="4" fill="#4a2a0e"/>
-<rect x="188" y="323" width="4" height="4" fill="#4a2a0e"/>
-<rect x="208" y="315" width="4" height="4" fill="#4a2a0e"/>
-<rect x="212" y="319" width="4" height="4" fill="#4a2a0e"/>
-<rect x="216" y="323" width="4" height="4" fill="#4a2a0e"/>
-<rect x="184" y="331" width="4" height="4" fill="#4a2a0e"/>
-<rect x="220" y="331" width="4" height="4" fill="#4a2a0e"/>
-<rect x="180" y="331" width="4" height="4" fill="#4a2a0e"/>
-<rect x="224" y="331" width="4" height="4" fill="#4a2a0e"/>
+<rect x="200" y="315" width="4" height="4" fill="#6B3410"/>
+<rect x="200" y="319" width="4" height="4" fill="#6B3410"/>
+<rect x="200" y="323" width="4" height="4" fill="#6B3410"/>
+<rect x="200" y="327" width="4" height="4" fill="#6B3410"/>
+<rect x="196" y="315" width="4" height="4" fill="#6B3410"/>
+<rect x="192" y="319" width="4" height="4" fill="#6B3410"/>
+<rect x="188" y="323" width="4" height="4" fill="#6B3410"/>
+<rect x="208" y="315" width="4" height="4" fill="#6B3410"/>
+<rect x="212" y="319" width="4" height="4" fill="#6B3410"/>
+<rect x="216" y="323" width="4" height="4" fill="#6B3410"/>
+<rect x="184" y="331" width="4" height="4" fill="#6B3410"/>
+<rect x="220" y="331" width="4" height="4" fill="#6B3410"/>
+<rect x="180" y="331" width="4" height="4" fill="#6B3410"/>
+<rect x="224" y="331" width="4" height="4" fill="#6B3410"/>
 <!-- Branches -->
 <defs>
   <rect id="px_trunk" width="12" height="4"/>
@@ -539,1439 +503,1439 @@
 </defs>
 <g id="wind-trunk">
 <animateTransform attributeName="transform" type="rotate" values="0 200 307;-0.3 200 307;0.3 200 307;-0.3 200 307;0 200 307" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="10s" begin="0s" repeatCount="indefinite"/>
-<use href="#px_trunk" x="196" y="307" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="303" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="299" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="295" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="291" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="287" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="283" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="279" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="275" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="271" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="267" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="263" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="259" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="255" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="251" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="247" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="247" fill="#5a3010"/>
-<use href="#px_trunk" x="196" y="243" fill="#5a3010"/>
-<use href="#px_trunk" x="192" y="239" fill="#5a3010"/>
-<use href="#px_trunk" x="192" y="235" fill="#5a3010"/>
-<use href="#px_trunk" x="188" y="231" fill="#5a3010"/>
-<use href="#px_trunk" x="188" y="227" fill="#5a3010"/>
-<use href="#px_trunk" x="184" y="223" fill="#5a3010"/>
-<use href="#px_trunk" x="184" y="219" fill="#5a3010"/>
-<use href="#px_trunk" x="180" y="215" fill="#5a3010"/>
-<use href="#px_trunk" x="180" y="211" fill="#5a3010"/>
-<use href="#px_trunk" x="196" y="247" fill="#3a200a"/>
-<use href="#px_trunk" x="196" y="243" fill="#3a200a"/>
-<use href="#px_trunk" x="200" y="239" fill="#3a200a"/>
-<use href="#px_trunk" x="200" y="235" fill="#3a200a"/>
-<use href="#px_trunk" x="204" y="231" fill="#3a200a"/>
-<use href="#px_trunk" x="204" y="227" fill="#3a200a"/>
-<use href="#px_trunk" x="208" y="223" fill="#3a200a"/>
-<use href="#px_trunk" x="208" y="219" fill="#3a200a"/>
-<use href="#px_trunk" x="212" y="215" fill="#3a200a"/>
-<use href="#px_trunk" x="212" y="211" fill="#3a200a"/>
-<use href="#px_trunk" x="196" y="247" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="243" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="239" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="235" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="231" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="227" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="223" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="219" fill="#4a2a0e"/>
-<use href="#px_trunk" x="196" y="215" fill="#4a2a0e"/>
+<use href="#px_trunk" x="196" y="307" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="303" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="299" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="295" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="291" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="287" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="283" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="279" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="275" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="271" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="267" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="263" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="259" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="255" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="251" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="247" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="247" fill="#8B4513"/>
+<use href="#px_trunk" x="196" y="243" fill="#8B4513"/>
+<use href="#px_trunk" x="192" y="239" fill="#8B4513"/>
+<use href="#px_trunk" x="192" y="235" fill="#8B4513"/>
+<use href="#px_trunk" x="188" y="231" fill="#8B4513"/>
+<use href="#px_trunk" x="188" y="227" fill="#8B4513"/>
+<use href="#px_trunk" x="184" y="223" fill="#8B4513"/>
+<use href="#px_trunk" x="184" y="219" fill="#8B4513"/>
+<use href="#px_trunk" x="180" y="215" fill="#8B4513"/>
+<use href="#px_trunk" x="180" y="211" fill="#8B4513"/>
+<use href="#px_trunk" x="196" y="247" fill="#5a2d0c"/>
+<use href="#px_trunk" x="196" y="243" fill="#5a2d0c"/>
+<use href="#px_trunk" x="200" y="239" fill="#5a2d0c"/>
+<use href="#px_trunk" x="200" y="235" fill="#5a2d0c"/>
+<use href="#px_trunk" x="204" y="231" fill="#5a2d0c"/>
+<use href="#px_trunk" x="204" y="227" fill="#5a2d0c"/>
+<use href="#px_trunk" x="208" y="223" fill="#5a2d0c"/>
+<use href="#px_trunk" x="208" y="219" fill="#5a2d0c"/>
+<use href="#px_trunk" x="212" y="215" fill="#5a2d0c"/>
+<use href="#px_trunk" x="212" y="211" fill="#5a2d0c"/>
+<use href="#px_trunk" x="196" y="247" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="243" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="239" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="235" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="231" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="227" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="223" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="219" fill="#6B3410"/>
+<use href="#px_trunk" x="196" y="215" fill="#6B3410"/>
 </g>
 <g id="wind-mid">
 <animateTransform attributeName="transform" type="rotate" values="0 200 163;-1.0 200 163;1.0 200 163;-1.0 200 163;0 200 163" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="7s" begin="0.3s" repeatCount="indefinite"/>
-<use href="#px_mid" x="182" y="211" fill="#5a3010"/>
-<use href="#px_mid" x="178" y="207" fill="#5a3010"/>
-<use href="#px_mid" x="174" y="203" fill="#5a3010"/>
-<use href="#px_mid" x="170" y="199" fill="#5a3010"/>
-<use href="#px_mid" x="166" y="195" fill="#5a3010"/>
-<use href="#px_mid" x="162" y="191" fill="#5a3010"/>
-<use href="#px_mid" x="162" y="191" fill="#5a3010"/>
-<use href="#px_mid" x="158" y="191" fill="#5a3010"/>
-<use href="#px_mid" x="154" y="191" fill="#5a3010"/>
-<use href="#px_mid" x="150" y="187" fill="#5a3010"/>
-<use href="#px_mid" x="146" y="187" fill="#5a3010"/>
-<use href="#px_mid" x="142" y="187" fill="#5a3010"/>
-<use href="#px_mid" x="162" y="191" fill="#5a3010"/>
-<use href="#px_mid" x="158" y="187" fill="#5a3010"/>
-<use href="#px_mid" x="158" y="183" fill="#5a3010"/>
-<use href="#px_mid" x="158" y="179" fill="#5a3010"/>
-<use href="#px_mid" x="154" y="175" fill="#5a3010"/>
-<use href="#px_mid" x="182" y="211" fill="#4a2a0e"/>
-<use href="#px_mid" x="182" y="207" fill="#4a2a0e"/>
-<use href="#px_mid" x="182" y="203" fill="#4a2a0e"/>
-<use href="#px_mid" x="182" y="199" fill="#4a2a0e"/>
-<use href="#px_mid" x="178" y="195" fill="#4a2a0e"/>
-<use href="#px_mid" x="178" y="191" fill="#4a2a0e"/>
-<use href="#px_mid" x="178" y="187" fill="#4a2a0e"/>
-<use href="#px_mid" x="178" y="183" fill="#4a2a0e"/>
-<use href="#px_mid" x="178" y="183" fill="#5a3010"/>
-<use href="#px_mid" x="174" y="179" fill="#5a3010"/>
-<use href="#px_mid" x="174" y="175" fill="#5a3010"/>
-<use href="#px_mid" x="174" y="171" fill="#5a3010"/>
-<use href="#px_mid" x="170" y="167" fill="#5a3010"/>
-<use href="#px_mid" x="178" y="183" fill="#3a200a"/>
-<use href="#px_mid" x="178" y="179" fill="#3a200a"/>
-<use href="#px_mid" x="178" y="175" fill="#3a200a"/>
-<use href="#px_mid" x="182" y="171" fill="#3a200a"/>
-<use href="#px_mid" x="182" y="167" fill="#3a200a"/>
-<use href="#px_mid" x="182" y="163" fill="#3a200a"/>
-<use href="#px_mid" x="182" y="211" fill="#5a3010"/>
-<use href="#px_mid" x="178" y="207" fill="#5a3010"/>
-<use href="#px_mid" x="178" y="203" fill="#5a3010"/>
-<use href="#px_mid" x="174" y="199" fill="#5a3010"/>
-<use href="#px_mid" x="174" y="195" fill="#5a3010"/>
-<use href="#px_mid" x="170" y="191" fill="#5a3010"/>
-<use href="#px_mid" x="170" y="191" fill="#5a3010"/>
-<use href="#px_mid" x="166" y="191" fill="#5a3010"/>
-<use href="#px_mid" x="162" y="187" fill="#5a3010"/>
-<use href="#px_mid" x="158" y="183" fill="#5a3010"/>
-<use href="#px_mid" x="154" y="183" fill="#5a3010"/>
-<use href="#px_mid" x="170" y="191" fill="#4a2a0e"/>
-<use href="#px_mid" x="170" y="187" fill="#4a2a0e"/>
-<use href="#px_mid" x="170" y="183" fill="#4a2a0e"/>
-<use href="#px_mid" x="170" y="179" fill="#4a2a0e"/>
-<use href="#px_mid" x="170" y="175" fill="#4a2a0e"/>
-<use href="#px_mid" x="214" y="211" fill="#4a2a0e"/>
-<use href="#px_mid" x="214" y="207" fill="#4a2a0e"/>
-<use href="#px_mid" x="214" y="203" fill="#4a2a0e"/>
-<use href="#px_mid" x="214" y="199" fill="#4a2a0e"/>
-<use href="#px_mid" x="218" y="195" fill="#4a2a0e"/>
-<use href="#px_mid" x="218" y="191" fill="#4a2a0e"/>
-<use href="#px_mid" x="218" y="187" fill="#4a2a0e"/>
-<use href="#px_mid" x="218" y="183" fill="#4a2a0e"/>
-<use href="#px_mid" x="218" y="183" fill="#5a3010"/>
-<use href="#px_mid" x="214" y="179" fill="#5a3010"/>
-<use href="#px_mid" x="214" y="175" fill="#5a3010"/>
-<use href="#px_mid" x="214" y="171" fill="#5a3010"/>
-<use href="#px_mid" x="210" y="167" fill="#5a3010"/>
-<use href="#px_mid" x="218" y="183" fill="#3a200a"/>
-<use href="#px_mid" x="222" y="179" fill="#3a200a"/>
-<use href="#px_mid" x="222" y="175" fill="#3a200a"/>
-<use href="#px_mid" x="222" y="171" fill="#3a200a"/>
-<use href="#px_mid" x="226" y="167" fill="#3a200a"/>
-<use href="#px_mid" x="214" y="211" fill="#3a200a"/>
-<use href="#px_mid" x="218" y="207" fill="#3a200a"/>
-<use href="#px_mid" x="222" y="203" fill="#3a200a"/>
-<use href="#px_mid" x="226" y="199" fill="#3a200a"/>
-<use href="#px_mid" x="230" y="195" fill="#3a200a"/>
-<use href="#px_mid" x="234" y="191" fill="#3a200a"/>
-<use href="#px_mid" x="234" y="191" fill="#3a200a"/>
-<use href="#px_mid" x="238" y="187" fill="#3a200a"/>
-<use href="#px_mid" x="238" y="183" fill="#3a200a"/>
-<use href="#px_mid" x="238" y="179" fill="#3a200a"/>
-<use href="#px_mid" x="242" y="175" fill="#3a200a"/>
-<use href="#px_mid" x="234" y="191" fill="#3a200a"/>
-<use href="#px_mid" x="238" y="191" fill="#3a200a"/>
-<use href="#px_mid" x="242" y="191" fill="#3a200a"/>
-<use href="#px_mid" x="246" y="187" fill="#3a200a"/>
-<use href="#px_mid" x="250" y="187" fill="#3a200a"/>
-<use href="#px_mid" x="254" y="187" fill="#3a200a"/>
-<use href="#px_mid" x="214" y="211" fill="#3a200a"/>
-<use href="#px_mid" x="218" y="207" fill="#3a200a"/>
-<use href="#px_mid" x="218" y="203" fill="#3a200a"/>
-<use href="#px_mid" x="222" y="199" fill="#3a200a"/>
-<use href="#px_mid" x="222" y="195" fill="#3a200a"/>
-<use href="#px_mid" x="226" y="191" fill="#3a200a"/>
-<use href="#px_mid" x="226" y="191" fill="#4a2a0e"/>
-<use href="#px_mid" x="226" y="187" fill="#4a2a0e"/>
-<use href="#px_mid" x="222" y="183" fill="#4a2a0e"/>
-<use href="#px_mid" x="222" y="179" fill="#4a2a0e"/>
-<use href="#px_mid" x="222" y="175" fill="#4a2a0e"/>
-<use href="#px_mid" x="226" y="191" fill="#3a200a"/>
-<use href="#px_mid" x="230" y="187" fill="#3a200a"/>
-<use href="#px_mid" x="234" y="183" fill="#3a200a"/>
-<use href="#px_mid" x="238" y="179" fill="#3a200a"/>
-<use href="#px_mid" x="198" y="215" fill="#5a3010"/>
-<use href="#px_mid" x="194" y="211" fill="#5a3010"/>
-<use href="#px_mid" x="190" y="207" fill="#5a3010"/>
-<use href="#px_mid" x="190" y="203" fill="#5a3010"/>
-<use href="#px_mid" x="186" y="199" fill="#5a3010"/>
-<use href="#px_mid" x="182" y="195" fill="#5a3010"/>
-<use href="#px_mid" x="182" y="195" fill="#5a3010"/>
-<use href="#px_mid" x="178" y="191" fill="#5a3010"/>
-<use href="#px_mid" x="174" y="187" fill="#5a3010"/>
-<use href="#px_mid" x="170" y="183" fill="#5a3010"/>
-<use href="#px_mid" x="182" y="195" fill="#4a2a0e"/>
-<use href="#px_mid" x="182" y="191" fill="#4a2a0e"/>
-<use href="#px_mid" x="182" y="187" fill="#4a2a0e"/>
-<use href="#px_mid" x="182" y="183" fill="#4a2a0e"/>
-<use href="#px_mid" x="182" y="179" fill="#4a2a0e"/>
-<use href="#px_mid" x="182" y="175" fill="#4a2a0e"/>
-<use href="#px_mid" x="198" y="215" fill="#3a200a"/>
-<use href="#px_mid" x="198" y="211" fill="#3a200a"/>
-<use href="#px_mid" x="202" y="207" fill="#3a200a"/>
-<use href="#px_mid" x="202" y="203" fill="#3a200a"/>
-<use href="#px_mid" x="202" y="199" fill="#3a200a"/>
-<use href="#px_mid" x="206" y="195" fill="#3a200a"/>
-<use href="#px_mid" x="206" y="191" fill="#3a200a"/>
-<use href="#px_mid" x="206" y="191" fill="#4a2a0e"/>
-<use href="#px_mid" x="206" y="187" fill="#4a2a0e"/>
-<use href="#px_mid" x="206" y="183" fill="#4a2a0e"/>
-<use href="#px_mid" x="206" y="179" fill="#4a2a0e"/>
-<use href="#px_mid" x="206" y="175" fill="#4a2a0e"/>
-<use href="#px_mid" x="206" y="191" fill="#3a200a"/>
-<use href="#px_mid" x="210" y="191" fill="#3a200a"/>
-<use href="#px_mid" x="214" y="187" fill="#3a200a"/>
-<use href="#px_mid" x="218" y="183" fill="#3a200a"/>
-<use href="#px_mid" x="222" y="183" fill="#3a200a"/>
-<use href="#px_mid" x="198" y="215" fill="#4a2a0e"/>
-<use href="#px_mid" x="198" y="211" fill="#4a2a0e"/>
-<use href="#px_mid" x="198" y="207" fill="#4a2a0e"/>
-<use href="#px_mid" x="198" y="203" fill="#4a2a0e"/>
-<use href="#px_mid" x="198" y="199" fill="#4a2a0e"/>
-<use href="#px_mid" x="198" y="195" fill="#4a2a0e"/>
-<use href="#px_mid" x="198" y="195" fill="#5a3010"/>
-<use href="#px_mid" x="198" y="191" fill="#5a3010"/>
-<use href="#px_mid" x="194" y="187" fill="#5a3010"/>
-<use href="#px_mid" x="190" y="183" fill="#5a3010"/>
-<use href="#px_mid" x="190" y="179" fill="#5a3010"/>
-<use href="#px_mid" x="198" y="195" fill="#3a200a"/>
-<use href="#px_mid" x="198" y="191" fill="#3a200a"/>
-<use href="#px_mid" x="198" y="187" fill="#3a200a"/>
-<use href="#px_mid" x="202" y="183" fill="#3a200a"/>
-<use href="#px_mid" x="202" y="179" fill="#3a200a"/>
+<use href="#px_mid" x="182" y="211" fill="#8B4513"/>
+<use href="#px_mid" x="178" y="207" fill="#8B4513"/>
+<use href="#px_mid" x="174" y="203" fill="#8B4513"/>
+<use href="#px_mid" x="170" y="199" fill="#8B4513"/>
+<use href="#px_mid" x="166" y="195" fill="#8B4513"/>
+<use href="#px_mid" x="162" y="191" fill="#8B4513"/>
+<use href="#px_mid" x="162" y="191" fill="#8B4513"/>
+<use href="#px_mid" x="158" y="191" fill="#8B4513"/>
+<use href="#px_mid" x="154" y="191" fill="#8B4513"/>
+<use href="#px_mid" x="150" y="187" fill="#8B4513"/>
+<use href="#px_mid" x="146" y="187" fill="#8B4513"/>
+<use href="#px_mid" x="142" y="187" fill="#8B4513"/>
+<use href="#px_mid" x="162" y="191" fill="#8B4513"/>
+<use href="#px_mid" x="158" y="187" fill="#8B4513"/>
+<use href="#px_mid" x="158" y="183" fill="#8B4513"/>
+<use href="#px_mid" x="158" y="179" fill="#8B4513"/>
+<use href="#px_mid" x="154" y="175" fill="#8B4513"/>
+<use href="#px_mid" x="182" y="211" fill="#6B3410"/>
+<use href="#px_mid" x="182" y="207" fill="#6B3410"/>
+<use href="#px_mid" x="182" y="203" fill="#6B3410"/>
+<use href="#px_mid" x="182" y="199" fill="#6B3410"/>
+<use href="#px_mid" x="178" y="195" fill="#6B3410"/>
+<use href="#px_mid" x="178" y="191" fill="#6B3410"/>
+<use href="#px_mid" x="178" y="187" fill="#6B3410"/>
+<use href="#px_mid" x="178" y="183" fill="#6B3410"/>
+<use href="#px_mid" x="178" y="183" fill="#8B4513"/>
+<use href="#px_mid" x="174" y="179" fill="#8B4513"/>
+<use href="#px_mid" x="174" y="175" fill="#8B4513"/>
+<use href="#px_mid" x="174" y="171" fill="#8B4513"/>
+<use href="#px_mid" x="170" y="167" fill="#8B4513"/>
+<use href="#px_mid" x="178" y="183" fill="#5a2d0c"/>
+<use href="#px_mid" x="178" y="179" fill="#5a2d0c"/>
+<use href="#px_mid" x="178" y="175" fill="#5a2d0c"/>
+<use href="#px_mid" x="182" y="171" fill="#5a2d0c"/>
+<use href="#px_mid" x="182" y="167" fill="#5a2d0c"/>
+<use href="#px_mid" x="182" y="163" fill="#5a2d0c"/>
+<use href="#px_mid" x="182" y="211" fill="#8B4513"/>
+<use href="#px_mid" x="178" y="207" fill="#8B4513"/>
+<use href="#px_mid" x="178" y="203" fill="#8B4513"/>
+<use href="#px_mid" x="174" y="199" fill="#8B4513"/>
+<use href="#px_mid" x="174" y="195" fill="#8B4513"/>
+<use href="#px_mid" x="170" y="191" fill="#8B4513"/>
+<use href="#px_mid" x="170" y="191" fill="#8B4513"/>
+<use href="#px_mid" x="166" y="191" fill="#8B4513"/>
+<use href="#px_mid" x="162" y="187" fill="#8B4513"/>
+<use href="#px_mid" x="158" y="183" fill="#8B4513"/>
+<use href="#px_mid" x="154" y="183" fill="#8B4513"/>
+<use href="#px_mid" x="170" y="191" fill="#6B3410"/>
+<use href="#px_mid" x="170" y="187" fill="#6B3410"/>
+<use href="#px_mid" x="170" y="183" fill="#6B3410"/>
+<use href="#px_mid" x="170" y="179" fill="#6B3410"/>
+<use href="#px_mid" x="170" y="175" fill="#6B3410"/>
+<use href="#px_mid" x="214" y="211" fill="#6B3410"/>
+<use href="#px_mid" x="214" y="207" fill="#6B3410"/>
+<use href="#px_mid" x="214" y="203" fill="#6B3410"/>
+<use href="#px_mid" x="214" y="199" fill="#6B3410"/>
+<use href="#px_mid" x="218" y="195" fill="#6B3410"/>
+<use href="#px_mid" x="218" y="191" fill="#6B3410"/>
+<use href="#px_mid" x="218" y="187" fill="#6B3410"/>
+<use href="#px_mid" x="218" y="183" fill="#6B3410"/>
+<use href="#px_mid" x="218" y="183" fill="#8B4513"/>
+<use href="#px_mid" x="214" y="179" fill="#8B4513"/>
+<use href="#px_mid" x="214" y="175" fill="#8B4513"/>
+<use href="#px_mid" x="214" y="171" fill="#8B4513"/>
+<use href="#px_mid" x="210" y="167" fill="#8B4513"/>
+<use href="#px_mid" x="218" y="183" fill="#5a2d0c"/>
+<use href="#px_mid" x="222" y="179" fill="#5a2d0c"/>
+<use href="#px_mid" x="222" y="175" fill="#5a2d0c"/>
+<use href="#px_mid" x="222" y="171" fill="#5a2d0c"/>
+<use href="#px_mid" x="226" y="167" fill="#5a2d0c"/>
+<use href="#px_mid" x="214" y="211" fill="#5a2d0c"/>
+<use href="#px_mid" x="218" y="207" fill="#5a2d0c"/>
+<use href="#px_mid" x="222" y="203" fill="#5a2d0c"/>
+<use href="#px_mid" x="226" y="199" fill="#5a2d0c"/>
+<use href="#px_mid" x="230" y="195" fill="#5a2d0c"/>
+<use href="#px_mid" x="234" y="191" fill="#5a2d0c"/>
+<use href="#px_mid" x="234" y="191" fill="#5a2d0c"/>
+<use href="#px_mid" x="238" y="187" fill="#5a2d0c"/>
+<use href="#px_mid" x="238" y="183" fill="#5a2d0c"/>
+<use href="#px_mid" x="238" y="179" fill="#5a2d0c"/>
+<use href="#px_mid" x="242" y="175" fill="#5a2d0c"/>
+<use href="#px_mid" x="234" y="191" fill="#5a2d0c"/>
+<use href="#px_mid" x="238" y="191" fill="#5a2d0c"/>
+<use href="#px_mid" x="242" y="191" fill="#5a2d0c"/>
+<use href="#px_mid" x="246" y="187" fill="#5a2d0c"/>
+<use href="#px_mid" x="250" y="187" fill="#5a2d0c"/>
+<use href="#px_mid" x="254" y="187" fill="#5a2d0c"/>
+<use href="#px_mid" x="214" y="211" fill="#5a2d0c"/>
+<use href="#px_mid" x="218" y="207" fill="#5a2d0c"/>
+<use href="#px_mid" x="218" y="203" fill="#5a2d0c"/>
+<use href="#px_mid" x="222" y="199" fill="#5a2d0c"/>
+<use href="#px_mid" x="222" y="195" fill="#5a2d0c"/>
+<use href="#px_mid" x="226" y="191" fill="#5a2d0c"/>
+<use href="#px_mid" x="226" y="191" fill="#6B3410"/>
+<use href="#px_mid" x="226" y="187" fill="#6B3410"/>
+<use href="#px_mid" x="222" y="183" fill="#6B3410"/>
+<use href="#px_mid" x="222" y="179" fill="#6B3410"/>
+<use href="#px_mid" x="222" y="175" fill="#6B3410"/>
+<use href="#px_mid" x="226" y="191" fill="#5a2d0c"/>
+<use href="#px_mid" x="230" y="187" fill="#5a2d0c"/>
+<use href="#px_mid" x="234" y="183" fill="#5a2d0c"/>
+<use href="#px_mid" x="238" y="179" fill="#5a2d0c"/>
+<use href="#px_mid" x="198" y="215" fill="#8B4513"/>
+<use href="#px_mid" x="194" y="211" fill="#8B4513"/>
+<use href="#px_mid" x="190" y="207" fill="#8B4513"/>
+<use href="#px_mid" x="190" y="203" fill="#8B4513"/>
+<use href="#px_mid" x="186" y="199" fill="#8B4513"/>
+<use href="#px_mid" x="182" y="195" fill="#8B4513"/>
+<use href="#px_mid" x="182" y="195" fill="#8B4513"/>
+<use href="#px_mid" x="178" y="191" fill="#8B4513"/>
+<use href="#px_mid" x="174" y="187" fill="#8B4513"/>
+<use href="#px_mid" x="170" y="183" fill="#8B4513"/>
+<use href="#px_mid" x="182" y="195" fill="#6B3410"/>
+<use href="#px_mid" x="182" y="191" fill="#6B3410"/>
+<use href="#px_mid" x="182" y="187" fill="#6B3410"/>
+<use href="#px_mid" x="182" y="183" fill="#6B3410"/>
+<use href="#px_mid" x="182" y="179" fill="#6B3410"/>
+<use href="#px_mid" x="182" y="175" fill="#6B3410"/>
+<use href="#px_mid" x="198" y="215" fill="#5a2d0c"/>
+<use href="#px_mid" x="198" y="211" fill="#5a2d0c"/>
+<use href="#px_mid" x="202" y="207" fill="#5a2d0c"/>
+<use href="#px_mid" x="202" y="203" fill="#5a2d0c"/>
+<use href="#px_mid" x="202" y="199" fill="#5a2d0c"/>
+<use href="#px_mid" x="206" y="195" fill="#5a2d0c"/>
+<use href="#px_mid" x="206" y="191" fill="#5a2d0c"/>
+<use href="#px_mid" x="206" y="191" fill="#6B3410"/>
+<use href="#px_mid" x="206" y="187" fill="#6B3410"/>
+<use href="#px_mid" x="206" y="183" fill="#6B3410"/>
+<use href="#px_mid" x="206" y="179" fill="#6B3410"/>
+<use href="#px_mid" x="206" y="175" fill="#6B3410"/>
+<use href="#px_mid" x="206" y="191" fill="#5a2d0c"/>
+<use href="#px_mid" x="210" y="191" fill="#5a2d0c"/>
+<use href="#px_mid" x="214" y="187" fill="#5a2d0c"/>
+<use href="#px_mid" x="218" y="183" fill="#5a2d0c"/>
+<use href="#px_mid" x="222" y="183" fill="#5a2d0c"/>
+<use href="#px_mid" x="198" y="215" fill="#6B3410"/>
+<use href="#px_mid" x="198" y="211" fill="#6B3410"/>
+<use href="#px_mid" x="198" y="207" fill="#6B3410"/>
+<use href="#px_mid" x="198" y="203" fill="#6B3410"/>
+<use href="#px_mid" x="198" y="199" fill="#6B3410"/>
+<use href="#px_mid" x="198" y="195" fill="#6B3410"/>
+<use href="#px_mid" x="198" y="195" fill="#8B4513"/>
+<use href="#px_mid" x="198" y="191" fill="#8B4513"/>
+<use href="#px_mid" x="194" y="187" fill="#8B4513"/>
+<use href="#px_mid" x="190" y="183" fill="#8B4513"/>
+<use href="#px_mid" x="190" y="179" fill="#8B4513"/>
+<use href="#px_mid" x="198" y="195" fill="#5a2d0c"/>
+<use href="#px_mid" x="198" y="191" fill="#5a2d0c"/>
+<use href="#px_mid" x="198" y="187" fill="#5a2d0c"/>
+<use href="#px_mid" x="202" y="183" fill="#5a2d0c"/>
+<use href="#px_mid" x="202" y="179" fill="#5a2d0c"/>
 </g>
 <g id="wind-tip-1">
 <animateTransform attributeName="transform" type="rotate" values="0 159 160;-3.0 159 160;3.0 159 160;-3.0 159 160;0 159 160" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.5s" begin="0.2s" repeatCount="indefinite"/>
-<use href="#px_tip" x="144" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="191" fill="#5a3010"/>
-<use href="#px_tip" x="124" y="195" fill="#5a3010"/>
-<use href="#px_tip" x="124" y="195" fill="#5a3010"/>
-<use href="#px_tip" x="120" y="199" fill="#5a3010"/>
-<use href="#px_tip" x="120" y="203" fill="#5a3010"/>
-<use href="#px_tip" x="120" y="203" fill="#5a3010"/>
-<use href="#px_tip" x="120" y="207" fill="#5a3010"/>
-<use href="#px_tip" x="120" y="203" fill="#5a3010"/>
-<use href="#px_tip" x="116" y="203" fill="#5a3010"/>
-<use href="#px_tip" x="124" y="195" fill="#5a3010"/>
-<use href="#px_tip" x="120" y="195" fill="#5a3010"/>
-<use href="#px_tip" x="116" y="195" fill="#5a3010"/>
-<use href="#px_tip" x="116" y="195" fill="#5a3010"/>
-<use href="#px_tip" x="112" y="199" fill="#5a3010"/>
-<use href="#px_tip" x="116" y="195" fill="#5a3010"/>
-<use href="#px_tip" x="112" y="195" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="124" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="120" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="120" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="116" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="116" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="112" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="108" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="116" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="112" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="108" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="120" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="120" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="116" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="116" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="112" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="116" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="116" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="124" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="120" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="120" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="116" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="120" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="116" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="124" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="124" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="120" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="116" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="124" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="120" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="120" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="124" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="124" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="120" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="124" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="124" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="167" fill="#4a2a0e"/>
-<use href="#px_tip" x="128" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="128" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="128" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="124" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="132" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="156" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="148" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="148" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="148" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="148" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="144" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="148" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="148" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="148" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="148" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="156" y="175" fill="#4a2a0e"/>
-<use href="#px_tip" x="156" y="171" fill="#4a2a0e"/>
-<use href="#px_tip" x="156" y="167" fill="#4a2a0e"/>
-<use href="#px_tip" x="156" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="156" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="156" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="152" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="152" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="152" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="156" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="156" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="160" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="160" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="160" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="160" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="164" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="164" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="164" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="164" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="160" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="164" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="168" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="168" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="168" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="168" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="168" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="172" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="172" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="164" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="156" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="156" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="156" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="156" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="156" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="156" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="156" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="156" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="156" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="160" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="172" y="167" fill="#4a2a0e"/>
-<use href="#px_tip" x="172" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="172" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="172" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="172" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="172" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="164" y="135" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="139" fill="#4a2a0e"/>
-<use href="#px_tip" x="168" y="135" fill="#4a2a0e"/>
-<use href="#px_tip" x="168" y="131" fill="#4a2a0e"/>
-<use href="#px_tip" x="172" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="172" y="139" fill="#4a2a0e"/>
-<use href="#px_tip" x="172" y="135" fill="#4a2a0e"/>
-<use href="#px_tip" x="172" y="135" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="131" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="135" fill="#3a200a"/>
-<use href="#px_tip" x="172" y="131" fill="#3a200a"/>
-<use href="#px_tip" x="172" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="176" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="180" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="180" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="180" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="180" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="180" y="135" fill="#5a3010"/>
-<use href="#px_tip" x="180" y="131" fill="#5a3010"/>
-<use href="#px_tip" x="180" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="135" fill="#3a200a"/>
-<use href="#px_tip" x="180" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="135" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="188" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="184" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="180" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="180" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="180" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="176" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="176" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="176" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="164" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="176" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="135" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="176" y="135" fill="#3a200a"/>
-<use href="#px_tip" x="180" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="180" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="180" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="180" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="180" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="180" y="135" fill="#5a3010"/>
-<use href="#px_tip" x="180" y="135" fill="#5a3010"/>
-<use href="#px_tip" x="176" y="131" fill="#5a3010"/>
-<use href="#px_tip" x="180" y="135" fill="#4a2a0e"/>
-<use href="#px_tip" x="180" y="131" fill="#4a2a0e"/>
-<use href="#px_tip" x="180" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="135" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="135" fill="#4a2a0e"/>
-<use href="#px_tip" x="184" y="131" fill="#4a2a0e"/>
-<use href="#px_tip" x="184" y="135" fill="#3a200a"/>
-<use href="#px_tip" x="188" y="135" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="188" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="192" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="196" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="196" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="196" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="156" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="128" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="156" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="132" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="136" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="140" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="148" y="171" fill="#4a2a0e"/>
-<use href="#px_tip" x="148" y="167" fill="#4a2a0e"/>
-<use href="#px_tip" x="148" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="148" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="148" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="148" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="152" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="172" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="164" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="164" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="156" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="156" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="164" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="164" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="168" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="168" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="168" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="168" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="164" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="164" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="164" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="164" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="168" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="168" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="172" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="172" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="168" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="172" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="176" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="172" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="172" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="176" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="176" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="176" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="176" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="172" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="172" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="172" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="172" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="176" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="176" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="176" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="176" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="176" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="180" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="176" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="176" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="180" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="180" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="180" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="180" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="180" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="180" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="180" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="188" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="196" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="196" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="188" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="188" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="184" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="188" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="184" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="196" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="188" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="192" y="139" fill="#4a2a0e"/>
-<use href="#px_tip" x="196" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="196" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="188" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="196" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="135" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="164" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="156" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="191" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="191" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="195" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="191" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="191" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="187" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="140" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="156" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="144" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="183" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="164" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="164" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="156" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="156" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="148" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="156" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="167" fill="#4a2a0e"/>
-<use href="#px_tip" x="152" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="164" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="156" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="156" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="152" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="156" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="156" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="160" y="167" fill="#4a2a0e"/>
-<use href="#px_tip" x="160" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="160" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="164" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="180" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="176" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="176" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="164" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="164" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="164" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="160" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="164" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="168" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="176" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="176" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="176" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="176" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="168" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="172" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="172" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="176" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="176" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="176" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="176" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="176" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="176" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="184" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="188" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="188" y="167" fill="#4a2a0e"/>
-<use href="#px_tip" x="188" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="188" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="188" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="184" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="184" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="184" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="180" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="184" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="184" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="188" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="188" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="188" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="188" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="188" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="188" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="192" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="188" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="192" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="196" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="196" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="196" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="196" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="196" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="188" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="188" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="196" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="192" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="196" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="196" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="196" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="196" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="192" y="179" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="188" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="188" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="184" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="180" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="180" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="176" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="180" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="176" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="188" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="184" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="184" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="180" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="184" y="167" fill="#4a2a0e"/>
-<use href="#px_tip" x="184" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="184" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="192" y="179" fill="#4a2a0e"/>
-<use href="#px_tip" x="192" y="175" fill="#4a2a0e"/>
-<use href="#px_tip" x="196" y="171" fill="#4a2a0e"/>
-<use href="#px_tip" x="196" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="192" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="192" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="196" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="196" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="196" y="159" fill="#5a3010"/>
+<use href="#px_tip" x="144" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="191" fill="#8B4513"/>
+<use href="#px_tip" x="124" y="195" fill="#8B4513"/>
+<use href="#px_tip" x="124" y="195" fill="#8B4513"/>
+<use href="#px_tip" x="120" y="199" fill="#8B4513"/>
+<use href="#px_tip" x="120" y="203" fill="#8B4513"/>
+<use href="#px_tip" x="120" y="203" fill="#8B4513"/>
+<use href="#px_tip" x="120" y="207" fill="#8B4513"/>
+<use href="#px_tip" x="120" y="203" fill="#8B4513"/>
+<use href="#px_tip" x="116" y="203" fill="#8B4513"/>
+<use href="#px_tip" x="124" y="195" fill="#8B4513"/>
+<use href="#px_tip" x="120" y="195" fill="#8B4513"/>
+<use href="#px_tip" x="116" y="195" fill="#8B4513"/>
+<use href="#px_tip" x="116" y="195" fill="#8B4513"/>
+<use href="#px_tip" x="112" y="199" fill="#8B4513"/>
+<use href="#px_tip" x="116" y="195" fill="#8B4513"/>
+<use href="#px_tip" x="112" y="195" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="124" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="120" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="120" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="116" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="116" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="112" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="108" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="116" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="112" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="108" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="120" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="120" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="116" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="116" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="112" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="116" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="116" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="124" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="120" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="120" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="116" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="120" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="116" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="124" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="124" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="120" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="116" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="124" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="120" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="120" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="124" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="124" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="120" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="124" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="124" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="167" fill="#6B3410"/>
+<use href="#px_tip" x="128" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="128" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="128" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="124" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="132" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="156" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="148" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="148" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="148" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="148" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="144" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="148" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="148" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="148" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="148" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="156" y="175" fill="#6B3410"/>
+<use href="#px_tip" x="156" y="171" fill="#6B3410"/>
+<use href="#px_tip" x="156" y="167" fill="#6B3410"/>
+<use href="#px_tip" x="156" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="156" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="156" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="152" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="152" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="152" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="156" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="156" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="160" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="160" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="160" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="160" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="164" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="164" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="164" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="164" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="160" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="164" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="168" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="168" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="168" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="168" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="168" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="172" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="172" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="164" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="156" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="156" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="156" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="156" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="156" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="156" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="156" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="156" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="156" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="160" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="172" y="167" fill="#6B3410"/>
+<use href="#px_tip" x="172" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="172" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="172" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="172" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="172" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="164" y="135" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="139" fill="#6B3410"/>
+<use href="#px_tip" x="168" y="135" fill="#6B3410"/>
+<use href="#px_tip" x="168" y="131" fill="#6B3410"/>
+<use href="#px_tip" x="172" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="172" y="139" fill="#6B3410"/>
+<use href="#px_tip" x="172" y="135" fill="#6B3410"/>
+<use href="#px_tip" x="172" y="135" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="131" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="135" fill="#5a2d0c"/>
+<use href="#px_tip" x="172" y="131" fill="#5a2d0c"/>
+<use href="#px_tip" x="172" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="176" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="180" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="180" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="180" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="180" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="180" y="135" fill="#8B4513"/>
+<use href="#px_tip" x="180" y="131" fill="#8B4513"/>
+<use href="#px_tip" x="180" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="135" fill="#5a2d0c"/>
+<use href="#px_tip" x="180" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="135" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="188" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="184" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="180" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="180" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="180" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="176" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="176" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="176" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="164" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="176" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="135" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="176" y="135" fill="#5a2d0c"/>
+<use href="#px_tip" x="180" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="180" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="180" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="180" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="180" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="180" y="135" fill="#8B4513"/>
+<use href="#px_tip" x="180" y="135" fill="#8B4513"/>
+<use href="#px_tip" x="176" y="131" fill="#8B4513"/>
+<use href="#px_tip" x="180" y="135" fill="#6B3410"/>
+<use href="#px_tip" x="180" y="131" fill="#6B3410"/>
+<use href="#px_tip" x="180" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="135" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="135" fill="#6B3410"/>
+<use href="#px_tip" x="184" y="131" fill="#6B3410"/>
+<use href="#px_tip" x="184" y="135" fill="#5a2d0c"/>
+<use href="#px_tip" x="188" y="135" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="188" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="192" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="196" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="196" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="196" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="156" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="128" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="156" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="132" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="136" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="140" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="148" y="171" fill="#6B3410"/>
+<use href="#px_tip" x="148" y="167" fill="#6B3410"/>
+<use href="#px_tip" x="148" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="148" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="148" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="148" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="152" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="172" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="164" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="164" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="156" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="156" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="164" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="164" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="168" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="168" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="168" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="168" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="164" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="164" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="164" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="164" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="168" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="168" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="172" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="172" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="168" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="172" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="176" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="172" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="172" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="176" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="176" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="176" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="176" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="172" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="172" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="172" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="172" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="176" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="176" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="176" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="176" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="176" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="180" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="176" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="176" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="180" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="180" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="180" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="180" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="180" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="180" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="180" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="188" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="196" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="196" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="188" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="188" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="184" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="188" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="184" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="196" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="188" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="192" y="139" fill="#6B3410"/>
+<use href="#px_tip" x="196" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="196" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="188" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="196" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="135" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="164" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="156" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="191" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="191" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="195" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="191" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="191" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="187" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="140" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="156" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="144" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="183" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="164" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="164" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="156" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="156" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="148" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="156" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="167" fill="#6B3410"/>
+<use href="#px_tip" x="152" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="164" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="156" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="156" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="152" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="156" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="156" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="160" y="167" fill="#6B3410"/>
+<use href="#px_tip" x="160" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="160" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="164" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="180" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="176" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="176" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="164" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="164" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="164" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="160" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="164" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="168" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="176" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="176" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="176" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="176" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="168" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="172" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="172" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="176" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="176" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="176" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="176" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="176" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="176" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="184" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="188" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="188" y="167" fill="#6B3410"/>
+<use href="#px_tip" x="188" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="188" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="188" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="184" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="184" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="184" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="180" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="184" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="184" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="188" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="188" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="188" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="188" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="188" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="188" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="192" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="188" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="192" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="196" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="196" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="196" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="196" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="196" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="188" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="188" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="196" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="192" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="196" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="196" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="196" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="196" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="192" y="179" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="188" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="188" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="184" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="180" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="180" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="176" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="180" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="176" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="188" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="184" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="184" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="180" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="184" y="167" fill="#6B3410"/>
+<use href="#px_tip" x="184" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="184" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="192" y="179" fill="#6B3410"/>
+<use href="#px_tip" x="192" y="175" fill="#6B3410"/>
+<use href="#px_tip" x="196" y="171" fill="#6B3410"/>
+<use href="#px_tip" x="196" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="192" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="192" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="196" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="196" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="196" y="159" fill="#8B4513"/>
 </g>
 <g id="wind-tip-2">
 <animateTransform attributeName="transform" type="rotate" values="0 235 160;-3.0 235 160;3.0 235 160;-3.0 235 160;0 235 160" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.5s" begin="0.4s" repeatCount="indefinite"/>
-<use href="#px_tip" x="200" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="200" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="200" y="139" fill="#4a2a0e"/>
-<use href="#px_tip" x="200" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="135" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="135" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="204" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="204" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="208" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="204" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="208" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="204" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="208" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="208" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="208" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="208" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="208" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="204" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="204" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="204" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="139" fill="#4a2a0e"/>
-<use href="#px_tip" x="200" y="135" fill="#4a2a0e"/>
-<use href="#px_tip" x="200" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="204" y="135" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="167" fill="#4a2a0e"/>
-<use href="#px_tip" x="212" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="212" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="212" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="212" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="212" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="212" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="212" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="212" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="208" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="204" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="204" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="135" fill="#5a3010"/>
-<use href="#px_tip" x="204" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="204" y="135" fill="#5a3010"/>
-<use href="#px_tip" x="204" y="131" fill="#5a3010"/>
-<use href="#px_tip" x="212" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="135" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="135" fill="#4a2a0e"/>
-<use href="#px_tip" x="212" y="131" fill="#4a2a0e"/>
-<use href="#px_tip" x="212" y="135" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="131" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="216" y="139" fill="#4a2a0e"/>
-<use href="#px_tip" x="216" y="135" fill="#4a2a0e"/>
-<use href="#px_tip" x="216" y="135" fill="#5a3010"/>
-<use href="#px_tip" x="212" y="131" fill="#5a3010"/>
-<use href="#px_tip" x="216" y="135" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="131" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="220" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="220" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="224" y="135" fill="#3a200a"/>
-<use href="#px_tip" x="224" y="131" fill="#3a200a"/>
-<use href="#px_tip" x="220" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="224" y="135" fill="#3a200a"/>
-<use href="#px_tip" x="228" y="167" fill="#4a2a0e"/>
-<use href="#px_tip" x="228" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="228" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="228" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="228" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="228" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="224" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="220" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="220" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="216" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="216" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="212" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="216" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="212" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="220" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="220" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="220" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="216" y="135" fill="#5a3010"/>
-<use href="#px_tip" x="220" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="220" y="135" fill="#3a200a"/>
-<use href="#px_tip" x="228" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="232" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="232" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="232" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="232" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="232" y="139" fill="#4a2a0e"/>
-<use href="#px_tip" x="232" y="135" fill="#4a2a0e"/>
-<use href="#px_tip" x="232" y="131" fill="#4a2a0e"/>
-<use href="#px_tip" x="232" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="135" fill="#3a200a"/>
-<use href="#px_tip" x="232" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="139" fill="#4a2a0e"/>
-<use href="#px_tip" x="236" y="135" fill="#4a2a0e"/>
-<use href="#px_tip" x="236" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="228" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="232" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="248" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="248" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="248" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="244" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="248" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="175" fill="#4a2a0e"/>
-<use href="#px_tip" x="244" y="171" fill="#4a2a0e"/>
-<use href="#px_tip" x="240" y="167" fill="#4a2a0e"/>
-<use href="#px_tip" x="240" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="240" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="240" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="240" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="236" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="236" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="232" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="232" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="228" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="232" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="228" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="236" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="236" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="236" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="236" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="236" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="236" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="240" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="244" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="244" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="240" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="240" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="240" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="240" y="139" fill="#5a3010"/>
-<use href="#px_tip" x="240" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="244" y="139" fill="#4a2a0e"/>
-<use href="#px_tip" x="244" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="139" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="260" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="260" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="260" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="260" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="260" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="272" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="272" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="272" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="187" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="167" fill="#4a2a0e"/>
-<use href="#px_tip" x="268" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="268" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="268" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="264" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="268" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="272" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="272" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="272" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="272" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="272" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="276" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="272" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="276" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="276" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="280" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="280" y="167" fill="#4a2a0e"/>
-<use href="#px_tip" x="280" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="280" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="284" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="276" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="280" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="280" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="284" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="280" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="284" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="187" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="187" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="191" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="191" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="191" fill="#3a200a"/>
-<use href="#px_tip" x="272" y="191" fill="#3a200a"/>
-<use href="#px_tip" x="276" y="191" fill="#3a200a"/>
-<use href="#px_tip" x="280" y="191" fill="#3a200a"/>
-<use href="#px_tip" x="280" y="191" fill="#3a200a"/>
-<use href="#px_tip" x="284" y="187" fill="#3a200a"/>
-<use href="#px_tip" x="284" y="187" fill="#3a200a"/>
-<use href="#px_tip" x="288" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="284" y="187" fill="#3a200a"/>
-<use href="#px_tip" x="288" y="187" fill="#3a200a"/>
-<use href="#px_tip" x="280" y="191" fill="#3a200a"/>
-<use href="#px_tip" x="284" y="195" fill="#3a200a"/>
-<use href="#px_tip" x="284" y="195" fill="#3a200a"/>
-<use href="#px_tip" x="288" y="195" fill="#3a200a"/>
-<use href="#px_tip" x="292" y="195" fill="#3a200a"/>
-<use href="#px_tip" x="284" y="195" fill="#3a200a"/>
-<use href="#px_tip" x="288" y="199" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="191" fill="#3a200a"/>
-<use href="#px_tip" x="272" y="195" fill="#3a200a"/>
-<use href="#px_tip" x="276" y="199" fill="#3a200a"/>
-<use href="#px_tip" x="276" y="199" fill="#3a200a"/>
-<use href="#px_tip" x="280" y="199" fill="#3a200a"/>
-<use href="#px_tip" x="284" y="199" fill="#3a200a"/>
-<use href="#px_tip" x="284" y="199" fill="#3a200a"/>
-<use href="#px_tip" x="288" y="199" fill="#3a200a"/>
-<use href="#px_tip" x="284" y="199" fill="#3a200a"/>
-<use href="#px_tip" x="288" y="203" fill="#3a200a"/>
-<use href="#px_tip" x="276" y="199" fill="#3a200a"/>
-<use href="#px_tip" x="280" y="203" fill="#3a200a"/>
-<use href="#px_tip" x="280" y="203" fill="#3a200a"/>
-<use href="#px_tip" x="284" y="207" fill="#3a200a"/>
-<use href="#px_tip" x="280" y="203" fill="#3a200a"/>
-<use href="#px_tip" x="280" y="207" fill="#3a200a"/>
-<use href="#px_tip" x="224" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="224" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="220" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="220" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="220" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="216" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="212" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="212" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="208" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="204" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="204" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="204" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="212" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="208" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="208" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="204" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="208" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="204" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="220" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="220" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="220" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="220" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="216" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="216" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="216" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="216" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="216" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="220" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="220" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="220" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="220" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="220" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="224" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="224" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="224" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="228" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="228" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="228" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="228" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="228" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="228" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="224" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="224" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="224" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="220" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="224" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="224" y="143" fill="#4a2a0e"/>
-<use href="#px_tip" x="228" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="228" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="228" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="228" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="228" y="143" fill="#5a3010"/>
-<use href="#px_tip" x="228" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="232" y="143" fill="#3a200a"/>
-<use href="#px_tip" x="228" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="232" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="236" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="236" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="248" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="248" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="248" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="248" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="256" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="256" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="256" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="272" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="260" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="264" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="268" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="200" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="200" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="204" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="204" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="208" y="175" fill="#5a3010"/>
-<use href="#px_tip" x="204" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="204" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="200" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="200" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="200" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="204" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="204" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="204" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="204" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="204" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="208" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="208" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="208" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="208" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="208" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="208" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="208" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="204" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="208" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="208" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="208" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="212" y="147" fill="#4a2a0e"/>
-<use href="#px_tip" x="212" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="216" y="151" fill="#4a2a0e"/>
-<use href="#px_tip" x="216" y="151" fill="#5a3010"/>
-<use href="#px_tip" x="212" y="147" fill="#5a3010"/>
-<use href="#px_tip" x="216" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="147" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="220" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="220" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="220" y="151" fill="#3a200a"/>
-<use href="#px_tip" x="220" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="224" y="155" fill="#3a200a"/>
-<use href="#px_tip" x="224" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="228" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="232" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="232" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="232" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="232" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="232" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="232" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="232" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="232" y="159" fill="#5a3010"/>
-<use href="#px_tip" x="228" y="155" fill="#5a3010"/>
-<use href="#px_tip" x="232" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="232" y="155" fill="#4a2a0e"/>
-<use href="#px_tip" x="232" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="232" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="232" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="240" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="240" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="224" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="228" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="232" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="175" fill="#4a2a0e"/>
-<use href="#px_tip" x="244" y="171" fill="#4a2a0e"/>
-<use href="#px_tip" x="244" y="167" fill="#4a2a0e"/>
-<use href="#px_tip" x="244" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="236" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="240" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="244" y="183" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="187" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="187" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="187" fill="#3a200a"/>
-<use href="#px_tip" x="248" y="187" fill="#3a200a"/>
-<use href="#px_tip" x="252" y="191" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="204" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="204" y="179" fill="#4a2a0e"/>
-<use href="#px_tip" x="200" y="175" fill="#4a2a0e"/>
-<use href="#px_tip" x="200" y="171" fill="#4a2a0e"/>
-<use href="#px_tip" x="200" y="171" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="167" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="163" fill="#5a3010"/>
-<use href="#px_tip" x="200" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="200" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="204" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="204" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="204" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="204" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="208" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="204" y="179" fill="#3a200a"/>
-<use href="#px_tip" x="208" y="175" fill="#3a200a"/>
-<use href="#px_tip" x="208" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="208" y="171" fill="#4a2a0e"/>
-<use href="#px_tip" x="208" y="167" fill="#4a2a0e"/>
-<use href="#px_tip" x="212" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="212" y="163" fill="#4a2a0e"/>
-<use href="#px_tip" x="208" y="159" fill="#4a2a0e"/>
-<use href="#px_tip" x="212" y="163" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="159" fill="#3a200a"/>
-<use href="#px_tip" x="208" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="212" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="220" y="167" fill="#3a200a"/>
-<use href="#px_tip" x="216" y="171" fill="#3a200a"/>
-<use href="#px_tip" x="220" y="171" fill="#3a200a"/>
+<use href="#px_tip" x="200" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="200" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="200" y="139" fill="#6B3410"/>
+<use href="#px_tip" x="200" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="135" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="135" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="204" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="204" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="208" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="204" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="208" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="204" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="208" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="208" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="208" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="208" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="208" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="204" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="204" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="204" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="139" fill="#6B3410"/>
+<use href="#px_tip" x="200" y="135" fill="#6B3410"/>
+<use href="#px_tip" x="200" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="204" y="135" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="167" fill="#6B3410"/>
+<use href="#px_tip" x="212" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="212" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="212" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="212" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="212" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="212" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="212" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="212" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="208" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="204" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="204" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="135" fill="#8B4513"/>
+<use href="#px_tip" x="204" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="204" y="135" fill="#8B4513"/>
+<use href="#px_tip" x="204" y="131" fill="#8B4513"/>
+<use href="#px_tip" x="212" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="135" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="135" fill="#6B3410"/>
+<use href="#px_tip" x="212" y="131" fill="#6B3410"/>
+<use href="#px_tip" x="212" y="135" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="131" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="216" y="139" fill="#6B3410"/>
+<use href="#px_tip" x="216" y="135" fill="#6B3410"/>
+<use href="#px_tip" x="216" y="135" fill="#8B4513"/>
+<use href="#px_tip" x="212" y="131" fill="#8B4513"/>
+<use href="#px_tip" x="216" y="135" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="131" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="220" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="220" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="224" y="135" fill="#5a2d0c"/>
+<use href="#px_tip" x="224" y="131" fill="#5a2d0c"/>
+<use href="#px_tip" x="220" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="224" y="135" fill="#5a2d0c"/>
+<use href="#px_tip" x="228" y="167" fill="#6B3410"/>
+<use href="#px_tip" x="228" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="228" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="228" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="228" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="228" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="224" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="220" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="220" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="216" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="216" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="212" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="216" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="212" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="220" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="220" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="220" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="216" y="135" fill="#8B4513"/>
+<use href="#px_tip" x="220" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="220" y="135" fill="#5a2d0c"/>
+<use href="#px_tip" x="228" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="232" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="232" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="232" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="232" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="232" y="139" fill="#6B3410"/>
+<use href="#px_tip" x="232" y="135" fill="#6B3410"/>
+<use href="#px_tip" x="232" y="131" fill="#6B3410"/>
+<use href="#px_tip" x="232" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="135" fill="#5a2d0c"/>
+<use href="#px_tip" x="232" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="139" fill="#6B3410"/>
+<use href="#px_tip" x="236" y="135" fill="#6B3410"/>
+<use href="#px_tip" x="236" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="228" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="232" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="248" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="248" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="248" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="244" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="248" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="175" fill="#6B3410"/>
+<use href="#px_tip" x="244" y="171" fill="#6B3410"/>
+<use href="#px_tip" x="240" y="167" fill="#6B3410"/>
+<use href="#px_tip" x="240" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="240" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="240" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="240" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="236" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="236" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="232" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="232" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="228" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="232" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="228" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="236" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="236" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="236" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="236" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="236" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="236" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="240" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="244" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="244" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="240" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="240" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="240" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="240" y="139" fill="#8B4513"/>
+<use href="#px_tip" x="240" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="244" y="139" fill="#6B3410"/>
+<use href="#px_tip" x="244" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="139" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="260" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="260" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="260" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="260" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="260" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="272" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="272" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="272" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="187" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="167" fill="#6B3410"/>
+<use href="#px_tip" x="268" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="268" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="268" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="264" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="268" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="272" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="272" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="272" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="272" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="272" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="276" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="272" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="276" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="276" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="280" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="280" y="167" fill="#6B3410"/>
+<use href="#px_tip" x="280" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="280" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="284" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="276" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="280" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="280" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="284" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="280" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="284" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="187" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="187" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="191" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="191" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="191" fill="#5a2d0c"/>
+<use href="#px_tip" x="272" y="191" fill="#5a2d0c"/>
+<use href="#px_tip" x="276" y="191" fill="#5a2d0c"/>
+<use href="#px_tip" x="280" y="191" fill="#5a2d0c"/>
+<use href="#px_tip" x="280" y="191" fill="#5a2d0c"/>
+<use href="#px_tip" x="284" y="187" fill="#5a2d0c"/>
+<use href="#px_tip" x="284" y="187" fill="#5a2d0c"/>
+<use href="#px_tip" x="288" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="284" y="187" fill="#5a2d0c"/>
+<use href="#px_tip" x="288" y="187" fill="#5a2d0c"/>
+<use href="#px_tip" x="280" y="191" fill="#5a2d0c"/>
+<use href="#px_tip" x="284" y="195" fill="#5a2d0c"/>
+<use href="#px_tip" x="284" y="195" fill="#5a2d0c"/>
+<use href="#px_tip" x="288" y="195" fill="#5a2d0c"/>
+<use href="#px_tip" x="292" y="195" fill="#5a2d0c"/>
+<use href="#px_tip" x="284" y="195" fill="#5a2d0c"/>
+<use href="#px_tip" x="288" y="199" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="191" fill="#5a2d0c"/>
+<use href="#px_tip" x="272" y="195" fill="#5a2d0c"/>
+<use href="#px_tip" x="276" y="199" fill="#5a2d0c"/>
+<use href="#px_tip" x="276" y="199" fill="#5a2d0c"/>
+<use href="#px_tip" x="280" y="199" fill="#5a2d0c"/>
+<use href="#px_tip" x="284" y="199" fill="#5a2d0c"/>
+<use href="#px_tip" x="284" y="199" fill="#5a2d0c"/>
+<use href="#px_tip" x="288" y="199" fill="#5a2d0c"/>
+<use href="#px_tip" x="284" y="199" fill="#5a2d0c"/>
+<use href="#px_tip" x="288" y="203" fill="#5a2d0c"/>
+<use href="#px_tip" x="276" y="199" fill="#5a2d0c"/>
+<use href="#px_tip" x="280" y="203" fill="#5a2d0c"/>
+<use href="#px_tip" x="280" y="203" fill="#5a2d0c"/>
+<use href="#px_tip" x="284" y="207" fill="#5a2d0c"/>
+<use href="#px_tip" x="280" y="203" fill="#5a2d0c"/>
+<use href="#px_tip" x="280" y="207" fill="#5a2d0c"/>
+<use href="#px_tip" x="224" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="224" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="220" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="220" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="220" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="216" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="212" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="212" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="208" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="204" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="204" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="204" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="212" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="208" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="208" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="204" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="208" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="204" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="220" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="220" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="220" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="220" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="216" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="216" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="216" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="216" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="216" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="220" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="220" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="220" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="220" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="220" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="224" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="224" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="224" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="228" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="228" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="228" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="228" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="228" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="228" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="224" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="224" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="224" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="220" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="224" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="224" y="143" fill="#6B3410"/>
+<use href="#px_tip" x="228" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="228" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="228" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="228" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="228" y="143" fill="#8B4513"/>
+<use href="#px_tip" x="228" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="232" y="143" fill="#5a2d0c"/>
+<use href="#px_tip" x="228" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="232" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="236" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="236" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="248" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="248" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="248" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="248" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="256" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="256" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="256" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="272" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="260" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="264" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="268" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="200" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="200" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="204" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="204" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="208" y="175" fill="#8B4513"/>
+<use href="#px_tip" x="204" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="204" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="200" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="200" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="200" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="204" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="204" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="204" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="204" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="204" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="208" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="208" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="208" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="208" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="208" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="208" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="208" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="204" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="208" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="208" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="208" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="212" y="147" fill="#6B3410"/>
+<use href="#px_tip" x="212" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="216" y="151" fill="#6B3410"/>
+<use href="#px_tip" x="216" y="151" fill="#8B4513"/>
+<use href="#px_tip" x="212" y="147" fill="#8B4513"/>
+<use href="#px_tip" x="216" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="147" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="220" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="220" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="220" y="151" fill="#5a2d0c"/>
+<use href="#px_tip" x="220" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="224" y="155" fill="#5a2d0c"/>
+<use href="#px_tip" x="224" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="228" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="232" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="232" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="232" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="232" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="232" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="232" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="232" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="232" y="159" fill="#8B4513"/>
+<use href="#px_tip" x="228" y="155" fill="#8B4513"/>
+<use href="#px_tip" x="232" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="232" y="155" fill="#6B3410"/>
+<use href="#px_tip" x="232" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="232" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="232" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="240" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="240" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="224" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="228" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="232" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="175" fill="#6B3410"/>
+<use href="#px_tip" x="244" y="171" fill="#6B3410"/>
+<use href="#px_tip" x="244" y="167" fill="#6B3410"/>
+<use href="#px_tip" x="244" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="236" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="240" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="244" y="183" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="187" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="187" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="187" fill="#5a2d0c"/>
+<use href="#px_tip" x="248" y="187" fill="#5a2d0c"/>
+<use href="#px_tip" x="252" y="191" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="204" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="204" y="179" fill="#6B3410"/>
+<use href="#px_tip" x="200" y="175" fill="#6B3410"/>
+<use href="#px_tip" x="200" y="171" fill="#6B3410"/>
+<use href="#px_tip" x="200" y="171" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="167" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="163" fill="#8B4513"/>
+<use href="#px_tip" x="200" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="200" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="204" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="204" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="204" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="204" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="208" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="204" y="179" fill="#5a2d0c"/>
+<use href="#px_tip" x="208" y="175" fill="#5a2d0c"/>
+<use href="#px_tip" x="208" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="208" y="171" fill="#6B3410"/>
+<use href="#px_tip" x="208" y="167" fill="#6B3410"/>
+<use href="#px_tip" x="212" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="212" y="163" fill="#6B3410"/>
+<use href="#px_tip" x="208" y="159" fill="#6B3410"/>
+<use href="#px_tip" x="212" y="163" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="159" fill="#5a2d0c"/>
+<use href="#px_tip" x="208" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="212" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="220" y="167" fill="#5a2d0c"/>
+<use href="#px_tip" x="216" y="171" fill="#5a2d0c"/>
+<use href="#px_tip" x="220" y="171" fill="#5a2d0c"/>
 </g>
 <!-- Fruit (milestone orbs) -->
-<use href="#fruit" x="172" y="139"/>
-<use href="#fruit" x="280" y="191"/>
+<use href="#fruit" x="236" y="155"/>
+<use href="#fruit" x="168" y="151"/>
 <!-- Leaves -->
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 172 187;-4.0 172 187;4.0 172 187;-4.0 172 187;0 172 187" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.8000000000000003s" begin="2.65s" repeatCount="indefinite"/>
@@ -1980,11 +1944,6 @@
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 144 183;-4.0 144 183;4.0 144 183;-4.0 144 183;0 144 183" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.3840000000000003s" begin="3.38s" repeatCount="indefinite"/>
 <use href="#leaf-3" x="144" y="183"/>
-</g>
-<g>
-<animateTransform attributeName="transform" type="translate" from="212 159" to="237 311" dur="2.57s" begin="2.33s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
-<animate attributeName="opacity" from="1" to="0" dur="0.51s" begin="4.39s" fill="remove" repeatCount="indefinite"/>
-<use href="#leaf-2" x="0" y="0"/>
 </g>
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 156 163;-4.0 156 163;4.0 156 163;-4.0 156 163;0 156 163" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.088s" begin="0.06s" repeatCount="indefinite"/>
@@ -2031,11 +1990,6 @@
 <use href="#leaf-2" x="192" y="163"/>
 </g>
 <g>
-<animateTransform attributeName="transform" type="translate" from="256 167" to="243 311" dur="2.56s" begin="2.82s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
-<animate attributeName="opacity" from="1" to="0" dur="0.51s" begin="4.87s" fill="remove" repeatCount="indefinite"/>
-<use href="#leaf-2" x="0" y="0"/>
-</g>
-<g>
 <animateTransform attributeName="transform" type="rotate" values="0 212 155;-4.0 212 155;4.0 212 155;-4.0 212 155;0 212 155" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.64s" begin="3.78s" repeatCount="indefinite"/>
 <use href="#leaf-0" x="212" y="155"/>
 </g>
@@ -2048,13 +2002,9 @@
 <use href="#leaf-0" x="156" y="167"/>
 </g>
 <g>
-<animateTransform attributeName="transform" type="rotate" values="0 152 167;-4.0 152 167;4.0 152 167;-4.0 152 167;0 152 167" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.7520000000000002s" begin="1.98s" repeatCount="indefinite"/>
-<use href="#leaf-2" x="152" y="167"/>
-</g>
-<g>
-<animateTransform attributeName="transform" type="translate" from="208 163" to="193 311" dur="3.71s" begin="3.48s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
-<animate attributeName="opacity" from="1" to="0" dur="0.74s" begin="6.45s" fill="remove" repeatCount="indefinite"/>
-<use href="#leaf-0" x="0" y="0"/>
+<animateTransform attributeName="transform" type="translate" from="152 167" to="148 311" dur="3.44s" begin="1.98s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
+<animate attributeName="opacity" from="1" to="0" dur="0.69s" begin="4.73s" fill="remove" repeatCount="indefinite"/>
+<use href="#leaf-2" x="0" y="0"/>
 </g>
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 144 179;-4.0 144 179;4.0 144 179;-4.0 144 179;0 144 179" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.568s" begin="0.05s" repeatCount="indefinite"/>
@@ -2077,8 +2027,9 @@
 <use href="#leaf-3" x="220" y="163"/>
 </g>
 <g>
-<animateTransform attributeName="transform" type="rotate" values="0 264 179;-4.0 264 179;4.0 264 179;-4.0 264 179;0 264 179" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.16s" begin="2.97s" repeatCount="indefinite"/>
-<use href="#leaf-3" x="264" y="179"/>
+<animateTransform attributeName="transform" type="translate" from="264 179" to="275 311" dur="2.7s" begin="2.97s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
+<animate attributeName="opacity" from="1" to="0" dur="0.54s" begin="5.13s" fill="remove" repeatCount="indefinite"/>
+<use href="#leaf-3" x="0" y="0"/>
 </g>
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 232 187;-4.0 232 187;4.0 232 187;-4.0 232 187;0 232 187" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.096s" begin="0.14s" repeatCount="indefinite"/>
@@ -2111,11 +2062,6 @@
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 216 211;-4.0 216 211;4.0 216 211;-4.0 216 211;0 216 211" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.72s" begin="0.38s" repeatCount="indefinite"/>
 <use href="#leaf-1" x="216" y="211"/>
-</g>
-<g>
-<animateTransform attributeName="transform" type="translate" from="148 179" to="173 311" dur="3.78s" begin="2.19s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
-<animate attributeName="opacity" from="1" to="0" dur="0.76s" begin="5.21s" fill="remove" repeatCount="indefinite"/>
-<use href="#leaf-0" x="0" y="0"/>
 </g>
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 180 171;-4.0 180 171;4.0 180 171;-4.0 180 171;0 180 171" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.656s" begin="0.59s" repeatCount="indefinite"/>
@@ -2198,11 +2144,6 @@
 <use href="#leaf-2" x="216" y="187"/>
 </g>
 <g>
-<animateTransform attributeName="transform" type="translate" from="116 167" to="139 311" dur="4.25s" begin="1.88s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
-<animate attributeName="opacity" from="1" to="0" dur="0.85s" begin="5.28s" fill="remove" repeatCount="indefinite"/>
-<use href="#leaf-0" x="0" y="0"/>
-</g>
-<g>
 <animateTransform attributeName="transform" type="rotate" values="0 228 151;-4.0 228 151;4.0 228 151;-4.0 228 151;0 228 151" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.128s" begin="2.41s" repeatCount="indefinite"/>
 <use href="#leaf-2" x="228" y="151"/>
 </g>
@@ -2231,19 +2172,41 @@
 <use href="#leaf-2" x="244" y="159"/>
 </g>
 <g>
-<animate attributeName="opacity" from="0" to="1" dur="2s" begin="4.05s" fill="freeze"/>
-<animateTransform attributeName="transform" type="rotate" values="0 156 171;-4.0 156 171;4.0 156 171;-4.0 156 171;0 156 171" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.584s" begin="6.05s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 156 171;-4.0 156 171;4.0 156 171;-4.0 156 171;0 156 171" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.584s" begin="4.05s" repeatCount="indefinite"/>
 <use href="#leaf-3" x="156" y="171"/>
 </g>
 <g>
-<animate attributeName="opacity" from="0" to="1" dur="2s" begin="4.05s" fill="freeze"/>
-<animateTransform attributeName="transform" type="rotate" values="0 260 167;-4.0 260 167;4.0 260 167;-4.0 260 167;0 260 167" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.7520000000000002s" begin="6.05s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 260 167;-4.0 260 167;4.0 260 167;-4.0 260 167;0 260 167" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.7520000000000002s" begin="4.05s" repeatCount="indefinite"/>
 <use href="#leaf-1" x="260" y="167"/>
 </g>
 <g>
-<animate attributeName="opacity" from="0" to="1" dur="2s" begin="4.89s" fill="freeze"/>
-<animateTransform attributeName="transform" type="rotate" values="0 156 159;-4.0 156 159;4.0 156 159;-4.0 156 159;0 156 159" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.408s" begin="6.89s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 156 159;-4.0 156 159;4.0 156 159;-4.0 156 159;0 156 159" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.408s" begin="4.89s" repeatCount="indefinite"/>
 <use href="#leaf-2" x="156" y="159"/>
+</g>
+<g>
+<animate attributeName="opacity" from="0" to="1" dur="2s" begin="2.42s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" values="0 184 147;-4.0 184 147;4.0 184 147;-4.0 184 147;0 184 147" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.9920000000000004s" begin="4.42s" repeatCount="indefinite"/>
+<use href="#leaf-3" x="184" y="147"/>
+</g>
+<g>
+<animate attributeName="opacity" from="0" to="1" dur="2s" begin="0.3s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" values="0 256 175;-4.0 256 175;4.0 256 175;-4.0 256 175;0 256 175" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.2399999999999998s" begin="2.3s" repeatCount="indefinite"/>
+<use href="#leaf-2" x="256" y="175"/>
+</g>
+<g>
+<animate attributeName="opacity" from="0" to="1" dur="2s" begin="3.9s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" values="0 152 155;-4.0 152 155;4.0 152 155;-4.0 152 155;0 152 155" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.008s" begin="5.9s" repeatCount="indefinite"/>
+<use href="#leaf-2" x="152" y="155"/>
+</g>
+<g>
+<animate attributeName="opacity" from="0" to="1" dur="2s" begin="0.78s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" values="0 164 147;-4.0 164 147;4.0 164 147;-4.0 164 147;0 164 147" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.9600000000000004s" begin="2.7800000000000002s" repeatCount="indefinite"/>
+<use href="#leaf-1" x="164" y="147"/>
+</g>
+<g>
+<animate attributeName="opacity" from="0" to="1" dur="2s" begin="2.56s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" values="0 144 159;-4.0 144 159;4.0 144 159;-4.0 144 159;0 144 159" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.136s" begin="4.5600000000000005s" repeatCount="indefinite"/>
+<use href="#leaf-2" x="144" y="159"/>
 </g>
 <!-- Plants -->
 <use href="#plant-fern" x="311" y="311"/>
