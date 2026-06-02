@@ -207,16 +207,16 @@
 <!-- No stars (daytime) -->
 <!-- Weather -->
 <g opacity="0.3">
-  <rect x="0" y="38" width="12" height="4" fill="#ffffff"/>
-  <rect x="4" y="34" width="8" height="4" fill="#ffffff"/>
-  <rect x="-4" y="38" width="4" height="4" fill="#ffffff"/>
-  <animateTransform attributeName="transform" type="translate" from="-20 0" to="420 0" dur="40.4s" begin="9.88s" repeatCount="indefinite"/>
+  <rect x="0" y="46" width="12" height="4" fill="#ffffff"/>
+  <rect x="4" y="42" width="8" height="4" fill="#ffffff"/>
+  <rect x="-4" y="46" width="4" height="4" fill="#ffffff"/>
+  <animateTransform attributeName="transform" type="translate" from="-20 0" to="420 0" dur="34.1s" begin="7.29s" repeatCount="indefinite"/>
 </g>
 <g opacity="0.3">
-  <rect x="0" y="16" width="12" height="4" fill="#ffffff"/>
-  <rect x="4" y="12" width="8" height="4" fill="#ffffff"/>
-  <rect x="-4" y="16" width="4" height="4" fill="#ffffff"/>
-  <animateTransform attributeName="transform" type="translate" from="-20 0" to="420 0" dur="31.9s" begin="2.51s" repeatCount="indefinite"/>
+  <rect x="0" y="25" width="12" height="4" fill="#ffffff"/>
+  <rect x="4" y="21" width="8" height="4" fill="#ffffff"/>
+  <rect x="-4" y="25" width="4" height="4" fill="#ffffff"/>
+  <animateTransform attributeName="transform" type="translate" from="-20 0" to="420 0" dur="53.2s" begin="5.36s" repeatCount="indefinite"/>
 </g>
 <!-- Ground (summer) -->
 <rect x="0" y="311" width="4" height="4" fill="#1a2a17"/>
@@ -318,7 +318,7 @@
 <rect x="384" y="311" width="4" height="4" fill="#207720"/>
 <rect x="388" y="311" width="4" height="4" fill="#1c611c"/>
 <rect x="392" y="311" width="4" height="4" fill="#227d22"/>
-<rect x="396" y="311" width="4" height="4" fill="#227f22"/>
+<rect x="396" y="311" width="4" height="4" fill="#238423"/>
 <rect x="0" y="315" width="4" height="4" fill="#2d5a27"/>
 <rect x="4" y="315" width="4" height="4" fill="#4a7c59"/>
 <rect x="8" y="315" width="4" height="4" fill="#2d5a27"/>
@@ -1869,8 +1869,8 @@
 <use href="#px_tip" x="232" y="180" fill="#5a2d0c"/>
 </g>
 <!-- Fruit (milestone orbs) -->
-<use href="#fruit" x="144" y="152"/>
-<use href="#fruit" x="200" y="140"/>
+<use href="#fruit" x="208" y="132"/>
+<use href="#fruit" x="284" y="160"/>
 <!-- Leaves -->
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 224 180;-4.0 224 180;4.0 224 180;-4.0 224 180;0 224 180" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.8480000000000003s" begin="1.9s" repeatCount="indefinite"/>
@@ -2141,13 +2141,11 @@
 <use href="#leaf-1" x="112" y="208"/>
 </g>
 <g>
-<animate attributeName="opacity" from="0" to="1" dur="2s" begin="1.09s" fill="freeze"/>
-<animateTransform attributeName="transform" type="rotate" values="0 116 180;-4.0 116 180;4.0 116 180;-4.0 116 180;0 116 180" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.04s" begin="3.09s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 116 180;-4.0 116 180;4.0 116 180;-4.0 116 180;0 116 180" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.04s" begin="1.09s" repeatCount="indefinite"/>
 <use href="#leaf-0" x="116" y="180"/>
 </g>
 <g>
-<animate attributeName="opacity" from="0" to="1" dur="2s" begin="1.84s" fill="freeze"/>
-<animateTransform attributeName="transform" type="rotate" values="0 256 188;-4.0 256 188;4.0 256 188;-4.0 256 188;0 256 188" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.104s" begin="3.84s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 256 188;-4.0 256 188;4.0 256 188;-4.0 256 188;0 256 188" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.104s" begin="1.84s" repeatCount="indefinite"/>
 <use href="#leaf-2" x="256" y="188"/>
 </g>
 <!-- Plants -->
@@ -2160,4 +2158,5 @@
 <use href="#plant-flower_orange" x="175" y="311"/>
 <use href="#plant-sprout" x="61" y="311"/>
 <use href="#plant-fern" x="291" y="311"/>
+<use href="#plant-sprout" x="126" y="311"/>
 </svg>
