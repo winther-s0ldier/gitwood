@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 692,
-  "last_update": "2026-06-02T16:13:26.823997+00:00",
+  "total_contributions": 694,
+  "last_update": "2026-06-02T20:41:28.545334+00:00",
   "tree": {
     "branches": [
       {
@@ -12315,12 +12315,30 @@
         "growth_stage": "sprout",
         "born_at": "2026-06-02T16:13:26.824637+00:00",
         "size": 1
+      },
+      {
+        "x": 352,
+        "y": 311,
+        "type": "mushroom",
+        "kind": "ground_plant",
+        "growth_stage": "sprout",
+        "born_at": "2026-06-02T20:41:28.545746+00:00",
+        "size": 1
+      },
+      {
+        "x": 90,
+        "y": 311,
+        "type": "shrub",
+        "kind": "ground_plant",
+        "growth_stage": "sprout",
+        "born_at": "2026-06-02T20:41:28.545756+00:00",
+        "size": 1
       }
     ]
   },
   "activity": {
     "streak": 2,
-    "recent_score": 14,
+    "recent_score": 16,
     "last_high_day": null
   },
   "yearly_cache": {
@@ -12413,7 +12431,7 @@
     "2026-05-30": 6,
     "2026-05-31": 9,
     "2026-06-01": 7,
-    "2026-06-02": 11
+    "2026-06-02": 13
   },
   "canvas": {
     "w": 400,
