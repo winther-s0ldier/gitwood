@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 717,
-  "last_update": "2026-06-05T19:47:50.683836+00:00",
+  "total_contributions": 719,
+  "last_update": "2026-06-06T02:42:38.302153+00:00",
   "tree": {
     "branches": [
       {
@@ -11806,12 +11806,12 @@
       {
         "x": 188,
         "y": 188,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 2,
         "delay": 3.1,
         "duration": 3.38,
         "drift": 25,
-        "fell_at": null,
+        "fell_at": "2026-06-06T02:42:38.302516+00:00",
         "season": "summer",
         "attached_at": "2026-06-03T03:38:04.910580+00:00",
         "lifespan_days": 15
@@ -12459,7 +12459,7 @@
         "y": 326,
         "type": "mushroom",
         "kind": "ground_plant",
-        "growth_stage": "sprout",
+        "growth_stage": "growing",
         "born_at": "2026-06-02T20:41:28.545746+00:00",
         "size": 1
       },
@@ -12468,15 +12468,15 @@
         "y": 326,
         "type": "shrub",
         "kind": "ground_plant",
-        "growth_stage": "sprout",
+        "growth_stage": "growing",
         "born_at": "2026-06-02T20:41:28.545756+00:00",
         "size": 1
       }
     ]
   },
   "activity": {
-    "streak": 5,
-    "recent_score": 8,
+    "streak": 6,
+    "recent_score": 2,
     "last_high_day": null
   },
   "yearly_cache": {
@@ -12572,7 +12572,8 @@
     "2026-06-02": 14,
     "2026-06-03": 9,
     "2026-06-04": 4,
-    "2026-06-05": 9
+    "2026-06-05": 10,
+    "2026-06-06": 1
   },
   "canvas": {
     "w": 400,
