@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 762,
-  "last_update": "2026-06-08T03:31:14.324530+00:00",
+  "total_contributions": 765,
+  "last_update": "2026-06-08T10:27:48.172249+00:00",
   "tree": {
     "branches": [
       {
@@ -11496,19 +11496,6 @@
     ],
     "leaves": [
       {
-        "x": 244,
-        "y": 160,
-        "state": "falling",
-        "color_idx": 2,
-        "delay": 1.88,
-        "duration": 3.61,
-        "drift": -5,
-        "fell_at": "2026-06-08T03:31:14.324878+00:00",
-        "season": "summer",
-        "attached_at": "2026-06-03T03:38:04.910449+00:00",
-        "lifespan_days": 27
-      },
-      {
         "x": 188,
         "y": 168,
         "state": "attached",
@@ -11611,19 +11598,6 @@
         "season": "summer",
         "attached_at": "2026-06-03T03:38:04.910566+00:00",
         "lifespan_days": 19
-      },
-      {
-        "x": 240,
-        "y": 156,
-        "state": "falling",
-        "color_idx": 2,
-        "delay": 2.94,
-        "duration": 3.18,
-        "drift": -4,
-        "fell_at": "2026-06-08T03:31:14.324878+00:00",
-        "season": "summer",
-        "attached_at": "2026-06-03T03:38:04.910576+00:00",
-        "lifespan_days": 21
       },
       {
         "x": 164,
@@ -12482,6 +12456,32 @@
         "season": "summer",
         "attached_at": "2026-06-07T19:15:01.533442+00:00",
         "lifespan_days": 23
+      },
+      {
+        "x": 192,
+        "y": 188,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 3.61,
+        "duration": 3.47,
+        "drift": -28,
+        "fell_at": null,
+        "season": "summer",
+        "attached_at": "2026-06-08T10:27:48.172819+00:00",
+        "lifespan_days": 19
+      },
+      {
+        "x": 228,
+        "y": 160,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 1.48,
+        "duration": 2.57,
+        "drift": 29,
+        "fell_at": null,
+        "season": "summer",
+        "attached_at": "2026-06-08T10:27:48.172838+00:00",
+        "lifespan_days": 22
       }
     ],
     "plants": [
@@ -12535,7 +12535,7 @@
         "y": 326,
         "type": "mushroom",
         "kind": "ground_plant",
-        "growth_stage": "growing",
+        "growth_stage": "mature",
         "born_at": "2026-05-29T09:44:07.247386+00:00",
         "size": 1
       },
@@ -12623,8 +12623,8 @@
     ]
   },
   "activity": {
-    "streak": 0,
-    "recent_score": 0,
+    "streak": 8,
+    "recent_score": 4,
     "last_high_day": "streak_7"
   },
   "yearly_cache": {
@@ -12722,7 +12722,8 @@
     "2026-06-04": 4,
     "2026-06-05": 10,
     "2026-06-06": 11,
-    "2026-06-07": 21
+    "2026-06-07": 21,
+    "2026-06-08": 3
   },
   "canvas": {
     "w": 400,
