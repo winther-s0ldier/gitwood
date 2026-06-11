@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 806,
-  "last_update": "2026-06-11T10:15:27.375626+00:00",
+  "total_contributions": 808,
+  "last_update": "2026-06-11T15:49:15.588704+00:00",
   "tree": {
     "branches": [
       {
@@ -11726,19 +11726,6 @@
         "lifespan_days": 16
       },
       {
-        "x": 156,
-        "y": 168,
-        "state": "falling",
-        "color_idx": 1,
-        "delay": 0.53,
-        "duration": 2.94,
-        "drift": 1,
-        "fell_at": "2026-06-11T10:15:27.375896+00:00",
-        "season": "summer",
-        "attached_at": "2026-06-03T03:38:04.910701+00:00",
-        "lifespan_days": 19
-      },
-      {
         "x": 132,
         "y": 176,
         "state": "attached",
@@ -12651,7 +12638,7 @@
       {
         "x": 204,
         "y": 200,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 2.88,
         "duration": 3.04,
@@ -12664,7 +12651,7 @@
       {
         "x": 208,
         "y": 176,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 3.87,
         "duration": 2.79,
@@ -12677,7 +12664,7 @@
       {
         "x": 180,
         "y": 208,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.54,
         "duration": 3.64,
@@ -12686,6 +12673,19 @@
         "season": "summer",
         "attached_at": "2026-06-11T10:15:27.376125+00:00",
         "lifespan_days": 25
+      },
+      {
+        "x": 172,
+        "y": 220,
+        "state": "regrowing",
+        "color_idx": 0,
+        "delay": 1.38,
+        "duration": 4.23,
+        "drift": 9,
+        "fell_at": null,
+        "season": "summer",
+        "attached_at": "2026-06-11T15:49:15.589358+00:00",
+        "lifespan_days": 15
       }
     ],
     "plants": [
@@ -12828,7 +12828,7 @@
   },
   "activity": {
     "streak": 11,
-    "recent_score": 2,
+    "recent_score": 4,
     "last_high_day": "streak_7"
   },
   "yearly_cache": {
@@ -12930,7 +12930,7 @@
     "2026-06-08": 8,
     "2026-06-09": 14,
     "2026-06-10": 12,
-    "2026-06-11": 10
+    "2026-06-11": 12
   },
   "canvas": {
     "w": 400,
