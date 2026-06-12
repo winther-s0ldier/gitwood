@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 811,
-  "last_update": "2026-06-12T03:28:45.523239+00:00",
+  "total_contributions": 812,
+  "last_update": "2026-06-12T10:03:01.325525+00:00",
   "tree": {
     "branches": [
       {
@@ -12363,19 +12363,6 @@
         "lifespan_days": 22
       },
       {
-        "x": 228,
-        "y": 168,
-        "state": "falling",
-        "color_idx": 1,
-        "delay": 4.02,
-        "duration": 2.86,
-        "drift": -30,
-        "fell_at": "2026-06-12T03:28:45.523594+00:00",
-        "season": "summer",
-        "attached_at": "2026-06-11T03:28:46.835333+00:00",
-        "lifespan_days": 26
-      },
-      {
         "x": 144,
         "y": 208,
         "state": "attached",
@@ -12456,12 +12443,12 @@
       {
         "x": 180,
         "y": 224,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 3,
         "delay": 4.29,
         "duration": 4.2,
         "drift": 8,
-        "fell_at": null,
+        "fell_at": "2026-06-12T10:03:01.325731+00:00",
         "season": "summer",
         "attached_at": "2026-06-11T03:28:46.835371+00:00",
         "lifespan_days": 21
@@ -12690,7 +12677,7 @@
       {
         "x": 252,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 0.61,
         "duration": 3.77,
@@ -12699,6 +12686,19 @@
         "season": "summer",
         "attached_at": "2026-06-12T03:28:45.523841+00:00",
         "lifespan_days": 14
+      },
+      {
+        "x": 220,
+        "y": 224,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 2.24,
+        "duration": 4.11,
+        "drift": -26,
+        "fell_at": null,
+        "season": "summer",
+        "attached_at": "2026-06-12T10:03:01.325879+00:00",
+        "lifespan_days": 25
       }
     ],
     "plants": [
@@ -12770,7 +12770,7 @@
         "y": 326,
         "type": "sprout",
         "kind": "ground_plant",
-        "growth_stage": "growing",
+        "growth_stage": "mature",
         "born_at": "2026-06-02T03:31:14.937451+00:00",
         "size": 1
       },
@@ -12944,7 +12944,7 @@
     "2026-06-09": 14,
     "2026-06-10": 12,
     "2026-06-11": 14,
-    "2026-06-12": 1
+    "2026-06-12": 2
   },
   "canvas": {
     "w": 400,
