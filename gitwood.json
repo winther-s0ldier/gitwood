@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 813,
-  "last_update": "2026-06-12T14:47:46.113459+00:00",
+  "total_contributions": 814,
+  "last_update": "2026-06-12T20:02:53.711401+00:00",
   "tree": {
     "branches": [
       {
@@ -11843,19 +11843,6 @@
         "lifespan_days": 26
       },
       {
-        "x": 252,
-        "y": 184,
-        "state": "falling",
-        "color_idx": 2,
-        "delay": 4.2,
-        "duration": 3.98,
-        "drift": -6,
-        "fell_at": "2026-06-12T14:47:46.113786+00:00",
-        "season": "summer",
-        "attached_at": "2026-06-07T08:49:23.053949+00:00",
-        "lifespan_days": 18
-      },
-      {
         "x": 212,
         "y": 160,
         "state": "attached",
@@ -12690,7 +12677,7 @@
       {
         "x": 180,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 2.43,
         "duration": 2.71,
@@ -12698,6 +12685,19 @@
         "fell_at": null,
         "season": "summer",
         "attached_at": "2026-06-12T14:47:46.114039+00:00",
+        "lifespan_days": 14
+      },
+      {
+        "x": 132,
+        "y": 180,
+        "state": "regrowing",
+        "color_idx": 3,
+        "delay": 3.79,
+        "duration": 3.3,
+        "drift": -30,
+        "fell_at": null,
+        "season": "summer",
+        "attached_at": "2026-06-12T20:02:53.711959+00:00",
         "lifespan_days": 14
       }
     ],
@@ -12788,7 +12788,7 @@
         "y": 326,
         "type": "sprout",
         "kind": "ground_plant",
-        "growth_stage": "growing",
+        "growth_stage": "mature",
         "born_at": "2026-06-02T16:13:26.824637+00:00",
         "size": 1
       },
@@ -12944,7 +12944,7 @@
     "2026-06-09": 14,
     "2026-06-10": 12,
     "2026-06-11": 14,
-    "2026-06-12": 3
+    "2026-06-12": 4
   },
   "canvas": {
     "w": 400,
