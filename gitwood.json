@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 867,
-  "last_update": "2026-06-17T15:15:09.408241+00:00",
+  "total_contributions": 868,
+  "last_update": "2026-06-17T20:07:01.394808+00:00",
   "tree": {
     "branches": [
       {
@@ -12667,7 +12667,7 @@
       {
         "x": 232,
         "y": 172,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 3.21,
         "duration": 2.63,
@@ -12831,6 +12831,15 @@
         "growth_stage": "sprout",
         "born_at": "2026-06-17T15:15:09.408952+00:00",
         "size": 1
+      },
+      {
+        "x": 349,
+        "y": 326,
+        "type": "fern",
+        "kind": "ground_plant",
+        "growth_stage": "sprout",
+        "born_at": "2026-06-17T20:07:01.395497+00:00",
+        "size": 1
       }
     ]
   },
@@ -12944,7 +12953,7 @@
     "2026-06-14": 6,
     "2026-06-15": 7,
     "2026-06-16": 8,
-    "2026-06-17": 7
+    "2026-06-17": 8
   },
   "canvas": {
     "w": 400,
