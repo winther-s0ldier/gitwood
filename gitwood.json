@@ -1,8 +1,8 @@
 {
   "version": 1,
   "username": "winther-s0ldier",
-  "total_contributions": 1033,
-  "last_update": "2026-07-06T10:07:53.058274+00:00",
+  "total_contributions": 1035,
+  "last_update": "2026-07-06T15:21:17.011405+00:00",
   "tree": {
     "branches": [
       {
@@ -11969,19 +11969,6 @@
         "lifespan_days": 27
       },
       {
-        "x": 184,
-        "y": 144,
-        "state": "falling",
-        "color_idx": 0,
-        "delay": 4.2,
-        "duration": 2.92,
-        "drift": -30,
-        "fell_at": "2026-07-06T10:07:53.058784+00:00",
-        "season": "summer",
-        "attached_at": "2026-06-30T14:08:25.097451+00:00",
-        "lifespan_days": 19
-      },
-      {
         "x": 192,
         "y": 144,
         "state": "attached",
@@ -12127,12 +12114,12 @@
       {
         "x": 148,
         "y": 164,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 0,
         "delay": 0.97,
         "duration": 2.59,
         "drift": 23,
-        "fell_at": null,
+        "fell_at": "2026-07-06T15:21:17.011756+00:00",
         "season": "summer",
         "attached_at": "2026-07-02T08:48:33.788114+00:00",
         "lifespan_days": 23
@@ -12283,12 +12270,12 @@
       {
         "x": 236,
         "y": 164,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 2,
         "delay": 3.02,
         "duration": 2.78,
         "drift": -23,
-        "fell_at": null,
+        "fell_at": "2026-07-06T15:21:17.011756+00:00",
         "season": "summer",
         "attached_at": "2026-07-02T19:17:11.440017+00:00",
         "lifespan_days": 23
@@ -12331,19 +12318,6 @@
         "season": "summer",
         "attached_at": "2026-07-03T08:55:11.461119+00:00",
         "lifespan_days": 14
-      },
-      {
-        "x": 180,
-        "y": 168,
-        "state": "falling",
-        "color_idx": 2,
-        "delay": 4.27,
-        "duration": 4.4,
-        "drift": 9,
-        "fell_at": "2026-07-06T10:07:53.058784+00:00",
-        "season": "summer",
-        "attached_at": "2026-07-03T08:55:11.461137+00:00",
-        "lifespan_days": 22
       },
       {
         "x": 208,
@@ -12448,19 +12422,6 @@
         "season": "summer",
         "attached_at": "2026-07-03T13:52:07.849979+00:00",
         "lifespan_days": 25
-      },
-      {
-        "x": 152,
-        "y": 168,
-        "state": "falling",
-        "color_idx": 2,
-        "delay": 2.76,
-        "duration": 2.99,
-        "drift": 10,
-        "fell_at": "2026-07-06T10:07:53.058784+00:00",
-        "season": "summer",
-        "attached_at": "2026-07-03T13:52:07.849984+00:00",
-        "lifespan_days": 19
       },
       {
         "x": 160,
@@ -12569,12 +12530,12 @@
       {
         "x": 200,
         "y": 168,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 0,
         "delay": 2.04,
         "duration": 3.76,
         "drift": -29,
-        "fell_at": null,
+        "fell_at": "2026-07-06T15:21:17.011756+00:00",
         "season": "summer",
         "attached_at": "2026-07-03T19:12:11.910404+00:00",
         "lifespan_days": 18
@@ -12621,12 +12582,12 @@
       {
         "x": 200,
         "y": 212,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 0,
         "delay": 4.24,
         "duration": 4.18,
         "drift": -19,
-        "fell_at": null,
+        "fell_at": "2026-07-06T15:21:17.011756+00:00",
         "season": "summer",
         "attached_at": "2026-07-03T19:12:11.910456+00:00",
         "lifespan_days": 19
@@ -12762,19 +12723,6 @@
         "lifespan_days": 20
       },
       {
-        "x": 196,
-        "y": 216,
-        "state": "falling",
-        "color_idx": 1,
-        "delay": 1.69,
-        "duration": 4.22,
-        "drift": -24,
-        "fell_at": "2026-07-06T10:07:53.058784+00:00",
-        "season": "summer",
-        "attached_at": "2026-07-04T08:30:04.623146+00:00",
-        "lifespan_days": 19
-      },
-      {
         "x": 192,
         "y": 196,
         "state": "attached",
@@ -12842,12 +12790,12 @@
       {
         "x": 244,
         "y": 140,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 3,
         "delay": 4.79,
         "duration": 2.93,
         "drift": 6,
-        "fell_at": null,
+        "fell_at": "2026-07-06T15:21:17.011756+00:00",
         "season": "summer",
         "attached_at": "2026-07-05T08:46:27.875726+00:00",
         "lifespan_days": 23
@@ -12946,28 +12894,15 @@
       {
         "x": 152,
         "y": 156,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 3,
         "delay": 2.45,
         "duration": 2.8,
         "drift": 10,
-        "fell_at": null,
+        "fell_at": "2026-07-06T15:21:17.011756+00:00",
         "season": "summer",
         "attached_at": "2026-07-05T13:20:45.258226+00:00",
         "lifespan_days": 15
-      },
-      {
-        "x": 220,
-        "y": 188,
-        "state": "falling",
-        "color_idx": 3,
-        "delay": 3.16,
-        "duration": 2.64,
-        "drift": 23,
-        "fell_at": "2026-07-06T10:07:53.058784+00:00",
-        "season": "summer",
-        "attached_at": "2026-07-05T19:09:33.379149+00:00",
-        "lifespan_days": 14
       },
       {
         "x": 192,
@@ -12983,19 +12918,6 @@
         "lifespan_days": 28
       },
       {
-        "x": 264,
-        "y": 152,
-        "state": "falling",
-        "color_idx": 3,
-        "delay": 0.46,
-        "duration": 2.62,
-        "drift": -4,
-        "fell_at": "2026-07-06T10:07:53.058784+00:00",
-        "season": "summer",
-        "attached_at": "2026-07-05T19:09:33.379172+00:00",
-        "lifespan_days": 20
-      },
-      {
         "x": 168,
         "y": 184,
         "state": "attached",
@@ -13007,19 +12929,6 @@
         "season": "summer",
         "attached_at": "2026-07-05T19:09:33.379176+00:00",
         "lifespan_days": 19
-      },
-      {
-        "x": 188,
-        "y": 196,
-        "state": "falling",
-        "color_idx": 0,
-        "delay": 1.94,
-        "duration": 2.91,
-        "drift": -2,
-        "fell_at": "2026-07-06T10:07:53.058784+00:00",
-        "season": "summer",
-        "attached_at": "2026-07-05T19:09:33.379181+00:00",
-        "lifespan_days": 21
       },
       {
         "x": 248,
@@ -13141,7 +13050,7 @@
       {
         "x": 216,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 1.32,
         "duration": 3.94,
@@ -13154,7 +13063,7 @@
       {
         "x": 180,
         "y": 144,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 4.49,
         "duration": 4.43,
@@ -13167,7 +13076,7 @@
       {
         "x": 228,
         "y": 164,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 2.16,
         "duration": 3.0,
@@ -13180,7 +13089,7 @@
       {
         "x": 188,
         "y": 200,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 3.75,
         "duration": 4.4,
@@ -13193,7 +13102,7 @@
       {
         "x": 196,
         "y": 148,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 1.25,
         "duration": 4.48,
@@ -13206,7 +13115,7 @@
       {
         "x": 260,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 1.94,
         "duration": 2.51,
@@ -13219,7 +13128,7 @@
       {
         "x": 220,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 4.22,
         "duration": 3.76,
@@ -13232,7 +13141,7 @@
       {
         "x": 140,
         "y": 176,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 0.99,
         "duration": 4.32,
@@ -13241,6 +13150,97 @@
         "season": "summer",
         "attached_at": "2026-07-06T10:07:53.059177+00:00",
         "lifespan_days": 17
+      },
+      {
+        "x": 188,
+        "y": 132,
+        "state": "regrowing",
+        "color_idx": 1,
+        "delay": 1.73,
+        "duration": 3.91,
+        "drift": 3,
+        "fell_at": null,
+        "season": "summer",
+        "attached_at": "2026-07-06T15:21:17.012028+00:00",
+        "lifespan_days": 27
+      },
+      {
+        "x": 180,
+        "y": 180,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 4.44,
+        "duration": 3.25,
+        "drift": -14,
+        "fell_at": null,
+        "season": "summer",
+        "attached_at": "2026-07-06T15:21:17.012045+00:00",
+        "lifespan_days": 19
+      },
+      {
+        "x": 216,
+        "y": 188,
+        "state": "regrowing",
+        "color_idx": 0,
+        "delay": 2.84,
+        "duration": 4.46,
+        "drift": 26,
+        "fell_at": null,
+        "season": "summer",
+        "attached_at": "2026-07-06T15:21:17.012051+00:00",
+        "lifespan_days": 18
+      },
+      {
+        "x": 224,
+        "y": 180,
+        "state": "regrowing",
+        "color_idx": 1,
+        "delay": 0.22,
+        "duration": 4.39,
+        "drift": 13,
+        "fell_at": null,
+        "season": "summer",
+        "attached_at": "2026-07-06T15:21:17.012055+00:00",
+        "lifespan_days": 26
+      },
+      {
+        "x": 256,
+        "y": 144,
+        "state": "regrowing",
+        "color_idx": 0,
+        "delay": 1.99,
+        "duration": 2.96,
+        "drift": 11,
+        "fell_at": null,
+        "season": "summer",
+        "attached_at": "2026-07-06T15:21:17.012060+00:00",
+        "lifespan_days": 27
+      },
+      {
+        "x": 252,
+        "y": 144,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 4.52,
+        "duration": 3.09,
+        "drift": 26,
+        "fell_at": null,
+        "season": "summer",
+        "attached_at": "2026-07-06T15:21:17.012065+00:00",
+        "lifespan_days": 26
+      },
+      {
+        "x": 244,
+        "y": 144,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 4.44,
+        "duration": 2.56,
+        "drift": 19,
+        "fell_at": null,
+        "season": "summer",
+        "attached_at": "2026-07-06T15:21:17.012069+00:00",
+        "lifespan_days": 22
       }
     ],
     "plants": [
@@ -13555,7 +13555,7 @@
     "2026-07-03": 12,
     "2026-07-04": 6,
     "2026-07-05": 4,
-    "2026-07-06": 2
+    "2026-07-06": 4
   },
   "canvas": {
     "w": 400,
