@@ -200,87 +200,87 @@
 <!-- Stars -->
 <g>
 <animateTransform attributeName="transform" type="translate" values="0 0;3 0;0 0;-3 0;0 0" dur="60s" repeatCount="indefinite"/>
-<rect x="285" y="30" width="2" height="2" fill="#ffffff" opacity="0.4"/>
-<rect x="285" y="34" width="2" height="2" fill="#ffffff" opacity="0.5"/>
-<rect x="241" y="25" width="2" height="2" fill="#ffffff" opacity="0.6"/>
-<rect x="380" y="49" width="2" height="2" fill="#ffffff" opacity="0.6"/>
-<rect x="114" y="40" width="2" height="2" fill="#ffffff" opacity="0.6"/>
-<rect x="373" y="30" width="2" height="2" fill="#ffffff" opacity="0.5"/>
-<rect x="276" y="26" width="2" height="2" fill="#ffffff" opacity="0.3"/>
-<rect x="129" y="16" width="2" height="2" fill="#ffffff" opacity="0.4"/>
-<rect x="300" y="37" width="2" height="2" fill="#ffffff" opacity="0.8"/>
-<rect x="297" y="27" width="2" height="2" fill="#ffffff" opacity="0.7"/>
-<rect x="218" y="43" width="2" height="2" fill="#ffffff" opacity="0.7"/>
-<rect x="47" y="14" width="2" height="2" fill="#ffffff" opacity="0.4"/>
-<rect x="12" y="45" width="2" height="2" fill="#ffffff" opacity="0.4"/>
-<rect x="99" y="14" width="2" height="2" fill="#ffffff" opacity="0.6"/>
-<rect x="234" y="29" width="2" height="2" fill="#ffffff" opacity="0.6"/>
-<rect x="265" y="57" width="2" height="2" fill="#ffffff" opacity="0.3"/>
-<rect x="171" y="33" width="2" height="2" fill="#ffffff" opacity="0.5"/>
-<rect x="241" y="35" width="2" height="2" fill="#ffffff" opacity="0.6"/>
-<rect x="329" y="31" width="2" height="2" fill="#ffffff" opacity="0.8"/>
-<rect x="141" y="48" width="2" height="2" fill="#ffffff" opacity="0.7"/>
+<rect x="141" y="10" width="2" height="2" fill="#ffffff" opacity="0.8"/>
+<rect x="95" y="21" width="2" height="2" fill="#ffffff" opacity="0.6"/>
+<rect x="218" y="20" width="2" height="2" fill="#ffffff" opacity="0.6"/>
+<rect x="210" y="39" width="2" height="2" fill="#ffffff" opacity="0.6"/>
+<rect x="182" y="9" width="2" height="2" fill="#ffffff" opacity="0.3"/>
+<rect x="32" y="16" width="2" height="2" fill="#ffffff" opacity="0.8"/>
+<rect x="378" y="28" width="2" height="2" fill="#ffffff" opacity="0.5"/>
+<rect x="4" y="57" width="2" height="2" fill="#ffffff" opacity="0.5"/>
+<rect x="50" y="57" width="2" height="2" fill="#ffffff" opacity="0.4"/>
+<rect x="386" y="13" width="2" height="2" fill="#ffffff" opacity="0.4"/>
+<rect x="34" y="33" width="2" height="2" fill="#ffffff" opacity="0.3"/>
+<rect x="58" y="33" width="2" height="2" fill="#ffffff" opacity="0.7"/>
+<rect x="267" y="43" width="2" height="2" fill="#ffffff" opacity="0.8"/>
+<rect x="113" y="39" width="2" height="2" fill="#ffffff" opacity="0.8"/>
+<rect x="180" y="30" width="2" height="2" fill="#ffffff" opacity="0.6"/>
+<rect x="351" y="44" width="2" height="2" fill="#ffffff" opacity="0.4"/>
+<rect x="253" y="53" width="2" height="2" fill="#ffffff" opacity="0.8"/>
+<rect x="392" y="59" width="2" height="2" fill="#ffffff" opacity="0.6"/>
+<rect x="366" y="55" width="2" height="2" fill="#ffffff" opacity="0.5"/>
+<rect x="239" y="18" width="2" height="2" fill="#ffffff" opacity="0.3"/>
 </g>
 <!-- Weather -->
-<line x1="253" y1="234" x2="251" y2="242" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.41s" begin="0.74s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.41s" begin="0.74s" repeatCount="indefinite"/>
+<line x1="90" y1="261" x2="88" y2="269" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.75s" begin="1.49s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.75s" begin="1.49s" repeatCount="indefinite"/>
 </line>
-<line x1="372" y1="281" x2="370" y2="289" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.73s" begin="1.0s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.73s" begin="1.0s" repeatCount="indefinite"/>
+<line x1="144" y1="181" x2="142" y2="189" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.67s" begin="1.26s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.67s" begin="1.26s" repeatCount="indefinite"/>
 </line>
-<line x1="121" y1="25" x2="119" y2="33" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.45s" begin="1.98s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.45s" begin="1.98s" repeatCount="indefinite"/>
+<line x1="29" y1="47" x2="27" y2="55" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.74s" begin="1.37s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.74s" begin="1.37s" repeatCount="indefinite"/>
 </line>
-<line x1="384" y1="76" x2="382" y2="84" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.7s" begin="0.99s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.7s" begin="0.99s" repeatCount="indefinite"/>
+<line x1="292" y1="92" x2="290" y2="100" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.77s" begin="2.0s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.77s" begin="2.0s" repeatCount="indefinite"/>
 </line>
-<line x1="94" y1="224" x2="92" y2="232" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.7s" begin="1.49s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.7s" begin="1.49s" repeatCount="indefinite"/>
+<line x1="370" y1="173" x2="368" y2="181" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.55s" begin="0.94s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.55s" begin="0.94s" repeatCount="indefinite"/>
 </line>
-<line x1="168" y1="180" x2="166" y2="188" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.51s" begin="0.65s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.51s" begin="0.65s" repeatCount="indefinite"/>
+<line x1="175" y1="264" x2="173" y2="272" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.46s" begin="1.12s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.46s" begin="1.12s" repeatCount="indefinite"/>
 </line>
-<line x1="385" y1="202" x2="383" y2="210" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.44s" begin="1.65s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.44s" begin="1.65s" repeatCount="indefinite"/>
+<line x1="279" y1="36" x2="277" y2="44" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.73s" begin="0.42s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.73s" begin="0.42s" repeatCount="indefinite"/>
 </line>
-<line x1="400" y1="139" x2="398" y2="147" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.55s" begin="1.71s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.55s" begin="1.71s" repeatCount="indefinite"/>
+<line x1="154" y1="242" x2="152" y2="250" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.51s" begin="0.83s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.51s" begin="0.83s" repeatCount="indefinite"/>
 </line>
-<line x1="389" y1="20" x2="387" y2="28" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.54s" begin="0.74s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.54s" begin="0.74s" repeatCount="indefinite"/>
+<line x1="394" y1="54" x2="392" y2="62" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.42s" begin="0.29s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.42s" begin="0.29s" repeatCount="indefinite"/>
 </line>
-<line x1="63" y1="83" x2="61" y2="91" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.41s" begin="1.21s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.41s" begin="1.21s" repeatCount="indefinite"/>
+<line x1="81" y1="14" x2="79" y2="22" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.79s" begin="1.42s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.79s" begin="1.42s" repeatCount="indefinite"/>
 </line>
-<line x1="318" y1="13" x2="316" y2="21" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.62s" begin="0.97s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.62s" begin="0.97s" repeatCount="indefinite"/>
+<line x1="84" y1="82" x2="82" y2="90" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.57s" begin="1.12s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.57s" begin="1.12s" repeatCount="indefinite"/>
 </line>
-<line x1="393" y1="11" x2="391" y2="19" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.57s" begin="0.4s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.57s" begin="0.4s" repeatCount="indefinite"/>
+<line x1="332" y1="96" x2="330" y2="104" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.74s" begin="0.69s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.74s" begin="0.69s" repeatCount="indefinite"/>
 </line>
-<line x1="156" y1="297" x2="154" y2="305" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.8s" begin="1.53s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.8s" begin="1.53s" repeatCount="indefinite"/>
+<line x1="294" y1="197" x2="292" y2="205" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.55s" begin="0.68s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.55s" begin="0.68s" repeatCount="indefinite"/>
 </line>
-<line x1="365" y1="248" x2="363" y2="256" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.61s" begin="1.69s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.61s" begin="1.69s" repeatCount="indefinite"/>
+<line x1="139" y1="164" x2="137" y2="172" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.75s" begin="0.64s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.75s" begin="0.64s" repeatCount="indefinite"/>
 </line>
-<line x1="336" y1="145" x2="334" y2="153" stroke="#6688aa" stroke-width="1" opacity="0.4">
-  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.56s" begin="0.09s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.56s" begin="0.09s" repeatCount="indefinite"/>
+<line x1="271" y1="142" x2="269" y2="150" stroke="#6688aa" stroke-width="1" opacity="0.4">
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="4 350" dur="0.71s" begin="1.51s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0.2;0.4" dur="0.71s" begin="1.51s" repeatCount="indefinite"/>
 </line>
 <!-- Ground (autumn) -->
 <rect x="0" y="326" width="4" height="4" fill="#1a2a17"/>
@@ -324,65 +324,65 @@
 <rect x="152" y="326" width="4" height="4" fill="#755915"/>
 <rect x="156" y="326" width="4" height="4" fill="#1a2a17"/>
 <rect x="160" y="326" width="4" height="4" fill="#7d5d15"/>
-<rect x="164" y="326" width="4" height="4" fill="#1a2a17"/>
-<rect x="168" y="326" width="4" height="4" fill="#775a15"/>
+<rect x="164" y="326" width="4" height="4" fill="#6d5514"/>
+<rect x="168" y="326" width="4" height="4" fill="#6f5614"/>
 <rect x="172" y="326" width="4" height="4" fill="#655014"/>
 <rect x="176" y="326" width="4" height="4" fill="#775a15"/>
-<rect x="180" y="326" width="4" height="4" fill="#1a2a17"/>
-<rect x="184" y="326" width="4" height="4" fill="#6e5514"/>
-<rect x="188" y="326" width="4" height="4" fill="#795b15"/>
-<rect x="192" y="326" width="4" height="4" fill="#6f5614"/>
+<rect x="180" y="326" width="4" height="4" fill="#6e5514"/>
+<rect x="184" y="326" width="4" height="4" fill="#745815"/>
+<rect x="188" y="326" width="4" height="4" fill="#715714"/>
+<rect x="192" y="326" width="4" height="4" fill="#655014"/>
 <rect x="196" y="326" width="4" height="4" fill="#1a2a17"/>
 <rect x="200" y="326" width="4" height="4" fill="#1a2a17"/>
 <rect x="204" y="326" width="4" height="4" fill="#685214"/>
-<rect x="208" y="326" width="4" height="4" fill="#695314"/>
-<rect x="212" y="326" width="4" height="4" fill="#665114"/>
+<rect x="208" y="326" width="4" height="4" fill="#6d5514"/>
+<rect x="212" y="326" width="4" height="4" fill="#1a2a17"/>
 <rect x="216" y="326" width="4" height="4" fill="#6b5314"/>
 <rect x="220" y="326" width="4" height="4" fill="#655114"/>
-<rect x="224" y="326" width="4" height="4" fill="#655014"/>
-<rect x="228" y="326" width="4" height="4" fill="#866116"/>
-<rect x="232" y="326" width="4" height="4" fill="#7d5d15"/>
-<rect x="236" y="326" width="4" height="4" fill="#8f6616"/>
+<rect x="224" y="326" width="4" height="4" fill="#755915"/>
+<rect x="228" y="326" width="4" height="4" fill="#7b5c15"/>
+<rect x="232" y="326" width="4" height="4" fill="#956917"/>
+<rect x="236" y="326" width="4" height="4" fill="#7e5d15"/>
 <rect x="240" y="326" width="4" height="4" fill="#7d5d15"/>
-<rect x="244" y="326" width="4" height="4" fill="#815f15"/>
-<rect x="248" y="326" width="4" height="4" fill="#815f15"/>
-<rect x="252" y="326" width="4" height="4" fill="#a57118"/>
+<rect x="244" y="326" width="4" height="4" fill="#7f5e15"/>
+<rect x="248" y="326" width="4" height="4" fill="#876216"/>
+<rect x="252" y="326" width="4" height="4" fill="#9d6d17"/>
 <rect x="256" y="326" width="4" height="4" fill="#815f15"/>
 <rect x="260" y="326" width="4" height="4" fill="#836016"/>
 <rect x="264" y="326" width="4" height="4" fill="#916716"/>
 <rect x="268" y="326" width="4" height="4" fill="#7d5d15"/>
 <rect x="272" y="326" width="4" height="4" fill="#7b5c15"/>
-<rect x="276" y="326" width="4" height="4" fill="#7b5c15"/>
-<rect x="280" y="326" width="4" height="4" fill="#a16f17"/>
-<rect x="284" y="326" width="4" height="4" fill="#9b6c17"/>
-<rect x="288" y="326" width="4" height="4" fill="#7d5d15"/>
-<rect x="292" y="326" width="4" height="4" fill="#936817"/>
-<rect x="296" y="326" width="4" height="4" fill="#996b17"/>
-<rect x="300" y="326" width="4" height="4" fill="#916716"/>
+<rect x="276" y="326" width="4" height="4" fill="#876216"/>
+<rect x="280" y="326" width="4" height="4" fill="#b17819"/>
+<rect x="284" y="326" width="4" height="4" fill="#815f15"/>
+<rect x="288" y="326" width="4" height="4" fill="#876216"/>
+<rect x="292" y="326" width="4" height="4" fill="#8f6616"/>
+<rect x="296" y="326" width="4" height="4" fill="#9e6e17"/>
+<rect x="300" y="326" width="4" height="4" fill="#976a17"/>
 <rect x="304" y="326" width="4" height="4" fill="#c07f19"/>
-<rect x="308" y="326" width="4" height="4" fill="#a16f17"/>
-<rect x="312" y="326" width="4" height="4" fill="#8a6416"/>
-<rect x="316" y="326" width="4" height="4" fill="#996b17"/>
-<rect x="320" y="326" width="4" height="4" fill="#ab7418"/>
-<rect x="324" y="326" width="4" height="4" fill="#906716"/>
-<rect x="328" y="326" width="4" height="4" fill="#966a17"/>
-<rect x="332" y="326" width="4" height="4" fill="#9d6d17"/>
+<rect x="308" y="326" width="4" height="4" fill="#916716"/>
+<rect x="312" y="326" width="4" height="4" fill="#926716"/>
+<rect x="316" y="326" width="4" height="4" fill="#936817"/>
+<rect x="320" y="326" width="4" height="4" fill="#b57a19"/>
+<rect x="324" y="326" width="4" height="4" fill="#876216"/>
+<rect x="328" y="326" width="4" height="4" fill="#a27018"/>
+<rect x="332" y="326" width="4" height="4" fill="#8d6516"/>
 <rect x="336" y="326" width="4" height="4" fill="#815f15"/>
-<rect x="340" y="326" width="4" height="4" fill="#805e15"/>
-<rect x="344" y="326" width="4" height="4" fill="#856116"/>
-<rect x="348" y="326" width="4" height="4" fill="#8d6516"/>
-<rect x="352" y="326" width="4" height="4" fill="#836016"/>
-<rect x="356" y="326" width="4" height="4" fill="#815f15"/>
-<rect x="360" y="326" width="4" height="4" fill="#956917"/>
-<rect x="364" y="326" width="4" height="4" fill="#7d5d15"/>
-<rect x="368" y="326" width="4" height="4" fill="#846016"/>
-<rect x="372" y="326" width="4" height="4" fill="#8c6416"/>
-<rect x="376" y="326" width="4" height="4" fill="#9d6d17"/>
-<rect x="380" y="326" width="4" height="4" fill="#996b17"/>
-<rect x="384" y="326" width="4" height="4" fill="#996b17"/>
-<rect x="388" y="326" width="4" height="4" fill="#9d6d17"/>
-<rect x="392" y="326" width="4" height="4" fill="#7d5d15"/>
-<rect x="396" y="326" width="4" height="4" fill="#815f15"/>
+<rect x="340" y="326" width="4" height="4" fill="#815f15"/>
+<rect x="344" y="326" width="4" height="4" fill="#8d6516"/>
+<rect x="348" y="326" width="4" height="4" fill="#866116"/>
+<rect x="352" y="326" width="4" height="4" fill="#856116"/>
+<rect x="356" y="326" width="4" height="4" fill="#8c6416"/>
+<rect x="360" y="326" width="4" height="4" fill="#8a6416"/>
+<rect x="364" y="326" width="4" height="4" fill="#815f15"/>
+<rect x="368" y="326" width="4" height="4" fill="#805e15"/>
+<rect x="372" y="326" width="4" height="4" fill="#8d6516"/>
+<rect x="376" y="326" width="4" height="4" fill="#ad7518"/>
+<rect x="380" y="326" width="4" height="4" fill="#906716"/>
+<rect x="384" y="326" width="4" height="4" fill="#9b6c17"/>
+<rect x="388" y="326" width="4" height="4" fill="#956917"/>
+<rect x="392" y="326" width="4" height="4" fill="#7b5c15"/>
+<rect x="396" y="326" width="4" height="4" fill="#805e15"/>
 <rect x="0" y="330" width="4" height="4" fill="#6b7a30"/>
 <rect x="4" y="330" width="4" height="4" fill="#8a9a40"/>
 <rect x="8" y="330" width="4" height="4" fill="#6b7a30"/>
@@ -2042,9 +2042,9 @@
 <use href="#px_tip" x="300" y="212" fill="#3a200a"/>
 </g>
 <!-- Fruit (milestone orbs) -->
-<use href="#fruit" x="236" y="132"/>
-<use href="#fruit" x="192" y="144"/>
-<use href="#fruit" x="280" y="144"/>
+<use href="#fruit" x="196" y="148"/>
+<use href="#fruit" x="132" y="168"/>
+<use href="#fruit" x="184" y="132"/>
 <!-- Leaves -->
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 208 140;-4.0 208 140;4.0 208 140;-4.0 208 140;0 208 140" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.104s" begin="2.42s" repeatCount="indefinite"/>
@@ -2067,8 +2067,9 @@
 <use href="#leaf-0" x="196" y="144"/>
 </g>
 <g>
-<animateTransform attributeName="transform" type="rotate" values="0 276 148;-4.0 276 148;4.0 276 148;-4.0 276 148;0 276 148" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.5440000000000005s" begin="1.74s" repeatCount="indefinite"/>
-<use href="#leaf-3" x="276" y="148"/>
+<animateTransform attributeName="transform" type="translate" from="276 148" to="268 326" dur="3.18s" begin="1.74s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
+<animate attributeName="opacity" from="1" to="0" dur="0.64s" begin="4.28s" fill="remove" repeatCount="indefinite"/>
+<use href="#leaf-3" x="0" y="0"/>
 </g>
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 300 188;-4.0 300 188;4.0 300 188;-4.0 300 188;0 300 188" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.8000000000000003s" begin="4.64s" repeatCount="indefinite"/>
@@ -2095,11 +2096,6 @@
 <use href="#leaf-3" x="172" y="144"/>
 </g>
 <g>
-<animateTransform attributeName="transform" type="translate" from="200 212" to="213 326" dur="3.86s" begin="0.25s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
-<animate attributeName="opacity" from="1" to="0" dur="0.77s" begin="3.34s" fill="remove" repeatCount="indefinite"/>
-<use href="#leaf-2" x="0" y="0"/>
-</g>
-<g>
 <animateTransform attributeName="transform" type="rotate" values="0 120 184;-4.0 120 184;4.0 120 184;-4.0 120 184;0 120 184" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.4960000000000004s" begin="3.07s" repeatCount="indefinite"/>
 <use href="#leaf-1" x="120" y="184"/>
 </g>
@@ -2122,11 +2118,6 @@
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 184 188;-4.0 184 188;4.0 184 188;-4.0 184 188;0 184 188" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.176s" begin="4.01s" repeatCount="indefinite"/>
 <use href="#leaf-3" x="184" y="188"/>
-</g>
-<g>
-<animateTransform attributeName="transform" type="translate" from="200 140" to="211 326" dur="2.67s" begin="0.42s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
-<animate attributeName="opacity" from="1" to="0" dur="0.53s" begin="2.56s" fill="remove" repeatCount="indefinite"/>
-<use href="#leaf-1" x="0" y="0"/>
 </g>
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 156 152;-4.0 156 152;4.0 156 152;-4.0 156 152;0 156 152" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.8000000000000003s" begin="2.64s" repeatCount="indefinite"/>
@@ -2157,17 +2148,13 @@
 <use href="#leaf-3" x="244" y="140"/>
 </g>
 <g>
-<animateTransform attributeName="transform" type="rotate" values="0 200 204;-4.0 200 204;4.0 200 204;-4.0 200 204;0 200 204" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.688s" begin="1.01s" repeatCount="indefinite"/>
-<use href="#leaf-3" x="200" y="204"/>
+<animateTransform attributeName="transform" type="translate" from="200 204" to="224 326" dur="3.36s" begin="1.01s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
+<animate attributeName="opacity" from="1" to="0" dur="0.67s" begin="3.7s" fill="remove" repeatCount="indefinite"/>
+<use href="#leaf-3" x="0" y="0"/>
 </g>
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 168 132;-4.0 168 132;4.0 168 132;-4.0 168 132;0 168 132" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.6s" begin="2.5s" repeatCount="indefinite"/>
 <use href="#leaf-3" x="168" y="132"/>
-</g>
-<g>
-<animateTransform attributeName="transform" type="translate" from="300 208" to="310 326" dur="3.55s" begin="2.35s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
-<animate attributeName="opacity" from="1" to="0" dur="0.71s" begin="5.19s" fill="remove" repeatCount="indefinite"/>
-<use href="#leaf-2" x="0" y="0"/>
 </g>
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 152 196;-4.0 152 196;4.0 152 196;-4.0 152 196;0 152 196" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.4800000000000004s" begin="1.19s" repeatCount="indefinite"/>
@@ -2180,11 +2167,6 @@
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 232 140;-4.0 232 140;4.0 232 140;-4.0 232 140;0 232 140" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.032s" begin="3.81s" repeatCount="indefinite"/>
 <use href="#leaf-0" x="232" y="140"/>
-</g>
-<g>
-<animateTransform attributeName="transform" type="translate" from="208 152" to="205 326" dur="4.26s" begin="1.78s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
-<animate attributeName="opacity" from="1" to="0" dur="0.85s" begin="5.19s" fill="remove" repeatCount="indefinite"/>
-<use href="#leaf-2" x="0" y="0"/>
 </g>
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 268 144;-4.0 268 144;4.0 268 144;-4.0 268 144;0 268 144" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.112s" begin="0.25s" repeatCount="indefinite"/>
@@ -2227,11 +2209,6 @@
 <use href="#leaf-2" x="156" y="148"/>
 </g>
 <g>
-<animateTransform attributeName="transform" type="translate" from="204 188" to="233 326" dur="3.55s" begin="4.88s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
-<animate attributeName="opacity" from="1" to="0" dur="0.71s" begin="7.72s" fill="remove" repeatCount="indefinite"/>
-<use href="#leaf-2" x="0" y="0"/>
-</g>
-<g>
 <animateTransform attributeName="transform" type="rotate" values="0 196 152;-4.0 196 152;4.0 196 152;-4.0 196 152;0 196 152" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.368s" begin="1.77s" repeatCount="indefinite"/>
 <use href="#leaf-2" x="196" y="152"/>
 </g>
@@ -2260,17 +2237,13 @@
 <use href="#leaf-1" x="188" y="148"/>
 </g>
 <g>
-<animateTransform attributeName="transform" type="translate" from="176 208" to="150 326" dur="3.55s" begin="1.02s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
-<animate attributeName="opacity" from="1" to="0" dur="0.71s" begin="3.86s" fill="remove" repeatCount="indefinite"/>
-<use href="#leaf-3" x="0" y="0"/>
-</g>
-<g>
 <animateTransform attributeName="transform" type="rotate" values="0 156 160;-4.0 156 160;4.0 156 160;-4.0 156 160;0 156 160" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.096s" begin="4.26s" repeatCount="indefinite"/>
 <use href="#leaf-2" x="156" y="160"/>
 </g>
 <g>
-<animateTransform attributeName="transform" type="rotate" values="0 100 180;-4.0 100 180;4.0 100 180;-4.0 100 180;0 100 180" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.008s" begin="1.45s" repeatCount="indefinite"/>
-<use href="#leaf-2" x="100" y="180"/>
+<animateTransform attributeName="transform" type="translate" from="100 180" to="79 326" dur="2.51s" begin="1.45s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
+<animate attributeName="opacity" from="1" to="0" dur="0.5s" begin="3.46s" fill="remove" repeatCount="indefinite"/>
+<use href="#leaf-2" x="0" y="0"/>
 </g>
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 228 136;-4.0 228 136;4.0 228 136;-4.0 228 136;0 228 136" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.088s" begin="4.74s" repeatCount="indefinite"/>
@@ -2293,18 +2266,8 @@
 <use href="#leaf-2" x="300" y="184"/>
 </g>
 <g>
-<animateTransform attributeName="transform" type="translate" from="140 160" to="118 326" dur="3.44s" begin="0.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
-<animate attributeName="opacity" from="1" to="0" dur="0.69s" begin="2.95s" fill="remove" repeatCount="indefinite"/>
-<use href="#leaf-3" x="0" y="0"/>
-</g>
-<g>
 <animateTransform attributeName="transform" type="rotate" values="0 140 156;-4.0 140 156;4.0 140 156;-4.0 140 156;0 140 156" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.4000000000000004s" begin="4.23s" repeatCount="indefinite"/>
 <use href="#leaf-3" x="140" y="156"/>
-</g>
-<g>
-<animateTransform attributeName="transform" type="translate" from="224 176" to="219 326" dur="3.22s" begin="0.86s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0 0.75 1"/>
-<animate attributeName="opacity" from="1" to="0" dur="0.64s" begin="3.44s" fill="remove" repeatCount="indefinite"/>
-<use href="#leaf-0" x="0" y="0"/>
 </g>
 <g>
 <animateTransform attributeName="transform" type="rotate" values="0 120 160;-4.0 120 160;4.0 120 160;-4.0 120 160;0 120 160" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.008s" begin="1.18s" repeatCount="indefinite"/>
@@ -2315,29 +2278,64 @@
 <use href="#leaf-2" x="164" y="152"/>
 </g>
 <g>
-<animate attributeName="opacity" from="0" to="1" dur="2s" begin="2.58s" fill="freeze"/>
-<animateTransform attributeName="transform" type="rotate" values="0 232 136;-4.0 232 136;4.0 232 136;-4.0 232 136;0 232 136" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.096s" begin="4.58s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 232 136;-4.0 232 136;4.0 232 136;-4.0 232 136;0 232 136" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.096s" begin="2.58s" repeatCount="indefinite"/>
 <use href="#leaf-1" x="232" y="136"/>
 </g>
 <g>
-<animate attributeName="opacity" from="0" to="1" dur="2s" begin="2.29s" fill="freeze"/>
-<animateTransform attributeName="transform" type="rotate" values="0 208 176;-4.0 208 176;4.0 208 176;-4.0 208 176;0 208 176" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.136s" begin="4.29s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 208 176;-4.0 208 176;4.0 208 176;-4.0 208 176;0 208 176" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.136s" begin="2.29s" repeatCount="indefinite"/>
 <use href="#leaf-1" x="208" y="176"/>
 </g>
 <g>
-<animate attributeName="opacity" from="0" to="1" dur="2s" begin="4.76s" fill="freeze"/>
-<animateTransform attributeName="transform" type="rotate" values="0 152 156;-4.0 152 156;4.0 152 156;-4.0 152 156;0 152 156" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.4160000000000004s" begin="6.76s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 152 156;-4.0 152 156;4.0 152 156;-4.0 152 156;0 152 156" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.4160000000000004s" begin="4.76s" repeatCount="indefinite"/>
 <use href="#leaf-1" x="152" y="156"/>
 </g>
 <g>
-<animate attributeName="opacity" from="0" to="1" dur="2s" begin="1.62s" fill="freeze"/>
-<animateTransform attributeName="transform" type="rotate" values="0 180 200;-4.0 180 200;4.0 180 200;-4.0 180 200;0 180 200" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.088s" begin="3.62s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 180 200;-4.0 180 200;4.0 180 200;-4.0 180 200;0 180 200" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.088s" begin="1.62s" repeatCount="indefinite"/>
 <use href="#leaf-0" x="180" y="200"/>
 </g>
 <g>
-<animate attributeName="opacity" from="0" to="1" dur="2s" begin="3.38s" fill="freeze"/>
-<animateTransform attributeName="transform" type="rotate" values="0 172 168;-4.0 172 168;4.0 172 168;-4.0 172 168;0 172 168" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.3520000000000003s" begin="5.38s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 172 168;-4.0 172 168;4.0 172 168;-4.0 172 168;0 172 168" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.3520000000000003s" begin="3.38s" repeatCount="indefinite"/>
 <use href="#leaf-2" x="172" y="168"/>
+</g>
+<g>
+<animate attributeName="opacity" from="0" to="1" dur="2s" begin="1.59s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" values="0 188 132;-4.0 188 132;4.0 188 132;-4.0 188 132;0 188 132" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.08s" begin="3.59s" repeatCount="indefinite"/>
+<use href="#leaf-3" x="188" y="132"/>
+</g>
+<g>
+<animate attributeName="opacity" from="0" to="1" dur="2s" begin="1.9s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" values="0 220 200;-4.0 220 200;4.0 220 200;-4.0 220 200;0 220 200" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.472s" begin="3.9s" repeatCount="indefinite"/>
+<use href="#leaf-2" x="220" y="200"/>
+</g>
+<g>
+<animate attributeName="opacity" from="0" to="1" dur="2s" begin="1.87s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" values="0 148 144;-4.0 148 144;4.0 148 144;-4.0 148 144;0 148 144" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.032s" begin="3.87s" repeatCount="indefinite"/>
+<use href="#leaf-3" x="148" y="144"/>
+</g>
+<g>
+<animate attributeName="opacity" from="0" to="1" dur="2s" begin="2.32s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" values="0 120 180;-4.0 120 180;4.0 120 180;-4.0 120 180;0 120 180" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.08s" begin="4.32s" repeatCount="indefinite"/>
+<use href="#leaf-3" x="120" y="180"/>
+</g>
+<g>
+<animate attributeName="opacity" from="0" to="1" dur="2s" begin="0.94s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" values="0 240 168;-4.0 240 168;4.0 240 168;-4.0 240 168;0 240 168" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.4800000000000004s" begin="2.94s" repeatCount="indefinite"/>
+<use href="#leaf-2" x="240" y="168"/>
+</g>
+<g>
+<animate attributeName="opacity" from="0" to="1" dur="2s" begin="0.76s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" values="0 200 152;-4.0 200 152;4.0 200 152;-4.0 200 152;0 200 152" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.456s" begin="2.76s" repeatCount="indefinite"/>
+<use href="#leaf-0" x="200" y="152"/>
+</g>
+<g>
+<animate attributeName="opacity" from="0" to="1" dur="2s" begin="1.01s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" values="0 188 200;-4.0 188 200;4.0 188 200;-4.0 188 200;0 188 200" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="2.7600000000000002s" begin="3.01s" repeatCount="indefinite"/>
+<use href="#leaf-1" x="188" y="200"/>
+</g>
+<g>
+<animate attributeName="opacity" from="0" to="1" dur="2s" begin="1.05s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" values="0 204 156;-4.0 204 156;4.0 204 156;-4.0 204 156;0 204 156" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" calcMode="spline" dur="3.04s" begin="3.05s" repeatCount="indefinite"/>
+<use href="#leaf-2" x="204" y="156"/>
 </g>
 <!-- Plants -->
 <use href="#plant-fern" x="311" y="326"/>
