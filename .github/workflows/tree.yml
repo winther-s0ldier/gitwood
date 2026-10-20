@@ -2,8 +2,8 @@ name: Update Gitwood
 
 on:
   schedule:
-    # Runs every 6 hours
-    - cron: '0 */6 * * *'
+    # 06:30, 12:30, 18:30 and 00:30 IST so the sky shows dawn, day, dusk and night
+    - cron: '0 1,7,13,19 * * *'
   workflow_dispatch:
     inputs:
       mode:
