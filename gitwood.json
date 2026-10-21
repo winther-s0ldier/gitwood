@@ -1,8 +1,8 @@
 {
   "version": 2,
   "username": "winther-s0ldier",
-  "total_contributions": 1973,
-  "last_update": "2026-10-21T12:49:18.375193+00:00",
+  "total_contributions": 1975,
+  "last_update": "2026-10-21T17:57:05.270688+00:00",
   "tree": {
     "branches": [
       {
@@ -51879,7 +51879,7 @@
       {
         "x": 192,
         "y": 184,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 4.56,
         "duration": 4.38,
@@ -51892,7 +51892,7 @@
       {
         "x": 284,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 0.37,
         "duration": 3.59,
@@ -51901,6 +51901,19 @@
         "season": "autumn",
         "attached_at": "2026-10-21T12:49:18.388090+00:00",
         "lifespan_days": 10
+      },
+      {
+        "x": 144,
+        "y": 140,
+        "state": "regrowing",
+        "color_idx": 0,
+        "delay": 4.94,
+        "duration": 3.94,
+        "drift": 12,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-10-21T17:57:05.280520+00:00",
+        "lifespan_days": 13
       }
     ],
     "plants": [
@@ -52101,12 +52114,30 @@
         "growth_stage": "sprout",
         "born_at": "2026-10-21T12:49:18.388226+00:00",
         "size": 1
+      },
+      {
+        "x": 203,
+        "y": 326,
+        "type": "shrub",
+        "kind": "ground_plant",
+        "growth_stage": "sprout",
+        "born_at": "2026-10-21T17:57:05.280636+00:00",
+        "size": 1
+      },
+      {
+        "x": 296,
+        "y": 326,
+        "type": "shrub",
+        "kind": "ground_plant",
+        "growth_stage": "sprout",
+        "born_at": "2026-10-21T17:57:05.280676+00:00",
+        "size": 1
       }
     ]
   },
   "activity": {
     "streak": 207,
-    "recent_score": 18,
+    "recent_score": 20,
     "last_high_day": "streak_7",
     "inactive_days": 0,
     "merged_prs": 0,
@@ -52343,7 +52374,7 @@
     "2026-10-18": 4,
     "2026-10-19": 7,
     "2026-10-20": 6,
-    "2026-10-21": 18
+    "2026-10-21": 20
   },
   "canvas": {
     "w": 400,
