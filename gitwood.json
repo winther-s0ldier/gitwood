@@ -1,8 +1,8 @@
 {
   "version": 2,
   "username": "winther-s0ldier",
-  "total_contributions": 1975,
-  "last_update": "2026-10-21T17:57:05.270688+00:00",
+  "total_contributions": 1976,
+  "last_update": "2026-10-21T22:12:52.331435+00:00",
   "tree": {
     "branches": [
       {
@@ -51905,7 +51905,7 @@
       {
         "x": 144,
         "y": 140,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 4.94,
         "duration": 3.94,
@@ -52003,7 +52003,7 @@
         "y": 326,
         "type": "fern",
         "kind": "ground_plant",
-        "growth_stage": "sprout",
+        "growth_stage": "growing",
         "born_at": "2026-10-18T18:03:42.402718+00:00",
         "size": 1
       },
@@ -52012,7 +52012,7 @@
         "y": 326,
         "type": "shrub",
         "kind": "ground_plant",
-        "growth_stage": "growing",
+        "growth_stage": "mature",
         "born_at": "2026-10-11T18:03:42.402730+00:00",
         "size": 1
       },
@@ -52137,9 +52137,9 @@
   },
   "activity": {
     "streak": 207,
-    "recent_score": 20,
+    "recent_score": 21,
     "last_high_day": "streak_7",
-    "inactive_days": 0,
+    "inactive_days": 1,
     "merged_prs": 0,
     "celebrate_24h": 0
   },
@@ -52374,7 +52374,7 @@
     "2026-10-18": 4,
     "2026-10-19": 7,
     "2026-10-20": 6,
-    "2026-10-21": 20
+    "2026-10-21": 21
   },
   "canvas": {
     "w": 400,
