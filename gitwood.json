@@ -1,8 +1,8 @@
 {
   "version": 2,
   "username": "winther-s0ldier",
-  "total_contributions": 1954,
-  "last_update": "2026-10-20T22:10:58.892002+00:00",
+  "total_contributions": 1957,
+  "last_update": "2026-10-21T05:50:41.732524+00:00",
   "tree": {
     "branches": [
       {
@@ -10950,6 +10950,22 @@
         "angle": 191.0
       },
       {
+        "x": 160,
+        "y": 108,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
+        "angle": 127.0
+      },
+      {
+        "x": 156,
+        "y": 104,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
+        "angle": 127.0
+      },
+      {
         "x": 164,
         "y": 108,
         "w": 4,
@@ -21404,6 +21420,22 @@
         "h": 4,
         "depth": 7,
         "angle": 53.0
+      },
+      {
+        "x": 264,
+        "y": 112,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
+        "angle": 68.0
+      },
+      {
+        "x": 264,
+        "y": 108,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
+        "angle": 68.0
       },
       {
         "x": 264,
@@ -29598,6 +29630,22 @@
         "angle": 188.0
       },
       {
+        "x": 216,
+        "y": 128,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
+        "angle": 132.0
+      },
+      {
+        "x": 212,
+        "y": 128,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
+        "angle": 132.0
+      },
+      {
         "x": 220,
         "y": 132,
         "w": 4,
@@ -35651,6 +35699,22 @@
         "w": 4,
         "h": 4,
         "depth": 8,
+        "angle": 103.0
+      },
+      {
+        "x": 172,
+        "y": 124,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
+        "angle": 103.0
+      },
+      {
+        "x": 172,
+        "y": 128,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
         "angle": 59.0
       },
       {
@@ -39291,6 +39355,22 @@
         "w": 4,
         "h": 4,
         "depth": 8,
+        "angle": 57.0
+      },
+      {
+        "x": 216,
+        "y": 132,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
+        "angle": 57.0
+      },
+      {
+        "x": 212,
+        "y": 136,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
         "angle": 13.0
       },
       {
@@ -47092,6 +47172,22 @@
         "h": 4,
         "depth": 8,
         "angle": 22.0
+      },
+      {
+        "x": 228,
+        "y": 152,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
+        "angle": -40.0
+      },
+      {
+        "x": 232,
+        "y": 152,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
+        "angle": -40.0
       },
       {
         "x": 208,
@@ -47851,19 +47947,6 @@
         "season": "autumn",
         "attached_at": "2026-10-13T13:23:39.891140+00:00",
         "lifespan_days": 10
-      },
-      {
-        "x": 132,
-        "y": 152,
-        "state": "falling",
-        "color_idx": 1,
-        "delay": 2.11,
-        "duration": 3.99,
-        "drift": -18,
-        "fell_at": "2026-10-20T22:10:58.900741+00:00",
-        "season": "autumn",
-        "attached_at": "2026-10-14T11:01:43.771386+00:00",
-        "lifespan_days": 7
       },
       {
         "x": 228,
@@ -51365,7 +51448,7 @@
       {
         "x": 184,
         "y": 128,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 4.11,
         "duration": 3.32,
@@ -51378,7 +51461,7 @@
       {
         "x": 216,
         "y": 120,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 2.94,
         "duration": 3.13,
@@ -51387,6 +51470,19 @@
         "season": "autumn",
         "attached_at": "2026-10-20T22:10:58.901025+00:00",
         "lifespan_days": 9
+      },
+      {
+        "x": 172,
+        "y": 188,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 3.14,
+        "duration": 3.79,
+        "drift": 6,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-10-21T05:50:41.744161+00:00",
+        "lifespan_days": 7
       }
     ],
     "plants": [
@@ -51573,10 +51669,10 @@
     ]
   },
   "activity": {
-    "streak": 206,
-    "recent_score": 5,
+    "streak": 207,
+    "recent_score": 6,
     "last_high_day": "streak_7",
-    "inactive_days": 1,
+    "inactive_days": 0,
     "merged_prs": 0,
     "celebrate_24h": 0
   },
@@ -51810,7 +51906,8 @@
     "2026-10-17": 4,
     "2026-10-18": 4,
     "2026-10-19": 7,
-    "2026-10-20": 5
+    "2026-10-20": 6,
+    "2026-10-21": 2
   },
   "canvas": {
     "w": 400,
