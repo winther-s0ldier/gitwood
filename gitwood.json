@@ -1,8 +1,8 @@
 {
   "version": 2,
   "username": "winther-s0ldier",
-  "total_contributions": 2039,
-  "last_update": "2026-10-23T17:48:22.652655+00:00",
+  "total_contributions": 2040,
+  "last_update": "2026-10-23T21:56:58.122150+00:00",
   "tree": {
     "branches": [
       {
@@ -49744,19 +49744,6 @@
     ],
     "leaves": [
       {
-        "x": 224,
-        "y": 156,
-        "state": "falling",
-        "color_idx": 2,
-        "delay": 1.5,
-        "duration": 4.32,
-        "drift": 17,
-        "fell_at": "2026-10-23T17:48:22.669941+00:00",
-        "season": "autumn",
-        "attached_at": "2026-10-13T13:23:39.891140+00:00",
-        "lifespan_days": 10
-      },
-      {
         "x": 228,
         "y": 168,
         "state": "attached",
@@ -49837,12 +49824,12 @@
       {
         "x": 152,
         "y": 204,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 3.98,
         "duration": 3.63,
         "drift": 24,
-        "fell_at": null,
+        "fell_at": "2026-10-23T21:56:58.138592+00:00",
         "season": "autumn",
         "attached_at": "2026-10-16T10:32:18.577915+00:00",
         "lifespan_days": 8
@@ -49876,12 +49863,12 @@
       {
         "x": 232,
         "y": 164,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 3,
         "delay": 4.12,
         "duration": 2.97,
         "drift": -28,
-        "fell_at": null,
+        "fell_at": "2026-10-23T21:56:58.138592+00:00",
         "season": "autumn",
         "attached_at": "2026-10-16T20:24:55.804807+00:00",
         "lifespan_days": 7
@@ -53425,7 +53412,7 @@
       {
         "x": 192,
         "y": 176,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 4.51,
         "duration": 3.81,
@@ -53434,6 +53421,32 @@
         "season": "autumn",
         "attached_at": "2026-10-23T17:48:22.670578+00:00",
         "lifespan_days": 10
+      },
+      {
+        "x": 172,
+        "y": 120,
+        "state": "regrowing",
+        "color_idx": 1,
+        "delay": 1.91,
+        "duration": 2.5,
+        "drift": -26,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-10-23T21:56:58.139222+00:00",
+        "lifespan_days": 7
+      },
+      {
+        "x": 204,
+        "y": 152,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 1.45,
+        "duration": 3.14,
+        "drift": 6,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-10-23T21:56:58.139239+00:00",
+        "lifespan_days": 14
       }
     ],
     "plants": [
@@ -53451,7 +53464,7 @@
         "y": 326,
         "type": "shrub",
         "kind": "ground_plant",
-        "growth_stage": "growing",
+        "growth_stage": "mature",
         "born_at": "2026-10-13T18:03:42.402583+00:00",
         "size": 1
       },
@@ -53469,7 +53482,7 @@
         "y": 326,
         "type": "flower_blue",
         "kind": "flower",
-        "growth_stage": "blooming",
+        "growth_stage": "full_bloom",
         "born_at": "2026-10-16T18:03:42.402621+00:00",
         "size": 1
       },
@@ -53586,7 +53599,7 @@
         "y": 326,
         "type": "mushroom",
         "kind": "ground_plant",
-        "growth_stage": "sprout",
+        "growth_stage": "growing",
         "born_at": "2026-10-20T18:03:42.402812+00:00",
         "size": 1
       },
@@ -53657,9 +53670,9 @@
   },
   "activity": {
     "streak": 209,
-    "recent_score": 21,
+    "recent_score": 22,
     "last_high_day": "streak_7",
-    "inactive_days": 0,
+    "inactive_days": 1,
     "merged_prs": 0,
     "celebrate_24h": 0
   },
@@ -53896,7 +53909,7 @@
     "2026-10-20": 6,
     "2026-10-21": 26,
     "2026-10-22": 37,
-    "2026-10-23": 21
+    "2026-10-23": 22
   },
   "canvas": {
     "w": 400,
