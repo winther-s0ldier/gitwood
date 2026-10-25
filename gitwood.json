@@ -1,8 +1,8 @@
 {
   "version": 2,
   "username": "winther-s0ldier",
-  "total_contributions": 2065,
-  "last_update": "2026-10-24T21:27:34.383999+00:00",
+  "total_contributions": 2066,
+  "last_update": "2026-10-25T05:50:13.235096+00:00",
   "tree": {
     "branches": [
       {
@@ -17852,6 +17852,22 @@
         "h": 4,
         "depth": 7,
         "angle": 78.0
+      },
+      {
+        "x": 172,
+        "y": 148,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
+        "angle": 112.0
+      },
+      {
+        "x": 172,
+        "y": 144,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
+        "angle": 112.0
       },
       {
         "x": 172,
@@ -37875,6 +37891,22 @@
         "w": 4,
         "h": 4,
         "depth": 8,
+        "angle": 84.0
+      },
+      {
+        "x": 172,
+        "y": 148,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
+        "angle": 84.0
+      },
+      {
+        "x": 172,
+        "y": 152,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
         "angle": 28.0
       },
       {
@@ -44492,6 +44524,22 @@
         "h": 4,
         "depth": 7,
         "angle": 114.0
+      },
+      {
+        "x": 212,
+        "y": 148,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
+        "angle": 149.0
+      },
+      {
+        "x": 208,
+        "y": 144,
+        "w": 4,
+        "h": 4,
+        "depth": 8,
+        "angle": 149.0
       },
       {
         "x": 212,
@@ -50590,12 +50638,12 @@
       {
         "x": 232,
         "y": 176,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 2,
         "delay": 0.37,
         "duration": 3.75,
         "drift": -17,
-        "fell_at": null,
+        "fell_at": "2026-10-25T05:50:13.244715+00:00",
         "season": "autumn",
         "attached_at": "2026-10-18T02:43:06.145326+00:00",
         "lifespan_days": 7
@@ -54113,7 +54161,7 @@
       {
         "x": 156,
         "y": 188,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 0.47,
         "duration": 3.67,
@@ -54126,7 +54174,7 @@
       {
         "x": 108,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 2.83,
         "duration": 3.66,
@@ -54139,7 +54187,7 @@
       {
         "x": 180,
         "y": 176,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 2.47,
         "duration": 4.2,
@@ -54152,7 +54200,7 @@
       {
         "x": 160,
         "y": 140,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 1.67,
         "duration": 3.33,
@@ -54165,7 +54213,7 @@
       {
         "x": 196,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 0.12,
         "duration": 4.19,
@@ -54178,7 +54226,7 @@
       {
         "x": 292,
         "y": 164,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 3.2,
         "duration": 2.71,
@@ -54410,7 +54458,7 @@
   },
   "activity": {
     "streak": 210,
-    "recent_score": 17,
+    "recent_score": 18,
     "last_high_day": "streak_7",
     "inactive_days": 1,
     "merged_prs": 0,
@@ -54650,7 +54698,7 @@
     "2026-10-21": 26,
     "2026-10-22": 37,
     "2026-10-23": 30,
-    "2026-10-24": 17
+    "2026-10-24": 18
   },
   "canvas": {
     "w": 400,
