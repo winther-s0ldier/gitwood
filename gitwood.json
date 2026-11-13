@@ -1,8 +1,8 @@
 {
   "version": 2,
   "username": "winther-s0ldier",
-  "total_contributions": 2605,
-  "last_update": "2026-11-13T07:42:33.610458+00:00",
+  "total_contributions": 2614,
+  "last_update": "2026-11-13T20:24:12.580808+00:00",
   "tree": {
     "branches": [
       {
@@ -2780,6 +2780,22 @@
         "h": 4,
         "depth": 8,
         "angle": 139.0
+      },
+      {
+        "x": 100,
+        "y": 140,
+        "w": 4,
+        "h": 4,
+        "depth": 9,
+        "angle": 114.0
+      },
+      {
+        "x": 100,
+        "y": 136,
+        "w": 4,
+        "h": 4,
+        "depth": 9,
+        "angle": 114.0
       },
       {
         "x": 124,
@@ -29742,6 +29758,22 @@
         "angle": 43.0
       },
       {
+        "x": 328,
+        "y": 172,
+        "w": 4,
+        "h": 4,
+        "depth": 9,
+        "angle": 73.0
+      },
+      {
+        "x": 332,
+        "y": 168,
+        "w": 4,
+        "h": 4,
+        "depth": 9,
+        "angle": 73.0
+      },
+      {
         "x": 320,
         "y": 180,
         "w": 4,
@@ -56288,32 +56320,6 @@
     ],
     "leaves": [
       {
-        "x": 196,
-        "y": 168,
-        "state": "falling",
-        "color_idx": 3,
-        "delay": 3.77,
-        "duration": 3.32,
-        "drift": -7,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-10-30T06:55:36.368117+00:00",
-        "lifespan_days": 14
-      },
-      {
-        "x": 328,
-        "y": 192,
-        "state": "falling",
-        "color_idx": 2,
-        "delay": 2.37,
-        "duration": 4.36,
-        "drift": 28,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-10-30T13:56:58.313972+00:00",
-        "lifespan_days": 14
-      },
-      {
         "x": 128,
         "y": 168,
         "state": "attached",
@@ -56394,12 +56400,12 @@
       {
         "x": 264,
         "y": 144,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 0.04,
         "duration": 3.09,
         "drift": -8,
-        "fell_at": null,
+        "fell_at": "2026-11-13T20:24:12.599303+00:00",
         "season": "autumn",
         "attached_at": "2026-10-31T13:28:46.407222+00:00",
         "lifespan_days": 13
@@ -56407,12 +56413,12 @@
       {
         "x": 252,
         "y": 168,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 1.34,
         "duration": 3.12,
         "drift": 21,
-        "fell_at": null,
+        "fell_at": "2026-11-13T20:24:12.599303+00:00",
         "season": "autumn",
         "attached_at": "2026-10-31T13:28:46.407226+00:00",
         "lifespan_days": 13
@@ -56444,19 +56450,6 @@
         "lifespan_days": 14
       },
       {
-        "x": 272,
-        "y": 156,
-        "state": "falling",
-        "color_idx": 3,
-        "delay": 0.22,
-        "duration": 4.32,
-        "drift": -27,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-10-31T22:22:49.886408+00:00",
-        "lifespan_days": 12
-      },
-      {
         "x": 160,
         "y": 108,
         "state": "attached",
@@ -56468,19 +56461,6 @@
         "season": "autumn",
         "attached_at": "2026-10-31T22:22:49.886456+00:00",
         "lifespan_days": 13
-      },
-      {
-        "x": 68,
-        "y": 204,
-        "state": "falling",
-        "color_idx": 0,
-        "delay": 3.65,
-        "duration": 3.37,
-        "drift": 5,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-10-31T22:22:49.886473+00:00",
-        "lifespan_days": 12
       },
       {
         "x": 232,
@@ -56498,12 +56478,12 @@
       {
         "x": 224,
         "y": 212,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 3,
         "delay": 4.14,
         "duration": 3.44,
         "drift": 20,
-        "fell_at": null,
+        "fell_at": "2026-11-13T20:24:12.599303+00:00",
         "season": "autumn",
         "attached_at": "2026-11-01T18:19:59.185507+00:00",
         "lifespan_days": 12
@@ -56511,28 +56491,15 @@
       {
         "x": 236,
         "y": 140,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 0.58,
         "duration": 2.94,
         "drift": -2,
-        "fell_at": null,
+        "fell_at": "2026-11-13T20:24:12.599303+00:00",
         "season": "autumn",
         "attached_at": "2026-11-01T18:19:59.185512+00:00",
         "lifespan_days": 14
-      },
-      {
-        "x": 160,
-        "y": 172,
-        "state": "falling",
-        "color_idx": 2,
-        "delay": 0.08,
-        "duration": 3.37,
-        "drift": -1,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-11-01T18:19:59.185517+00:00",
-        "lifespan_days": 13
       },
       {
         "x": 256,
@@ -56550,12 +56517,12 @@
       {
         "x": 152,
         "y": 144,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 0.6,
         "duration": 4.02,
         "drift": -18,
-        "fell_at": null,
+        "fell_at": "2026-11-13T20:24:12.599303+00:00",
         "season": "autumn",
         "attached_at": "2026-11-01T18:19:59.185559+00:00",
         "lifespan_days": 13
@@ -56563,41 +56530,15 @@
       {
         "x": 244,
         "y": 196,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 3,
         "delay": 3.96,
         "duration": 4.31,
         "drift": 22,
-        "fell_at": null,
+        "fell_at": "2026-11-13T20:24:12.599303+00:00",
         "season": "autumn",
         "attached_at": "2026-11-01T18:19:59.185578+00:00",
         "lifespan_days": 12
-      },
-      {
-        "x": 272,
-        "y": 164,
-        "state": "falling",
-        "color_idx": 3,
-        "delay": 2.12,
-        "duration": 3.91,
-        "drift": -19,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-11-01T18:19:59.185589+00:00",
-        "lifespan_days": 14
-      },
-      {
-        "x": 164,
-        "y": 192,
-        "state": "falling",
-        "color_idx": 2,
-        "delay": 2.36,
-        "duration": 3.13,
-        "drift": 27,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-11-01T18:19:59.185593+00:00",
-        "lifespan_days": 13
       },
       {
         "x": 244,
@@ -56613,19 +56554,6 @@
         "lifespan_days": 13
       },
       {
-        "x": 144,
-        "y": 140,
-        "state": "falling",
-        "color_idx": 2,
-        "delay": 1.97,
-        "duration": 2.67,
-        "drift": 11,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-11-01T22:38:55.603979+00:00",
-        "lifespan_days": 11
-      },
-      {
         "x": 208,
         "y": 152,
         "state": "attached",
@@ -56637,19 +56565,6 @@
         "season": "autumn",
         "attached_at": "2026-11-01T22:38:55.603984+00:00",
         "lifespan_days": 12
-      },
-      {
-        "x": 336,
-        "y": 216,
-        "state": "falling",
-        "color_idx": 2,
-        "delay": 1.4,
-        "duration": 3.08,
-        "drift": 26,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-11-01T22:38:55.603998+00:00",
-        "lifespan_days": 14
       },
       {
         "x": 160,
@@ -56836,12 +56751,12 @@
       {
         "x": 200,
         "y": 216,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 0,
         "delay": 3.86,
         "duration": 4.29,
         "drift": -27,
-        "fell_at": null,
+        "fell_at": "2026-11-13T20:24:12.599303+00:00",
         "season": "autumn",
         "attached_at": "2026-11-03T20:00:15.154749+00:00",
         "lifespan_days": 10
@@ -56849,12 +56764,12 @@
       {
         "x": 256,
         "y": 192,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 2,
         "delay": 4.24,
         "duration": 2.77,
         "drift": -17,
-        "fell_at": null,
+        "fell_at": "2026-11-13T20:24:12.599303+00:00",
         "season": "autumn",
         "attached_at": "2026-11-03T20:00:15.154755+00:00",
         "lifespan_days": 10
@@ -56862,12 +56777,12 @@
       {
         "x": 312,
         "y": 244,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 0,
         "delay": 2.06,
         "duration": 4.43,
         "drift": 0,
-        "fell_at": null,
+        "fell_at": "2026-11-13T20:24:12.599303+00:00",
         "season": "autumn",
         "attached_at": "2026-11-03T20:00:15.154764+00:00",
         "lifespan_days": 10
@@ -56914,12 +56829,12 @@
       {
         "x": 272,
         "y": 148,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 0,
         "delay": 3.07,
         "duration": 3.33,
         "drift": -3,
-        "fell_at": null,
+        "fell_at": "2026-11-13T20:24:12.599303+00:00",
         "season": "autumn",
         "attached_at": "2026-11-03T20:00:15.154798+00:00",
         "lifespan_days": 10
@@ -56940,12 +56855,12 @@
       {
         "x": 228,
         "y": 168,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 2,
         "delay": 0.34,
         "duration": 2.91,
         "drift": 6,
-        "fell_at": null,
+        "fell_at": "2026-11-13T20:24:12.599303+00:00",
         "season": "autumn",
         "attached_at": "2026-11-03T20:00:15.154825+00:00",
         "lifespan_days": 10
@@ -56988,19 +56903,6 @@
         "season": "autumn",
         "attached_at": "2026-11-04T07:22:23.110003+00:00",
         "lifespan_days": 13
-      },
-      {
-        "x": 72,
-        "y": 176,
-        "state": "falling",
-        "color_idx": 0,
-        "delay": 3.8,
-        "duration": 2.96,
-        "drift": 8,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-11-04T07:22:23.110006+00:00",
-        "lifespan_days": 9
       },
       {
         "x": 84,
@@ -57081,53 +56983,27 @@
         "lifespan_days": 13
       },
       {
-        "x": 240,
-        "y": 176,
-        "state": "falling",
-        "color_idx": 1,
-        "delay": 2.67,
-        "duration": 3.59,
-        "drift": 11,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-11-04T20:21:21.153540+00:00",
-        "lifespan_days": 7
-      },
-      {
         "x": 168,
         "y": 124,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 2,
         "delay": 4.76,
         "duration": 3.09,
         "drift": 8,
-        "fell_at": null,
+        "fell_at": "2026-11-13T20:24:12.599303+00:00",
         "season": "autumn",
         "attached_at": "2026-11-04T20:21:21.153553+00:00",
         "lifespan_days": 11
       },
       {
-        "x": 156,
-        "y": 180,
-        "state": "falling",
-        "color_idx": 3,
-        "delay": 0.86,
-        "duration": 2.76,
-        "drift": -20,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-11-04T20:21:21.153556+00:00",
-        "lifespan_days": 8
-      },
-      {
         "x": 304,
         "y": 200,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 4.25,
         "duration": 2.84,
         "drift": -2,
-        "fell_at": null,
+        "fell_at": "2026-11-13T20:24:12.599303+00:00",
         "season": "autumn",
         "attached_at": "2026-11-04T20:21:21.153559+00:00",
         "lifespan_days": 11
@@ -57144,19 +57020,6 @@
         "season": "autumn",
         "attached_at": "2026-11-04T20:21:21.153562+00:00",
         "lifespan_days": 11
-      },
-      {
-        "x": 144,
-        "y": 180,
-        "state": "falling",
-        "color_idx": 1,
-        "delay": 1.04,
-        "duration": 2.63,
-        "drift": -25,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-11-04T20:21:21.153565+00:00",
-        "lifespan_days": 8
       },
       {
         "x": 284,
@@ -57187,12 +57050,12 @@
       {
         "x": 228,
         "y": 224,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 2.0,
         "duration": 2.62,
         "drift": 9,
-        "fell_at": null,
+        "fell_at": "2026-11-13T20:24:12.599303+00:00",
         "season": "autumn",
         "attached_at": "2026-11-04T20:21:21.153574+00:00",
         "lifespan_days": 9
@@ -57276,32 +57139,6 @@
         "lifespan_days": 11
       },
       {
-        "x": 196,
-        "y": 152,
-        "state": "falling",
-        "color_idx": 3,
-        "delay": 0.32,
-        "duration": 2.52,
-        "drift": -26,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-11-04T20:21:21.153590+00:00",
-        "lifespan_days": 7
-      },
-      {
-        "x": 108,
-        "y": 180,
-        "state": "falling",
-        "color_idx": 0,
-        "delay": 3.36,
-        "duration": 3.89,
-        "drift": -15,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-11-04T20:21:21.153592+00:00",
-        "lifespan_days": 8
-      },
-      {
         "x": 284,
         "y": 200,
         "state": "attached",
@@ -57315,56 +57152,17 @@
         "lifespan_days": 11
       },
       {
-        "x": 152,
-        "y": 176,
-        "state": "falling",
-        "color_idx": 3,
-        "delay": 2.76,
-        "duration": 3.97,
-        "drift": 6,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-11-04T20:21:21.153596+00:00",
-        "lifespan_days": 8
-      },
-      {
-        "x": 192,
-        "y": 120,
-        "state": "falling",
-        "color_idx": 1,
-        "delay": 0.09,
-        "duration": 3.66,
-        "drift": 13,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-11-04T20:21:21.153598+00:00",
-        "lifespan_days": 7
-      },
-      {
         "x": 196,
         "y": 116,
-        "state": "attached",
+        "state": "falling",
         "color_idx": 1,
         "delay": 0.53,
         "duration": 3.73,
         "drift": -3,
-        "fell_at": null,
+        "fell_at": "2026-11-13T20:24:12.599303+00:00",
         "season": "autumn",
         "attached_at": "2026-11-04T20:21:21.153600+00:00",
         "lifespan_days": 9
-      },
-      {
-        "x": 144,
-        "y": 176,
-        "state": "falling",
-        "color_idx": 3,
-        "delay": 4.29,
-        "duration": 3.69,
-        "drift": 12,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-11-04T20:21:21.153602+00:00",
-        "lifespan_days": 7
       },
       {
         "x": 164,
@@ -57417,19 +57215,6 @@
         "season": "autumn",
         "attached_at": "2026-11-04T20:21:21.153610+00:00",
         "lifespan_days": 13
-      },
-      {
-        "x": 172,
-        "y": 156,
-        "state": "falling",
-        "color_idx": 0,
-        "delay": 3.7,
-        "duration": 3.02,
-        "drift": 17,
-        "fell_at": "2026-11-13T07:42:33.629104+00:00",
-        "season": "autumn",
-        "attached_at": "2026-11-04T20:21:21.153612+00:00",
-        "lifespan_days": 9
       },
       {
         "x": 144,
@@ -57564,7 +57349,7 @@
       {
         "x": 172,
         "y": 108,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 3.04,
         "duration": 3.61,
@@ -57577,7 +57362,7 @@
       {
         "x": 192,
         "y": 140,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 1.9,
         "duration": 2.92,
@@ -57590,7 +57375,7 @@
       {
         "x": 284,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.13,
         "duration": 3.06,
@@ -57603,7 +57388,7 @@
       {
         "x": 140,
         "y": 132,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 1.25,
         "duration": 3.32,
@@ -57616,7 +57401,7 @@
       {
         "x": 216,
         "y": 132,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 2.34,
         "duration": 2.97,
@@ -57629,7 +57414,7 @@
       {
         "x": 260,
         "y": 208,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 2.84,
         "duration": 3.39,
@@ -57642,7 +57427,7 @@
       {
         "x": 100,
         "y": 140,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 1.54,
         "duration": 3.19,
@@ -57655,7 +57440,7 @@
       {
         "x": 100,
         "y": 180,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 2.05,
         "duration": 3.93,
@@ -57668,7 +57453,7 @@
       {
         "x": 168,
         "y": 212,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 0.26,
         "duration": 4.46,
@@ -57681,7 +57466,7 @@
       {
         "x": 80,
         "y": 216,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 3.77,
         "duration": 3.71,
@@ -57694,7 +57479,7 @@
       {
         "x": 180,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 3.3,
         "duration": 2.76,
@@ -57707,7 +57492,7 @@
       {
         "x": 240,
         "y": 200,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 3.38,
         "duration": 4.31,
@@ -57720,7 +57505,7 @@
       {
         "x": 292,
         "y": 192,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.82,
         "duration": 3.13,
@@ -57733,7 +57518,7 @@
       {
         "x": 144,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 4.37,
         "duration": 2.96,
@@ -57746,7 +57531,7 @@
       {
         "x": 176,
         "y": 212,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 4.76,
         "duration": 4.03,
@@ -57759,7 +57544,7 @@
       {
         "x": 152,
         "y": 120,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.07,
         "duration": 3.08,
@@ -57772,7 +57557,7 @@
       {
         "x": 124,
         "y": 136,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 0.3,
         "duration": 4.1,
@@ -57785,7 +57570,7 @@
       {
         "x": 164,
         "y": 136,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 2.31,
         "duration": 3.78,
@@ -57798,7 +57583,7 @@
       {
         "x": 228,
         "y": 140,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 2.51,
         "duration": 3.45,
@@ -57811,7 +57596,7 @@
       {
         "x": 172,
         "y": 124,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 0.12,
         "duration": 3.07,
@@ -57824,7 +57609,7 @@
       {
         "x": 108,
         "y": 132,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 3.69,
         "duration": 2.84,
@@ -57837,7 +57622,7 @@
       {
         "x": 320,
         "y": 232,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 1.33,
         "duration": 3.57,
@@ -57850,7 +57635,7 @@
       {
         "x": 236,
         "y": 136,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 0.38,
         "duration": 4.4,
@@ -57863,7 +57648,7 @@
       {
         "x": 272,
         "y": 144,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 1.49,
         "duration": 2.56,
@@ -57876,7 +57661,7 @@
       {
         "x": 300,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 3.79,
         "duration": 3.44,
@@ -57889,7 +57674,7 @@
       {
         "x": 220,
         "y": 132,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 2.63,
         "duration": 3.19,
@@ -57902,7 +57687,7 @@
       {
         "x": 136,
         "y": 132,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 0.55,
         "duration": 4.15,
@@ -57915,7 +57700,7 @@
       {
         "x": 284,
         "y": 172,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 0.89,
         "duration": 4.14,
@@ -57928,7 +57713,7 @@
       {
         "x": 128,
         "y": 184,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 2.87,
         "duration": 3.47,
@@ -57941,7 +57726,7 @@
       {
         "x": 324,
         "y": 184,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.81,
         "duration": 4.01,
@@ -57954,7 +57739,7 @@
       {
         "x": 280,
         "y": 188,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 2.99,
         "duration": 3.38,
@@ -57967,7 +57752,7 @@
       {
         "x": 260,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 0.22,
         "duration": 3.99,
@@ -57980,7 +57765,7 @@
       {
         "x": 108,
         "y": 172,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 0.27,
         "duration": 4.05,
@@ -57993,7 +57778,7 @@
       {
         "x": 252,
         "y": 124,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 2.7,
         "duration": 2.89,
@@ -58006,7 +57791,7 @@
       {
         "x": 72,
         "y": 184,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.12,
         "duration": 2.81,
@@ -58019,7 +57804,7 @@
       {
         "x": 304,
         "y": 204,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 1.62,
         "duration": 4.07,
@@ -58032,7 +57817,7 @@
       {
         "x": 216,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 1.8,
         "duration": 3.98,
@@ -58045,7 +57830,7 @@
       {
         "x": 128,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 2.36,
         "duration": 4.45,
@@ -58058,7 +57843,7 @@
       {
         "x": 188,
         "y": 132,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 2.57,
         "duration": 3.17,
@@ -58071,7 +57856,7 @@
       {
         "x": 172,
         "y": 112,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 1.76,
         "duration": 4.31,
@@ -58084,7 +57869,7 @@
       {
         "x": 296,
         "y": 176,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 2.42,
         "duration": 3.05,
@@ -58097,7 +57882,7 @@
       {
         "x": 236,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 4.38,
         "duration": 4.38,
@@ -58110,7 +57895,7 @@
       {
         "x": 120,
         "y": 128,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.81,
         "duration": 2.53,
@@ -58123,7 +57908,7 @@
       {
         "x": 140,
         "y": 184,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 3.09,
         "duration": 3.99,
@@ -58136,7 +57921,7 @@
       {
         "x": 304,
         "y": 148,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 2.36,
         "duration": 2.54,
@@ -58149,7 +57934,7 @@
       {
         "x": 188,
         "y": 164,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 1.35,
         "duration": 3.43,
@@ -58162,7 +57947,7 @@
       {
         "x": 308,
         "y": 200,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 1.87,
         "duration": 3.17,
@@ -58175,7 +57960,7 @@
       {
         "x": 132,
         "y": 164,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 1.47,
         "duration": 4.05,
@@ -58188,7 +57973,7 @@
       {
         "x": 172,
         "y": 164,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 4.38,
         "duration": 4.48,
@@ -58201,7 +57986,7 @@
       {
         "x": 192,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 0.84,
         "duration": 2.68,
@@ -58214,7 +57999,7 @@
       {
         "x": 312,
         "y": 224,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 1.1,
         "duration": 4.27,
@@ -58227,7 +58012,7 @@
       {
         "x": 224,
         "y": 124,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 3.35,
         "duration": 3.22,
@@ -58240,7 +58025,7 @@
       {
         "x": 316,
         "y": 164,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 3.57,
         "duration": 3.3,
@@ -58253,7 +58038,7 @@
       {
         "x": 260,
         "y": 168,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 1.59,
         "duration": 2.57,
@@ -58266,7 +58051,7 @@
       {
         "x": 292,
         "y": 172,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 3.78,
         "duration": 2.98,
@@ -58279,7 +58064,7 @@
       {
         "x": 152,
         "y": 128,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 0.08,
         "duration": 3.33,
@@ -58292,7 +58077,7 @@
       {
         "x": 168,
         "y": 216,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.74,
         "duration": 2.75,
@@ -58305,7 +58090,7 @@
       {
         "x": 136,
         "y": 176,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 0.97,
         "duration": 2.92,
@@ -58318,7 +58103,7 @@
       {
         "x": 84,
         "y": 220,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 4.66,
         "duration": 3.95,
@@ -58331,7 +58116,7 @@
       {
         "x": 168,
         "y": 180,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.19,
         "duration": 4.09,
@@ -58344,7 +58129,7 @@
       {
         "x": 160,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 3.43,
         "duration": 2.58,
@@ -58357,7 +58142,7 @@
       {
         "x": 200,
         "y": 136,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 4.78,
         "duration": 2.6,
@@ -58370,7 +58155,7 @@
       {
         "x": 184,
         "y": 188,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 0.71,
         "duration": 4.44,
@@ -58383,7 +58168,7 @@
       {
         "x": 256,
         "y": 184,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 2.88,
         "duration": 2.65,
@@ -58396,7 +58181,7 @@
       {
         "x": 240,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 4.45,
         "duration": 2.71,
@@ -58409,7 +58194,7 @@
       {
         "x": 264,
         "y": 204,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 0.17,
         "duration": 3.83,
@@ -58422,7 +58207,7 @@
       {
         "x": 88,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 4.41,
         "duration": 4.46,
@@ -58435,7 +58220,7 @@
       {
         "x": 276,
         "y": 128,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 0.88,
         "duration": 4.48,
@@ -58448,7 +58233,7 @@
       {
         "x": 304,
         "y": 168,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 1.85,
         "duration": 3.22,
@@ -58461,7 +58246,7 @@
       {
         "x": 232,
         "y": 224,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 3.09,
         "duration": 2.61,
@@ -58474,7 +58259,7 @@
       {
         "x": 256,
         "y": 148,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 2.45,
         "duration": 4.12,
@@ -58487,7 +58272,7 @@
       {
         "x": 212,
         "y": 148,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 4.91,
         "duration": 2.69,
@@ -58500,7 +58285,7 @@
       {
         "x": 320,
         "y": 164,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 4.99,
         "duration": 3.12,
@@ -58513,7 +58298,7 @@
       {
         "x": 212,
         "y": 176,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.04,
         "duration": 3.56,
@@ -58526,7 +58311,7 @@
       {
         "x": 172,
         "y": 116,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.68,
         "duration": 2.61,
@@ -58539,7 +58324,7 @@
       {
         "x": 220,
         "y": 128,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.73,
         "duration": 3.19,
@@ -58552,7 +58337,7 @@
       {
         "x": 316,
         "y": 240,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 1.64,
         "duration": 4.13,
@@ -58565,7 +58350,7 @@
       {
         "x": 276,
         "y": 184,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 2.47,
         "duration": 4.45,
@@ -58578,7 +58363,7 @@
       {
         "x": 160,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 4.54,
         "duration": 3.99,
@@ -58591,7 +58376,7 @@
       {
         "x": 164,
         "y": 132,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 2.01,
         "duration": 2.98,
@@ -58604,7 +58389,7 @@
       {
         "x": 112,
         "y": 212,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 2.98,
         "duration": 3.54,
@@ -58617,7 +58402,7 @@
       {
         "x": 208,
         "y": 144,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.93,
         "duration": 2.83,
@@ -58630,7 +58415,7 @@
       {
         "x": 216,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 0.05,
         "duration": 4.44,
@@ -58643,7 +58428,7 @@
       {
         "x": 72,
         "y": 212,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 4.74,
         "duration": 4.44,
@@ -58656,7 +58441,7 @@
       {
         "x": 324,
         "y": 200,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 4.61,
         "duration": 3.36,
@@ -58669,7 +58454,7 @@
       {
         "x": 112,
         "y": 164,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 1.68,
         "duration": 4.45,
@@ -58682,7 +58467,7 @@
       {
         "x": 244,
         "y": 172,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 4.63,
         "duration": 2.71,
@@ -58695,7 +58480,7 @@
       {
         "x": 224,
         "y": 128,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 0.52,
         "duration": 3.54,
@@ -58708,7 +58493,7 @@
       {
         "x": 280,
         "y": 172,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 1.64,
         "duration": 2.85,
@@ -58721,7 +58506,7 @@
       {
         "x": 288,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 3.02,
         "duration": 3.78,
@@ -58734,7 +58519,7 @@
       {
         "x": 288,
         "y": 140,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 3.6,
         "duration": 4.14,
@@ -58747,7 +58532,7 @@
       {
         "x": 72,
         "y": 192,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 4.58,
         "duration": 3.75,
@@ -58760,7 +58545,7 @@
       {
         "x": 224,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 0.17,
         "duration": 2.84,
@@ -58773,7 +58558,7 @@
       {
         "x": 160,
         "y": 140,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 1.3,
         "duration": 3.67,
@@ -58786,7 +58571,7 @@
       {
         "x": 116,
         "y": 172,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 1.12,
         "duration": 3.19,
@@ -58799,7 +58584,7 @@
       {
         "x": 204,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 1.36,
         "duration": 2.93,
@@ -58812,7 +58597,7 @@
       {
         "x": 148,
         "y": 124,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 4.9,
         "duration": 3.53,
@@ -58825,7 +58610,7 @@
       {
         "x": 196,
         "y": 128,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 3.42,
         "duration": 4.35,
@@ -58838,7 +58623,7 @@
       {
         "x": 168,
         "y": 116,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 0.97,
         "duration": 2.99,
@@ -58851,7 +58636,7 @@
       {
         "x": 84,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 3.8,
         "duration": 3.84,
@@ -58864,7 +58649,7 @@
       {
         "x": 100,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 0.09,
         "duration": 3.29,
@@ -58877,7 +58662,7 @@
       {
         "x": 304,
         "y": 196,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 0.81,
         "duration": 3.24,
@@ -58890,7 +58675,7 @@
       {
         "x": 140,
         "y": 180,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 1.45,
         "duration": 3.05,
@@ -58903,7 +58688,7 @@
       {
         "x": 124,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 0.68,
         "duration": 2.62,
@@ -58916,7 +58701,7 @@
       {
         "x": 260,
         "y": 136,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 0.13,
         "duration": 3.59,
@@ -58929,7 +58714,7 @@
       {
         "x": 120,
         "y": 200,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 2.52,
         "duration": 4.41,
@@ -58942,7 +58727,7 @@
       {
         "x": 84,
         "y": 180,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 2.93,
         "duration": 3.75,
@@ -58955,7 +58740,7 @@
       {
         "x": 212,
         "y": 192,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 4.55,
         "duration": 3.16,
@@ -58968,7 +58753,7 @@
       {
         "x": 240,
         "y": 144,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.59,
         "duration": 3.03,
@@ -58981,7 +58766,7 @@
       {
         "x": 148,
         "y": 112,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 2.4,
         "duration": 3.4,
@@ -58994,7 +58779,7 @@
       {
         "x": 116,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 0.37,
         "duration": 4.21,
@@ -59007,7 +58792,7 @@
       {
         "x": 160,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 0.37,
         "duration": 2.9,
@@ -59020,7 +58805,7 @@
       {
         "x": 252,
         "y": 164,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 3.85,
         "duration": 3.63,
@@ -59033,7 +58818,7 @@
       {
         "x": 156,
         "y": 124,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 4.7,
         "duration": 2.81,
@@ -59046,7 +58831,7 @@
       {
         "x": 172,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 3.94,
         "duration": 2.72,
@@ -59059,7 +58844,7 @@
       {
         "x": 188,
         "y": 112,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 1.64,
         "duration": 3.29,
@@ -59072,7 +58857,7 @@
       {
         "x": 164,
         "y": 172,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 2.48,
         "duration": 4.36,
@@ -59085,7 +58870,7 @@
       {
         "x": 72,
         "y": 216,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 3.08,
         "duration": 2.81,
@@ -59098,7 +58883,7 @@
       {
         "x": 108,
         "y": 188,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 3.67,
         "duration": 2.68,
@@ -59111,7 +58896,7 @@
       {
         "x": 268,
         "y": 128,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 1.66,
         "duration": 3.37,
@@ -59124,7 +58909,7 @@
       {
         "x": 156,
         "y": 208,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 0.41,
         "duration": 2.77,
@@ -59137,7 +58922,7 @@
       {
         "x": 268,
         "y": 208,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 4.82,
         "duration": 3.2,
@@ -59150,7 +58935,7 @@
       {
         "x": 276,
         "y": 188,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 3.65,
         "duration": 3.52,
@@ -59163,7 +58948,7 @@
       {
         "x": 120,
         "y": 172,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 1.64,
         "duration": 3.04,
@@ -59176,7 +58961,7 @@
       {
         "x": 256,
         "y": 144,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 0.05,
         "duration": 3.46,
@@ -59189,7 +58974,7 @@
       {
         "x": 224,
         "y": 132,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 1.66,
         "duration": 3.53,
@@ -59202,7 +58987,7 @@
       {
         "x": 212,
         "y": 188,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 1.94,
         "duration": 3.35,
@@ -59215,7 +59000,7 @@
       {
         "x": 284,
         "y": 204,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.23,
         "duration": 3.54,
@@ -59228,7 +59013,7 @@
       {
         "x": 192,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 2.94,
         "duration": 3.4,
@@ -59241,7 +59026,7 @@
       {
         "x": 212,
         "y": 144,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 1.99,
         "duration": 2.77,
@@ -59254,7 +59039,7 @@
       {
         "x": 88,
         "y": 232,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 2.81,
         "duration": 4.27,
@@ -59267,7 +59052,7 @@
       {
         "x": 196,
         "y": 112,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 0.95,
         "duration": 3.14,
@@ -59280,7 +59065,7 @@
       {
         "x": 100,
         "y": 216,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.62,
         "duration": 3.97,
@@ -59293,7 +59078,7 @@
       {
         "x": 220,
         "y": 196,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 1.36,
         "duration": 3.31,
@@ -59306,7 +59091,7 @@
       {
         "x": 72,
         "y": 224,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 2.84,
         "duration": 4.23,
@@ -59319,7 +59104,7 @@
       {
         "x": 80,
         "y": 184,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 0.37,
         "duration": 2.85,
@@ -59332,7 +59117,7 @@
       {
         "x": 288,
         "y": 172,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 2.62,
         "duration": 2.94,
@@ -59345,7 +59130,7 @@
       {
         "x": 160,
         "y": 124,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.75,
         "duration": 4.0,
@@ -59358,7 +59143,7 @@
       {
         "x": 236,
         "y": 176,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 2.51,
         "duration": 2.57,
@@ -59371,7 +59156,7 @@
       {
         "x": 92,
         "y": 180,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.1,
         "duration": 2.54,
@@ -59384,7 +59169,7 @@
       {
         "x": 196,
         "y": 224,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 1.0,
         "duration": 3.54,
@@ -59397,7 +59182,7 @@
       {
         "x": 152,
         "y": 196,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.64,
         "duration": 3.59,
@@ -59410,7 +59195,7 @@
       {
         "x": 280,
         "y": 132,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.44,
         "duration": 4.09,
@@ -59423,7 +59208,7 @@
       {
         "x": 200,
         "y": 116,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 1.96,
         "duration": 3.37,
@@ -59436,7 +59221,7 @@
       {
         "x": 200,
         "y": 208,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 0.3,
         "duration": 3.21,
@@ -59449,7 +59234,7 @@
       {
         "x": 192,
         "y": 128,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 1.63,
         "duration": 2.59,
@@ -59462,7 +59247,7 @@
       {
         "x": 192,
         "y": 116,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 0.97,
         "duration": 3.8,
@@ -59475,7 +59260,7 @@
       {
         "x": 140,
         "y": 192,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 0.25,
         "duration": 4.43,
@@ -59488,7 +59273,7 @@
       {
         "x": 316,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 2.01,
         "duration": 2.92,
@@ -59501,7 +59286,7 @@
       {
         "x": 108,
         "y": 136,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 0.6,
         "duration": 3.87,
@@ -59514,7 +59299,7 @@
       {
         "x": 128,
         "y": 144,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 2.75,
         "duration": 2.76,
@@ -59527,7 +59312,7 @@
       {
         "x": 236,
         "y": 112,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 4.05,
         "duration": 4.02,
@@ -59540,7 +59325,7 @@
       {
         "x": 84,
         "y": 224,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 2.05,
         "duration": 4.34,
@@ -59553,7 +59338,7 @@
       {
         "x": 112,
         "y": 132,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 1.33,
         "duration": 3.67,
@@ -59566,7 +59351,7 @@
       {
         "x": 208,
         "y": 188,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 2.87,
         "duration": 4.2,
@@ -59579,7 +59364,7 @@
       {
         "x": 228,
         "y": 116,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 3.36,
         "duration": 2.72,
@@ -59592,7 +59377,7 @@
       {
         "x": 276,
         "y": 160,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 2.25,
         "duration": 4.08,
@@ -59605,7 +59390,7 @@
       {
         "x": 244,
         "y": 164,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.39,
         "duration": 4.12,
@@ -59618,7 +59403,7 @@
       {
         "x": 196,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 2.42,
         "duration": 2.87,
@@ -59631,7 +59416,7 @@
       {
         "x": 136,
         "y": 168,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 0.0,
         "duration": 2.66,
@@ -59644,7 +59429,7 @@
       {
         "x": 276,
         "y": 148,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 1.87,
         "duration": 3.48,
@@ -59657,7 +59442,7 @@
       {
         "x": 244,
         "y": 136,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 0.21,
         "duration": 4.25,
@@ -59670,7 +59455,7 @@
       {
         "x": 144,
         "y": 128,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 1.69,
         "duration": 3.29,
@@ -59683,7 +59468,7 @@
       {
         "x": 192,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 4.87,
         "duration": 4.18,
@@ -59696,7 +59481,7 @@
       {
         "x": 268,
         "y": 148,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 1.68,
         "duration": 4.22,
@@ -59709,7 +59494,7 @@
       {
         "x": 144,
         "y": 192,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 1.81,
         "duration": 3.31,
@@ -59722,7 +59507,7 @@
       {
         "x": 316,
         "y": 152,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 4.09,
         "duration": 2.91,
@@ -59735,7 +59520,7 @@
       {
         "x": 280,
         "y": 140,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 1.25,
         "duration": 4.18,
@@ -59748,7 +59533,7 @@
       {
         "x": 220,
         "y": 164,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 3.93,
         "duration": 3.58,
@@ -59761,7 +59546,7 @@
       {
         "x": 236,
         "y": 188,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 2.44,
         "duration": 4.45,
@@ -59774,7 +59559,7 @@
       {
         "x": 312,
         "y": 164,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 2.33,
         "duration": 4.24,
@@ -59787,7 +59572,7 @@
       {
         "x": 232,
         "y": 216,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 1.15,
         "duration": 3.48,
@@ -59800,7 +59585,7 @@
       {
         "x": 204,
         "y": 128,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 0.67,
         "duration": 3.44,
@@ -59813,7 +59598,7 @@
       {
         "x": 172,
         "y": 172,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.55,
         "duration": 4.18,
@@ -59826,7 +59611,7 @@
       {
         "x": 180,
         "y": 132,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 2.19,
         "duration": 4.05,
@@ -59839,7 +59624,7 @@
       {
         "x": 240,
         "y": 204,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 2.37,
         "duration": 3.0,
@@ -59852,7 +59637,7 @@
       {
         "x": 204,
         "y": 224,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 2.56,
         "duration": 3.48,
@@ -59865,7 +59650,7 @@
       {
         "x": 164,
         "y": 112,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 2.9,
         "duration": 4.31,
@@ -59878,7 +59663,7 @@
       {
         "x": 320,
         "y": 192,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 1.09,
         "duration": 4.48,
@@ -59891,7 +59676,7 @@
       {
         "x": 184,
         "y": 192,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 3.84,
         "duration": 2.88,
@@ -59904,7 +59689,7 @@
       {
         "x": 244,
         "y": 116,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 3.74,
         "duration": 2.66,
@@ -59917,7 +59702,7 @@
       {
         "x": 264,
         "y": 128,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 4.04,
         "duration": 3.32,
@@ -59930,7 +59715,7 @@
       {
         "x": 272,
         "y": 132,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 3.09,
         "duration": 2.82,
@@ -59943,7 +59728,7 @@
       {
         "x": 132,
         "y": 176,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 1.34,
         "duration": 3.0,
@@ -59956,7 +59741,7 @@
       {
         "x": 176,
         "y": 120,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 0.23,
         "duration": 3.81,
@@ -59969,7 +59754,7 @@
       {
         "x": 232,
         "y": 136,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 2.07,
         "duration": 4.31,
@@ -59982,7 +59767,7 @@
       {
         "x": 340,
         "y": 212,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 3.87,
         "duration": 2.73,
@@ -59995,7 +59780,7 @@
       {
         "x": 248,
         "y": 188,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 0,
         "delay": 1.63,
         "duration": 3.72,
@@ -60008,7 +59793,7 @@
       {
         "x": 176,
         "y": 216,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 3.78,
         "duration": 3.36,
@@ -60021,7 +59806,7 @@
       {
         "x": 164,
         "y": 108,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 0.94,
         "duration": 3.44,
@@ -60034,7 +59819,7 @@
       {
         "x": 88,
         "y": 208,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 1.44,
         "duration": 2.96,
@@ -60047,7 +59832,7 @@
       {
         "x": 232,
         "y": 172,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 0.44,
         "duration": 3.04,
@@ -60060,7 +59845,7 @@
       {
         "x": 124,
         "y": 148,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 1.72,
         "duration": 3.58,
@@ -60073,7 +59858,7 @@
       {
         "x": 236,
         "y": 156,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 1,
         "delay": 2.23,
         "duration": 3.13,
@@ -60086,7 +59871,7 @@
       {
         "x": 156,
         "y": 184,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 2,
         "delay": 1.92,
         "duration": 4.29,
@@ -60099,7 +59884,7 @@
       {
         "x": 180,
         "y": 168,
-        "state": "regrowing",
+        "state": "attached",
         "color_idx": 3,
         "delay": 1.89,
         "duration": 2.64,
@@ -60108,6 +59893,253 @@
         "season": "autumn",
         "attached_at": "2026-11-13T07:42:33.630578+00:00",
         "lifespan_days": 7
+      },
+      {
+        "x": 200,
+        "y": 228,
+        "state": "regrowing",
+        "color_idx": 3,
+        "delay": 0.23,
+        "duration": 4.47,
+        "drift": -17,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599886+00:00",
+        "lifespan_days": 7
+      },
+      {
+        "x": 132,
+        "y": 196,
+        "state": "regrowing",
+        "color_idx": 3,
+        "delay": 1.83,
+        "duration": 4.23,
+        "drift": 30,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599903+00:00",
+        "lifespan_days": 9
+      },
+      {
+        "x": 116,
+        "y": 132,
+        "state": "regrowing",
+        "color_idx": 0,
+        "delay": 2.53,
+        "duration": 4.01,
+        "drift": -16,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599909+00:00",
+        "lifespan_days": 10
+      },
+      {
+        "x": 288,
+        "y": 164,
+        "state": "regrowing",
+        "color_idx": 3,
+        "delay": 2.57,
+        "duration": 3.16,
+        "drift": -13,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599913+00:00",
+        "lifespan_days": 14
+      },
+      {
+        "x": 244,
+        "y": 160,
+        "state": "regrowing",
+        "color_idx": 1,
+        "delay": 3.07,
+        "duration": 3.14,
+        "drift": -21,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599918+00:00",
+        "lifespan_days": 9
+      },
+      {
+        "x": 88,
+        "y": 236,
+        "state": "regrowing",
+        "color_idx": 0,
+        "delay": 0.44,
+        "duration": 2.5,
+        "drift": 21,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599922+00:00",
+        "lifespan_days": 11
+      },
+      {
+        "x": 280,
+        "y": 156,
+        "state": "regrowing",
+        "color_idx": 1,
+        "delay": 4.68,
+        "duration": 4.35,
+        "drift": -6,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599927+00:00",
+        "lifespan_days": 9
+      },
+      {
+        "x": 264,
+        "y": 192,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 4.38,
+        "duration": 2.91,
+        "drift": 20,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599932+00:00",
+        "lifespan_days": 8
+      },
+      {
+        "x": 140,
+        "y": 148,
+        "state": "regrowing",
+        "color_idx": 3,
+        "delay": 3.29,
+        "duration": 3.76,
+        "drift": 7,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599937+00:00",
+        "lifespan_days": 11
+      },
+      {
+        "x": 312,
+        "y": 148,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 4.07,
+        "duration": 4.44,
+        "drift": 15,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599942+00:00",
+        "lifespan_days": 8
+      },
+      {
+        "x": 188,
+        "y": 160,
+        "state": "regrowing",
+        "color_idx": 3,
+        "delay": 2.64,
+        "duration": 4.18,
+        "drift": 26,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599945+00:00",
+        "lifespan_days": 7
+      },
+      {
+        "x": 336,
+        "y": 212,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 2.53,
+        "duration": 4.24,
+        "drift": 18,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599949+00:00",
+        "lifespan_days": 8
+      },
+      {
+        "x": 72,
+        "y": 176,
+        "state": "regrowing",
+        "color_idx": 1,
+        "delay": 2.82,
+        "duration": 2.6,
+        "drift": 14,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599952+00:00",
+        "lifespan_days": 12
+      },
+      {
+        "x": 128,
+        "y": 148,
+        "state": "regrowing",
+        "color_idx": 1,
+        "delay": 0.47,
+        "duration": 3.53,
+        "drift": 26,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599956+00:00",
+        "lifespan_days": 9
+      },
+      {
+        "x": 264,
+        "y": 168,
+        "state": "regrowing",
+        "color_idx": 2,
+        "delay": 3.7,
+        "duration": 4.42,
+        "drift": -2,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599959+00:00",
+        "lifespan_days": 7
+      },
+      {
+        "x": 100,
+        "y": 152,
+        "state": "regrowing",
+        "color_idx": 0,
+        "delay": 2.2,
+        "duration": 2.74,
+        "drift": 2,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599963+00:00",
+        "lifespan_days": 9
+      },
+      {
+        "x": 324,
+        "y": 192,
+        "state": "regrowing",
+        "color_idx": 3,
+        "delay": 3.24,
+        "duration": 3.93,
+        "drift": 5,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599967+00:00",
+        "lifespan_days": 12
+      },
+      {
+        "x": 304,
+        "y": 212,
+        "state": "regrowing",
+        "color_idx": 1,
+        "delay": 4.4,
+        "duration": 2.83,
+        "drift": -25,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599970+00:00",
+        "lifespan_days": 10
+      },
+      {
+        "x": 172,
+        "y": 136,
+        "state": "regrowing",
+        "color_idx": 1,
+        "delay": 4.5,
+        "duration": 4.44,
+        "drift": 17,
+        "fell_at": null,
+        "season": "autumn",
+        "attached_at": "2026-11-13T20:24:12.599974+00:00",
+        "lifespan_days": 11
       }
     ],
     "plants": [
@@ -60208,15 +60240,6 @@
         "kind": "ground_plant",
         "growth_stage": "mature",
         "born_at": "2026-10-07T18:03:42.402766+00:00",
-        "size": 1
-      },
-      {
-        "x": 371,
-        "y": 326,
-        "type": "shrub",
-        "kind": "ground_plant",
-        "growth_stage": "withered",
-        "born_at": "2026-09-28T18:03:42.402776+00:00",
         "size": 1
       },
       {
@@ -60326,14 +60349,23 @@
         "growth_stage": "sprout",
         "born_at": "2026-11-12T20:42:46.210894+00:00",
         "size": 1
+      },
+      {
+        "x": 355,
+        "y": 346,
+        "type": "fern",
+        "kind": "ground_plant",
+        "growth_stage": "sprout",
+        "born_at": "2026-11-13T20:24:12.600120+00:00",
+        "size": 1
       }
     ]
   },
   "activity": {
     "streak": 5,
-    "recent_score": 17,
+    "recent_score": 26,
     "last_high_day": null,
-    "inactive_days": 0,
+    "inactive_days": 1,
     "merged_prs": 0,
     "celebrate_24h": 0
   },
@@ -60590,7 +60622,7 @@
     "2026-11-10": 32,
     "2026-11-11": 1,
     "2026-11-12": 73,
-    "2026-11-13": 17
+    "2026-11-13": 26
   },
   "canvas": {
     "w": 400,
